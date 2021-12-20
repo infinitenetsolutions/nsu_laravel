@@ -6,7 +6,7 @@ include "include/header.php";
     <div class="modal-dialog modal-xl">
       <div class="modal-content">             
         <div class="modal-body">
-         <iframe src="https://www.google.com/maps/embed?pb=!4v1580704861797!6m8!1m7!1sCAoSLEFGMVFpcE5SNWxBeEZ1Wks4Y0tiSFVQd2lvT01oVTl5VWRwa3BFbTdiSDVj!2m2!1d22.809599581886!2d86.264062143551!3f36.707148350228515!4f1.820868563873006!5f0.7820865974627469" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+         <!-- <iframe src="https://www.google.com/maps/embed?pb=!4v1580704861797!6m8!1m7!1sCAoSLEFGMVFpcE5SNWxBeEZ1Wks4Y0tiSFVQd2lvT01oVTl5VWRwa3BFbTdiSDVj!2m2!1d22.809599581886!2d86.264062143551!3f36.707148350228515!4f1.820868563873006!5f0.7820865974627469" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe> -->
         </div>        
         <!-- Modal footer -->
         <div class="modal-footer">
@@ -916,7 +916,7 @@ At NETAJI SUBHAS UNIVERSITY, students are expected to have an enriching and life
     </section>
 
     <!-- Divider: Testimonials -->
-    <section class="parallax Divider layer-overlay overlay-theme-colored-9" data-bg-img="images/bg/bg7.jpg" data-parallax-ratio="0.4">
+    <section class="parallax Divider layer-overlay overlay-theme-colored-9" data-bg-img="images/bg/bg8.jpg" data-parallax-ratio="0.4">
       <div class="container pt-70 pb-30">
         <div class="section-title">
           <div class="row">

@@ -25,12 +25,14 @@
       <div class="container pt-70 pb-40">
         <div class="section-title">
           <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-6">
               <h3 class="text-uppercase mt-0">About <span class="text-theme-colored2">Learnpro</span></h3>
 					  	<div class="double-line-bottom-theme-colored-2"></div>
               <p class="mt-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas voluptatem maiores eaque similique non distinctio voluptates perspiciatis omnis, repellendus ipsa aperiam, laudantium voluptatum nulla?.</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, assumenda, voluptatum. Libero eligendi molestias iure error animi totam laudantium, aspernatur similique id eos at consectetur illo culpa, quisquam temporibus esse!</p>
-              <a href="#" class="btn btn-colored btn-theme-colored2 text-white btn-lg pl-40 pr-40 mt-15">Read More</a>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, assumenda, voluptatum. Libero eligendi molestias iure error animi totam laudantium, aspernatur similique id eos at consectetur illo culpa, quisquam temporibus esse!</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, assumenda, voluptatum. Libero eligendi molestias iure error animi totam laudantium, aspernatur similique id eos at consectetur illo culpa, quisquam temporibus esse!</p>
+              <!-- <a href="#" class="btn btn-colored btn-theme-colored2 text-white btn-lg pl-40 pr-40 mt-15">Read More</a> -->
             </div>
             <div class="col-md-4">
               <h3 class="text-uppercase mt-0 mt-sm-30">Video <span class="text-theme-colored2">Tour</span></h3>
@@ -44,9 +46,36 @@
                   <a class="hover-link" data-lightbox-gallery="youtube-video" href="https://www.youtube.com/watch?v=F3QpgXBtDeo" title="Youtube Video">Youtube Video</a>
                 </div>
               </div>
+
             </div>
+            <div class="col-md-2">
+    <div class="sidebar sidebar-right mt-sm-30">
+        <div class="widget">
+        <h3 class="text-uppercase mt-0 mt-sm-30">Quick <span class="text-theme-colored2">Links</span></h3>
+        <div class="double-line-bottom-theme-colored-2"></div>
+            <ul class="list-divider list-border list check">
+                <li><a href="#"> MISSION & VISION</a></li>
+                <li><a href="#"> CHANCELLOR'S MESSAGE</a></li>
+                <li><a href="#"> VICE CHANCELLOR'S MESSAGE</a></li>
+                <li><a href="#"> PRO VICE CHANCELLOR'S MESSAGE</a></li>
+                <li><a href="#"> REGISTRAR'S MESSAGE</a></li>
+                <li><a href="#"> DEAN STUDENTS WELFARE</a></li>
+                <li><a href="#"> PROCTOR</a></li>
+                <li><a href="#"> HEAD OF ADMISSION</a></li>
+                <li><a href="#"> MEET OUR H.O.D</a></li>
+                <li><a href="#"> THE GOVERNING BODY</a></li>
+                <li><a href="#"> PROFILE OF FACULTY MEMBERS</a></li>
+                <li><a href="#"> TEACHING & LEARNING RESOURCES</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
            
         </div>
+
+
       </div>
     </section>
   
