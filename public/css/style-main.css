@@ -131,7 +131,7 @@ This file contains the common styles of this theme.
     }
     
     a {
-        color: #999999;
+        color: #fdfcfc;
         text-decoration: none;
     }
     
@@ -10060,9 +10060,9 @@ This file contains the common styles of this theme.
 */
     
     .menuzord-menu>li>a {
-        color: #404040;
+        color: #f5eded;
         text-transform: uppercase;
-        font-size: 10px;
+        font-size: 12px;
     }
     /*
  * common.less

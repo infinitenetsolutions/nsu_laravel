@@ -23,6 +23,9 @@ Route::get('career', function () {
     return view('career');
 })->name('career');
 
+Route::get('course-details', function () {
+    return view('course-details');
+})->name('course-details');
 
 
 Route::get('chancellors-message', function () {
