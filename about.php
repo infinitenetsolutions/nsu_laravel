@@ -25,18 +25,18 @@
       <div class="container pt-70 pb-40">
         <div class="section-title">
           <div class="row">
+            
             <div class="col-md-6">
-              <h3 class="text-uppercase mt-0">About <span class="text-theme-colored2">Learnpro</span></h3>
+              <h3 class="text-uppercase mt-0">About <span class="text-theme-colored2">us</span></h3>
 					  	<div class="double-line-bottom-theme-colored-2"></div>
-              <p class="mt-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas voluptatem maiores eaque similique non distinctio voluptates perspiciatis omnis, repellendus ipsa aperiam, laudantium voluptatum nulla?.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, assumenda, voluptatum. Libero eligendi molestias iure error animi totam laudantium, aspernatur similique id eos at consectetur illo culpa, quisquam temporibus esse!</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, assumenda, voluptatum. Libero eligendi molestias iure error animi totam laudantium, aspernatur similique id eos at consectetur illo culpa, quisquam temporibus esse!</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, assumenda, voluptatum. Libero eligendi molestias iure error animi totam laudantium, aspernatur similique id eos at consectetur illo culpa, quisquam temporibus esse!</p>
+              <p class="mt-20">Netaji Subhas University is the first premier and one of the best University in Jharkhand, with a venerable legacy, highest academic standards, diverse educational programmes, distinguished faculty, illustrious alumni, varied co-curricular activities and modern infrastructure stands as the pride of Jharkhand and Eastern India. It is an unit of Sitwanto Devi Mahila Kalyan Sansthan.</p>
+              <p>This is also one of the best University in Jamshedpur which emerges as a symbol of excellence, integrity and openness of mansa (thought), vaacha (speech) and karmana (action).</p>
+              <p>Sri, Madan Mohan Singh, the Chancellor of the University, realising the importance of distinguished faculty to act as role models, relentlessly searched for talent all over the country and roped in people of eminence for this University.</p>
               <!-- <a href="#" class="btn btn-colored btn-theme-colored2 text-white btn-lg pl-40 pr-40 mt-15">Read More</a> -->
             </div>
             <div class="col-md-4">
-              <h3 class="text-uppercase mt-0 mt-sm-30">Video <span class="text-theme-colored2">Tour</span></h3>
-              <div class="double-line-bottom-theme-colored-2"></div>
+              <h3 class="text-uppercase mt-0 mt-sm-30"> <span class="text-theme-colored2"></span></h3>
+              <!-- <div class="double-line-bottom-theme-colored-2"></div> -->
               <div class="box-hover-effect about-video">
                 <div class="effect-wrapper">
                   <div class="thumb">
@@ -53,7 +53,7 @@
         <div class="widget">
         <h3 class="text-uppercase mt-0 mt-sm-30">Quick <span class="text-theme-colored2">Links</span></h3>
         <div class="double-line-bottom-theme-colored-2"></div>
-            <ul class="list-divider list-border list check">
+            <ul class="list-divider list-border list check quick-links">
                 <li><a href="#"> MISSION & VISION</a></li>
                 <li><a href="#"> CHANCELLOR'S MESSAGE</a></li>
                 <li><a href="#"> VICE CHANCELLOR'S MESSAGE</a></li>
