@@ -93,4 +93,8 @@ Route::get('vice-chancellors-message', function () {
     return view('vice-chancellors-message');
 })->name('vice-chancellors-message');
 
+Route::get('library', function () {
+    return view('library');
+})->name('library');
+
 
