@@ -127,3 +127,6 @@ Route::get('canteen', function () {
 Route::get('transport', function () {
     return view('transport');
 })->name('transport');
+Route::get('sports', function () {
+    return view('sports');
+})->name('sports');

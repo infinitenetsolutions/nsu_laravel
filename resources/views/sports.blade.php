@@ -1,5 +1,5 @@
 <x-layout>
-    @slot('title', 'Transportation Facilities')
+    @slot('title', 'Our Sports')
         @slot('body')
             <!-- Start main-content -->
  <!-- Start main-content -->
@@ -11,7 +11,7 @@
         <div class="section-content">
           <div class="row"> 
             <div class="col-md-6">
-              <h2 class="text-theme-colored2 font-36">Transportation Facilities</h2>
+              <h2 class="text-theme-colored2 font-36">Our Sports</h2>
               <ol class="breadcrumb text-left mt-10 white">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Pages</a></li>
@@ -29,24 +29,15 @@
         <div class="section-title">
           <div class="row">
             <div class="col-md-5">
-              <h3 class="text-uppercase mt-0">Transportation  <span class="text-theme-colored2">Facilities</span></h3>
+              <h3 class="text-uppercase mt-0">Our <span class="text-theme-colored2">Sports</span></h3>
 					  	<div class="double-line-bottom-theme-colored-2"></div>
-              <p class="mt-20">Netaji Subhash University situated in Pokhari, Jamshedpur. The buses ply on different routes of Jamshedpur with pick and drop facility for the students. Our Bus drivers are well experienced and RTO license holder.</p>
+              <p class="mt-20">Netaji Subhas University provides sport facility for overall development of the students. Annual Sports day is a day of honoring and awarding our talented students who excel in different sports events. The sports activities actually help our student to reduce their stress, enhance the leadership quality in then and promotes true sportsmanship spirit in our students.</p>
 
-               <p>The students are spared from the difficulty of commuting to the University by public transport. The transport facility is also a significant contributor of inculcating an element of punctuality among the students. Bus facility is also available for students & faculty members for industrial visits, field trips and other academic activities.</p>
+               <p>Sports has always been an integral part of NSU and important aspect of life such that we could say that NSU has a rich sports heritage and has resulted in glory of the State in realms of sports.</p>
                 
-               
-                
-                    <h5 class="p-text"> Contact Person →</h5>
-                    <ul class="list-border">
-                      <li><span class="p-text">Mr. Raju Bhagat -</span><span> 9334833167<br> (for B. Ed & School students, 07:30 AM to 01:30 PM)</span></li>
-                      <li><span class="p-text"> Md. Nazim - </span><span>8951518012<br>(10:15 AM to 04:30 PM)</span></li>
-                     
-                    </ul>
-               
+               <p>A rich sports heritage and has resulted in the glory of the State in realms of sports.</p>
                
                 
-               
                
               <!-- <a href="#" class="btn btn-colored btn-theme-colored2 text-white btn-lg pl-40 pr-40 mt-15">Read More</a> -->
             </div>
@@ -54,7 +45,7 @@
               <div class="box-hover-effect about-video">
                 <div class="effect-wrapper">
                   <div class="thumb">
-                    <img class="img-fullwidth" src="https://www.nsuniv.ac.in/assets/images/upload/page_93951_15474658022.jpg" alt="project">
+                    <img class="img-fullwidth" src="https://www.nsuniv.ac.in/assets/images/upload/sport-1.png" alt="project">
                   </div>
                 </div>
               </div>
@@ -93,10 +84,8 @@
 </div>
 
 
-
            
         </div>
-        
 
 
       </div>
