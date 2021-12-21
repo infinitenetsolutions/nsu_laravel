@@ -1,5 +1,5 @@
 <x-layout>
-    @slot('title', 'Library')
+    @slot('title', 'Classroom')
         @slot('body')
             <!-- Start main-content -->
  <!-- Start main-content -->
@@ -11,7 +11,7 @@
         <div class="section-content">
           <div class="row"> 
             <div class="col-md-6">
-              <h2 class="text-theme-colored2 font-36">Our Library</h2>
+              <h2 class="text-theme-colored2 font-36">Classroom</h2>
               <ol class="breadcrumb text-left mt-10 white">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Pages</a></li>
@@ -29,15 +29,13 @@
         <div class="section-title">
           <div class="row">
             <div class="col-md-5">
-              <h3 class="text-uppercase mt-0">Our <span class="text-theme-colored2">Library</span></h3>
+              <h3 class="text-uppercase mt-0">Class<span class="text-theme-colored2">room</span></h3>
 					  	<div class="double-line-bottom-theme-colored-2"></div>
-              <p class="mt-20">Netaji Subhas University (NSU), Jamshedpur provides state-of-the-art infrastructure to its students. These facilities go a long way in ensuring a productive campus life and providing a perfect backdrop for academic pursuits.</p>
+              <p class="mt-20">All lecture classrooms are set against the picturesque hilltop background and equipped with the latest in audiovisual technology.</p>
 
-               <p> NSU, Jamshedpur's residential campus at Pokhari, provides a serene atmosphere to the students, away from the pollution and noise of the city. The sprawling premises also houses the NSU office and, central library, auditorium, conference hall, canteen, area for recreational activities, as well as teaching & non-teaching staff housing.</p>
+               <p> Quality education has become essential in today's world as the skill set of every individual is updating as the years, in terms of technology, passes by. NSU provides smart classrooms technologically which teaching and learning opportunities like never before!</p>
                 
-               <p> Technical laboratory knowledge to the students.</p>
-               <p>Students are required to make adequate and proper use of these facilities.</p>
-               <p>The students of NSU, Jamshedpur have access to the Central Library which has a splendid reference and lending facilities for books, reports, journals, periodicals, CDs and videos. Moreover the Library has an impressive subscription to International and National Case Studies. Online Databases like EBSCO, Emerald, Scopus, JSTOR, Frost and Sullivan, EMIS etc.</p>
+               <p> Learning is fun when subjects are interesting, and smart classes are doing exactly that by making the student's most boring subject palatable. By placing a digital learning technology, equipped with a specialised software, assistive listening devices and audio/visual capabilities in a classroom, The opportunity to provide students with quality education by helping them understand concepts better, improve their reading and comprehension skills, and achieve academic excellence.</p>
                 
                
               <!-- <a href="#" class="btn btn-colored btn-theme-colored2 text-white btn-lg pl-40 pr-40 mt-15">Read More</a> -->
@@ -46,7 +44,7 @@
               <div class="box-hover-effect about-video">
                 <div class="effect-wrapper">
                   <div class="thumb">
-                    <img class="img-fullwidth" src="https://www.nsuniv.ac.in/assets/images/upload/IMG_1085.jpg" alt="project">
+                    <img class="img-fullwidth" src="https://www.nsuniv.ac.in/assets/images/upload/image1.jpg" alt="project">
                   </div>
                 </div>
               </div>

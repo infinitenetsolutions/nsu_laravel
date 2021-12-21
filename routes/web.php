@@ -97,4 +97,33 @@ Route::get('library', function () {
     return view('library');
 })->name('library');
 
+Route::get('it-infrastructure', function () {
+    return view('it-infrastructure');
+})->name('it-infrastructure');
 
+Route::get('class-room', function () {
+    return view('class-room');
+})->name('class-room');
+
+
+Route::get('laboratory', function () {
+    return view('laboratory');
+})->name('laboratory');
+
+
+Route::get('accommodation', function () {
+    return view('accommodation');
+})->name('accommodation');
+
+Route::get('auditorium', function () {
+    return view('auditorium');
+})->name('auditorium');
+
+Route::get('canteen', function () {
+    return view('canteen');
+})->name('canteen');
+
+
+Route::get('transport', function () {
+    return view('transport');
+})->name('transport');

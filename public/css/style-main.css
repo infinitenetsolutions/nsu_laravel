@@ -125,9 +125,10 @@ This file contains the common styles of this theme.
     body {
         line-height: 1.7;
         color: #777777;
-        font-size: 14px;
+        font-size: 13px;
         font-family: 'Roboto', sans-serif;
         background-color: #fff;
+        text-align: justify;
     }
     
     a {
@@ -10341,3 +10342,17 @@ This file contains the common styles of this theme.
         vertical-align: middle;
         font-weight: 900;
     }
+    .side-bars{
+        background: linear-gradient( 
+90deg, rgba(255,82,65,1) 0%, rgba(199,0,19,1) 100%)!important;
+    }
+    .side-bars .border:after,.side-bars .border:before{
+        background: linear-gradient( 
+            90deg, rgba(255, 255, 255) 0%, rgba(255, 255, 255) 100%)!important
+    }
+   
+    .p-text{
+        color:red;
+        
+    }
+   

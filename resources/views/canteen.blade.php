@@ -1,5 +1,5 @@
 <x-layout>
-    @slot('title', 'Library')
+    @slot('title', 'Canteen')
         @slot('body')
             <!-- Start main-content -->
  <!-- Start main-content -->
@@ -11,7 +11,7 @@
         <div class="section-content">
           <div class="row"> 
             <div class="col-md-6">
-              <h2 class="text-theme-colored2 font-36">Our Library</h2>
+              <h2 class="text-theme-colored2 font-36">Our Canteen</h2>
               <ol class="breadcrumb text-left mt-10 white">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Pages</a></li>
@@ -29,16 +29,13 @@
         <div class="section-title">
           <div class="row">
             <div class="col-md-5">
-              <h3 class="text-uppercase mt-0">Our <span class="text-theme-colored2">Library</span></h3>
+              <h3 class="text-uppercase mt-0">Our <span class="text-theme-colored2">Canteen</span></h3>
 					  	<div class="double-line-bottom-theme-colored-2"></div>
-              <p class="mt-20">Netaji Subhas University (NSU), Jamshedpur provides state-of-the-art infrastructure to its students. These facilities go a long way in ensuring a productive campus life and providing a perfect backdrop for academic pursuits.</p>
+              <p class="mt-20">Quality food is important factor for a healthy mind in a healthy body. With this aim the spacious ans very well maintained canteen for the students is being run by the university. Where diverse taste buds are served to the students. Hygiene is taken maximum care for the students. During their lunch hour students enjoy food and relax here and rejuvenate themselves for the post lunch session.</p>
 
-               <p> NSU, Jamshedpur's residential campus at Pokhari, provides a serene atmosphere to the students, away from the pollution and noise of the city. The sprawling premises also houses the NSU office and, central library, auditorium, conference hall, canteen, area for recreational activities, as well as teaching & non-teaching staff housing.</p>
+               <p>The canteen offers a wide range of dishes, freshly cooked and prepared, and with attention paid to quality.</p>
                 
-               <p> Technical laboratory knowledge to the students.</p>
-               <p>Students are required to make adequate and proper use of these facilities.</p>
-               <p>The students of NSU, Jamshedpur have access to the Central Library which has a splendid reference and lending facilities for books, reports, journals, periodicals, CDs and videos. Moreover the Library has an impressive subscription to International and National Case Studies. Online Databases like EBSCO, Emerald, Scopus, JSTOR, Frost and Sullivan, EMIS etc.</p>
-                
+               <p> The objective of the Canteen and meal service is to protect by reducing the risk of food borne illness, with proper sanitary conditions and preventing adulterated food.From the very beginning of the College, the College Canteen has been functioning efficiently. The canteen is located inside the College. The hostelers and day scholars are provided meals by assuring food safety and quality.</p>
                
               <!-- <a href="#" class="btn btn-colored btn-theme-colored2 text-white btn-lg pl-40 pr-40 mt-15">Read More</a> -->
             </div>
@@ -46,7 +43,7 @@
               <div class="box-hover-effect about-video">
                 <div class="effect-wrapper">
                   <div class="thumb">
-                    <img class="img-fullwidth" src="https://www.nsuniv.ac.in/assets/images/upload/IMG_1085.jpg" alt="project">
+                    <img class="img-fullwidth" src="https://www.nsuniv.ac.in/assets/images/upload/Canteen-min.JPG" alt="project">
                   </div>
                 </div>
               </div>

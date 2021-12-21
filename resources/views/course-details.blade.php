@@ -192,9 +192,9 @@
           <div class="col-sm-12 col-md-4">
             <div class="sidebar sidebar-left mt-sm-30 ml-30 ml-sm-0">
            
-              <div class="widget border-1px bg-silver-deep p-15" style="background: linear-gradient(
-                90deg, rgba(255,82,65,1) 0%, rgba(199,0,19,1) 100%)!important;">
-                <h4 class="widget-title line-bottom-theme-colored-2 mb-10 text-white">ALL COURSES</h4>
+              <div class="widget border-1px bg-silver-deep p-15 side-bars" >
+                <h4 class="widget-title mb-10 text-white">ALL COURSES</h4>
+                <div class="double-line-bottom-theme-colored-2 mt-10 border"></div>
                 <div class="categories">
                   <ul class="list-border">
                     <li><a href="#"><b>- CENTRE OF RESEARCH -</b></a>

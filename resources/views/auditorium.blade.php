@@ -1,5 +1,5 @@
 <x-layout>
-    @slot('title', 'Library')
+    @slot('title', 'Auditorium')
         @slot('body')
             <!-- Start main-content -->
  <!-- Start main-content -->
@@ -11,7 +11,7 @@
         <div class="section-content">
           <div class="row"> 
             <div class="col-md-6">
-              <h2 class="text-theme-colored2 font-36">Our Library</h2>
+              <h2 class="text-theme-colored2 font-36">Our Auditorium</h2>
               <ol class="breadcrumb text-left mt-10 white">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Pages</a></li>
@@ -29,16 +29,14 @@
         <div class="section-title">
           <div class="row">
             <div class="col-md-5">
-              <h3 class="text-uppercase mt-0">Our <span class="text-theme-colored2">Library</span></h3>
+              <h3 class="text-uppercase mt-0">Our <span class="text-theme-colored2">Auditorium</span></h3>
 					  	<div class="double-line-bottom-theme-colored-2"></div>
-              <p class="mt-20">Netaji Subhas University (NSU), Jamshedpur provides state-of-the-art infrastructure to its students. These facilities go a long way in ensuring a productive campus life and providing a perfect backdrop for academic pursuits.</p>
+              <p class="mt-20">To cater the requirement of organizing national & international seminars at NSU air-conditioned auditorium has been constructed with a seating capacity of over 300 participants.</p>
 
-               <p> NSU, Jamshedpur's residential campus at Pokhari, provides a serene atmosphere to the students, away from the pollution and noise of the city. The sprawling premises also houses the NSU office and, central library, auditorium, conference hall, canteen, area for recreational activities, as well as teaching & non-teaching staff housing.</p>
+               <p> The auditorium is suitable enough to organize cultural events and various academic competitions.</p>
                 
-               <p> Technical laboratory knowledge to the students.</p>
-               <p>Students are required to make adequate and proper use of these facilities.</p>
-               <p>The students of NSU, Jamshedpur have access to the Central Library which has a splendid reference and lending facilities for books, reports, journals, periodicals, CDs and videos. Moreover the Library has an impressive subscription to International and National Case Studies. Online Databases like EBSCO, Emerald, Scopus, JSTOR, Frost and Sullivan, EMIS etc.</p>
-                
+               <p> The University has fully functional, Centrally Air Conditioned auditorium with a seating capacity of 320 persons.</p>
+                <p>The auditorium has a state of the art audio-visual system and a multi-functional lighting arrangement. Various cultural programmes, lectures and University annual function are organised in this auditorium.</p>
                
               <!-- <a href="#" class="btn btn-colored btn-theme-colored2 text-white btn-lg pl-40 pr-40 mt-15">Read More</a> -->
             </div>
@@ -46,7 +44,7 @@
               <div class="box-hover-effect about-video">
                 <div class="effect-wrapper">
                   <div class="thumb">
-                    <img class="img-fullwidth" src="https://www.nsuniv.ac.in/assets/images/upload/IMG_1085.jpg" alt="project">
+                    <img class="img-fullwidth" src="https://www.nsuniv.ac.in/assets/images/upload/Auditorium-2.jpg" alt="project">
                   </div>
                 </div>
               </div>
