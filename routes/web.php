@@ -135,6 +135,24 @@ Route::get('sports', function () {
 Route::get('conference-room', function () {
     return view('conference-room');
 })->name('conference-room');
+
 Route::get('moot-court', function () {
     return view('moot-court');
 })->name('moot-court');
+
+
+Route::get('traning-kitchen', function () {
+    return view('traning-kitchen');
+})->name('traning-kitchen');
+
+
+Route::get('fitness-center', function () {
+    return view('fitness-center');
+})->name('fitness-center');
+
+
+Route::get('mass-comm-studio', function () {
+    return view('mass-comm-studio');
+})->name('mass-comm-studio');
+
+
