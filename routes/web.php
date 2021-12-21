@@ -127,6 +127,14 @@ Route::get('canteen', function () {
 Route::get('transport', function () {
     return view('transport');
 })->name('transport');
+
 Route::get('sports', function () {
     return view('sports');
 })->name('sports');
+
+Route::get('conference-room', function () {
+    return view('conference-room');
+})->name('conference-room');
+Route::get('moot-court', function () {
+    return view('moot-court');
+})->name('moot-court');
