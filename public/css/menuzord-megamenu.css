@@ -473,7 +473,8 @@ License: http://codecanyon.net/licenses
             width: 100%;
             padding: 12px 20px;
             display: block;
-            border-bottom: solid 1px #f0f0f0;
+            border-bottom: solid 1px #ce0a19;
+            color: #d4131e;
         }
         .menuzord-responsive .menuzord-menu>li:first-child>a {
             border-top: solid 1px #f0f0f0;

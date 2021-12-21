@@ -37,11 +37,11 @@
                                 <ul>
                                     <!-- SLIDE 1 -->
                                     <li data-index="rs-1" data-transition="fade" data-slotamount="default" data-easein="default"
-                                        data-easeout="default" data-masterspeed="default" data-thumb="images/bg/bg10.jpg"
+                                        data-easeout="default" data-masterspeed="default" data-thumb="images/banners/bg10.jpg"
                                         data-rotate="0" data-fstransition="fade" data-saveperformance="off"
                                         data-title="Web Show" data-description="">
                                         <!-- MAIN IMAGE -->
-                                        <img src="images/bg/bg10.jpg" alt="" data-bgposition="center center" data-bgfit="cover"
+                                        <img src="images/banners/bg10.jpg" alt="" data-bgposition="center center" data-bgfit="cover"
                                             data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg"
                                             data-no-retina>
                                         <!-- LAYERS -->
