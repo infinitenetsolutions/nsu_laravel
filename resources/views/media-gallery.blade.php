@@ -24,259 +24,68 @@
                 </section>
 
                 <!-- Gallery Grid 3 -->
-                <section>
-                    <div class="container">
-                        <div class="section-content">
+                <div class="main-content">
+                    <!-- Section: inner-header -->
+
+                    <section>
+                        <div class="container">
                             <div class="row">
+                                <div class="col-md-12">
+                                    <div class="heading-line-bottom">
+                                        <h4 class="heading-title"> <i class="fa fa-picture-o" aria-hidden="true"></i> Media
+                                            Gallery</h4>
+                                    </div>
 
-
-
-
-                                <!-- Portfolio Gallery Grid -->
-                                <div class="gallery-isotope default-animation-effect grid-5 masonry gutter-small clearfix"
-                                    data-lightbox="gallery">
-                                    <!-- grid sizer for Masonry -->
-                                    <div class="gallery-item gallery-item-sizer"></div>
-
-                                    <!-- Portfolio Item Start -->
-                                    <div class="gallery-item wide">
-                                        <div class="thumb">
-                                            <img class="img-fullwidth" src="http://placehold.it/800x600" alt="project">
-                                            <div class="overlay-shade"></div>
-                                            <div class="text-holder">
-                                                <div class="title text-center">Sample Title</div>
-                                            </div>
-                                            <div class="icons-holder">
-                                                <div class="icons-holder-inner">
-                                                    <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
-                                                        <a data-lightbox="image" href="http://placehold.it/800x600"><i
-                                                                class="fa fa-plus"></i></a>
-                                                        <a href="#"><i class="fa fa-link"></i></a>
+                                    <!-- Portfolio Gallery Grid -->
+                                    <div class="gallery-isotope default-animation-effect grid-3 gutter-small clearfix"
+                                        data-lightbox="gallery">
+                                        <!-- Portfolio Item Start -->
+                                        @foreach ($images as $title)
+                                            <div class="gallery-item">
+                                                <div class="thumb">
+                                                    <img class="img-fullwidth" src="{{$url.$title->gallery_image_name}}" alt="project">
+                                                    <div class="overlay-shade"></div>
+                                                    <div class="text-holder">
+                                                        <div class="title text-center">{{$title->gallery_title}}</div>
+                                                    </div>
+                                                    <div class="icons-holder">
+                                                        <div class="icons-holder-inner">
+                                                            <div
+                                                                class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                                                                <a href="{{$url.$title->gallery_image_name}}" data-lightbox-gallery="gallery"
+                                                                    title="Your Title Here"><i class="fa fa-picture-o"></i></a>
+                                                                    <a href="{{$url.$title->gallery_image_name}}" data-lightbox-gallery="gallery"
+                                                                    title="Your Title Here"><i class="fa fa-link"></i></a>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a class="hover-link" data-lightbox="image"
-                                                href="http://placehold.it/800x600">View more</a>
-                                        </div>
-                                    </div>
-                                    <!-- Portfolio Item End -->
 
-                                    <!-- Portfolio Item Start -->
-                                    <div class="gallery-item">
-                                        <div class="thumb">
-                                            <img class="img-fullwidth" src="http://placehold.it/400x300" alt="project">
-                                            <div class="overlay-shade"></div>
-                                            <div class="text-holder">
-                                                <div class="title text-center">Sample Title</div>
-                                            </div>
-                                            <div class="icons-holder">
-                                                <div class="icons-holder-inner">
-                                                    <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
-                                                        <a data-lightbox="image" href="http://placehold.it/400x300"><i
-                                                                class="fa fa-plus"></i></a>
-                                                        <a href="#"><i class="fa fa-link"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <a class="hover-link" data-lightbox="image"
-                                                href="http://placehold.it/400x300">View more</a>
-                                        </div>
-                                    </div>
-                                    <!-- Portfolio Item End -->
+                                        @endforeach
 
-                                    <!-- Portfolio Item Start -->
-                                    <div class="gallery-item">
-                                        <div class="thumb">
-                                            <img class="img-fullwidth" src="http://placehold.it/400x300" alt="project">
-                                            <div class="overlay-shade"></div>
-                                            <div class="text-holder">
-                                                <div class="title text-center">Sample Title</div>
-                                            </div>
-                                            <div class="icons-holder">
-                                                <div class="icons-holder-inner">
-                                                    <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
-                                                        <a data-lightbox="image" href="http://placehold.it/400x300"><i
-                                                                class="fa fa-plus"></i></a>
-                                                        <a href="#"><i class="fa fa-link"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <a class="hover-link" data-lightbox="image"
-                                                href="http://placehold.it/400x300">View more</a>
-                                        </div>
                                     </div>
-
-                                    <!-- Portfolio Item End -->
-
-                                    <!-- Portfolio Item Start -->
-                                    <div class="gallery-item">
-                                        <div class="thumb">
-                                            <img class="img-fullwidth" src="http://placehold.it/400x600" alt="project">
-                                            <div class="overlay-shade"></div>
-                                            <div class="text-holder">
-                                                <div class="title text-center">Sample Title</div>
-                                            </div>
-                                            <div class="icons-holder">
-                                                <div class="icons-holder-inner">
-                                                    <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
-                                                        <a data-lightbox="image" href="http://placehold.it/400x600"><i
-                                                                class="fa fa-plus"></i></a>
-                                                        <a href="#"><i class="fa fa-link"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <a class="hover-link" data-lightbox="image"
-                                                href="http://placehold.it/400x600">View more</a>
-                                        </div>
-                                    </div>
-                                    <!-- Portfolio Item End -->
-
-                                    <!-- Portfolio Item Start -->
-                                    <div class="gallery-item">
-                                        <div class="thumb">
-                                            <img class="img-fullwidth" src="http://placehold.it/400x600" alt="project">
-                                            <div class="overlay-shade"></div>
-                                            <div class="text-holder">
-                                                <div class="title text-center">Sample Title</div>
-                                            </div>
-                                            <div class="icons-holder">
-                                                <div class="icons-holder-inner">
-                                                    <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
-                                                        <a data-lightbox="image" href="http://placehold.it/400x600"><i
-                                                                class="fa fa-plus"></i></a>
-                                                        <a href="#"><i class="fa fa-link"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <a class="hover-link" data-lightbox="image"
-                                                href="http://placehold.it/400x600">View more</a>
-                                        </div>
-                                    </div>
-                                    <!-- Portfolio Item End -->
-
-                                    <!-- Portfolio Item Start -->
-                                    <div class="gallery-item">
-                                        <div class="thumb">
-                                            <img class="img-fullwidth" src="http://placehold.it/400x300" alt="project">
-                                            <div class="overlay-shade"></div>
-                                            <div class="text-holder">
-                                                <div class="title text-center">Sample Title</div>
-                                            </div>
-                                            <div class="icons-holder">
-                                                <div class="icons-holder-inner">
-                                                    <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
-                                                        <a data-lightbox="image" href="http://placehold.it/400x300"><i
-                                                                class="fa fa-plus"></i></a>
-                                                        <a href="#"><i class="fa fa-link"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <a class="hover-link" data-lightbox="image"
-                                                href="http://placehold.it/400x300">View more</a>
-                                        </div>
-                                    </div>
-                                    <!-- Portfolio Item End -->
-
-                                    <!-- Portfolio Item Start -->
-                                    <div class="gallery-item">
-                                        <div class="thumb">
-                                            <img class="img-fullwidth" src="http://placehold.it/400x300" alt="project">
-                                            <div class="overlay-shade"></div>
-                                            <div class="text-holder">
-                                                <div class="title text-center">Sample Title</div>
-                                            </div>
-                                            <div class="icons-holder">
-                                                <div class="icons-holder-inner">
-                                                    <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
-                                                        <a data-lightbox="image" href="http://placehold.it/400x300"><i
-                                                                class="fa fa-plus"></i></a>
-                                                        <a href="#"><i class="fa fa-link"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <a class="hover-link" data-lightbox="image"
-                                                href="http://placehold.it/400x300">View more</a>
-                                        </div>
-                                    </div>
-                                    <!-- Portfolio Item End -->
-
-                                    <!-- Portfolio Item Start -->
-                                    <div class="gallery-item">
-                                        <div class="thumb">
-                                            <img class="img-fullwidth" src="http://placehold.it/400x300" alt="project">
-                                            <div class="overlay-shade"></div>
-                                            <div class="text-holder">
-                                                <div class="title text-center">Sample Title</div>
-                                            </div>
-                                            <div class="icons-holder">
-                                                <div class="icons-holder-inner">
-                                                    <div
-                                                        class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
-                                                        <a data-lightbox="image" href="http://placehold.it/400x300"><i
-                                                                class="fa fa-plus"></i></a>
-                                                        <a href="#"><i class="fa fa-link"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <a class="hover-link" data-lightbox="image"
-                                                href="http://placehold.it/400x300">View more</a>
-                                        </div>
-                                    </div>
-                                    <!-- Portfolio Item End -->
-
-                                    <!-- Portfolio Item Start -->
-                                    <div class="gallery-item">
-                                        <div class="thumb">
-                                            <img class="img-fullwidth" src="http://placehold.it/400x300" alt="project">
-                                            <div class="overlay-shade"></div>
-                                            <div class="text-holder">
-                                                <div class="title text-center">Sample Title</div>
-                                            </div>
-                                            <div class="icons-holder">
-                                                <div class="icons-holder-inner">
-                                                    <div
-                                                        class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
-                                                        <a data-lightbox="image" href="http://placehold.it/400x300"><i
-                                                                class="fa fa-plus"></i></a>
-                                                        <a href="#"><i class="fa fa-link"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <a class="hover-link" data-lightbox="image"
-                                                href="http://placehold.it/400x300">View more</a>
-                                        </div>
-                                    </div>
-                                    <!-- Portfolio Item End -->
-
-                                    <!-- Portfolio Item Start -->
-                                    <div class="gallery-item">
-                                        <div class="thumb">
-                                            <img class="img-fullwidth" src="http://placehold.it/400x300" alt="project">
-                                            <div class="overlay-shade"></div>
-                                            <div class="text-holder">
-                                                <div class="title text-center">Sample Title</div>
-                                            </div>
-                                            <div class="icons-holder">
-                                                <div class="icons-holder-inner">
-                                                    <div
-                                                        class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
-                                                        <a data-lightbox="image" href="http://placehold.it/400x300"><i
-                                                                class="fa fa-plus"></i></a>
-                                                        <a href="#"><i class="fa fa-link"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <a class="hover-link" data-lightbox="image"
-                                                href="http://placehold.it/400x300">View more</a>
-                                        </div>
-                                    </div>
-                                    <!-- Portfolio Item End -->
+                                    <!-- End Portfolio Gallery Grid -->
                                 </div>
-                                <!-- End Portfolio Gallery Grid -->
+
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <nav>
+                                            <ul class="pagination theme-colored pull-right xs-pull-center mb-xs-40">
+                                                <div class="d-flex justify-content-center">
+                                                    {!! $images->links()!!}
+                                                </div>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </section>
+
+                    </section>
+
+                </div>
 
             </div>
             <!-- end main-content -->

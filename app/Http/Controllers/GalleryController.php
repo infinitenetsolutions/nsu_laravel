@@ -10,12 +10,19 @@ class GalleryController extends Controller
 {
     function image_gallery()
     {
-   $images = DB::table('gallery_tbl')->get();
+        $images = DB::table('gallery_tbl')->get();
 
         $gallery_title = DB::table('gallery_tbl')
             ->select('gallery_title')
             ->groupBy('gallery_title')
             ->get();
-        return view('image-gallery', ['url' => url(), 'images' => $images,'gallery_title'=>$gallery_title]);
+
+        return view('image-gallery', ['url' => $this->url(), 'images' => $images, 'gallery_title' => $gallery_title]);
+    }
+
+    function media_gallery()
+    {
+        $images = DB::table('gallery_tbl')->paginate(9);
+        return view('media-gallery', ['url' => $this->url(), 'images' => $images,]);
     }
 }

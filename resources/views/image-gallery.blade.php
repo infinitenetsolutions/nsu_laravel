@@ -59,7 +59,6 @@
                                         </div>
                                         <!-- Portfolio Item End -->
 
-
                                         <!-- Portfolio Item Start -->
                                         @foreach ($gallery_title as $title)
                                             <div class="gallery-item photo">
@@ -72,9 +71,10 @@
                                                                     ->where('gallery_title', $title->gallery_title)
                                                                     ->get(); ?>
                                                                 @foreach ($images as $image)
-                                                                    <li><a href="{{$url.$image->gallery_image_name}}"
-                                                                            title="{{$url.$image->gallery_image_name}}"><img
-                                                                                src="{{$url.$image->gallery_image_name}}" alt=""></a></li>
+                                                                    <li><a href="{{ $url . $image->gallery_image_name }}"
+                                                                            title="{{ $image->gallery_title }}"><img
+                                                                                src="{{ $url . $image->gallery_image_name }}"
+                                                                                alt=""></a></li>
                                                                 @endforeach
 
 
@@ -86,9 +86,15 @@
                                                         <div class="icons-holder-inner">
                                                             <div
                                                                 class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
-                                                                <a href="#"><i class="fa fa-picture-o"></i></a>
+                                                                <a href="#"><i class="fa fa-picture-o"></i>
+                                                                </a>
+
+
                                                             </div>
+
                                                         </div>
+                                                        <span class="text-danger">{{ $title->gallery_title }}</span>
+
                                                     </div>
                                                 </div>
                                             </div>

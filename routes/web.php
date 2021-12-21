@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\GalleryController;
 use Illuminate\Support\Facades\Route;
 
@@ -34,10 +35,9 @@ Route::get('chancellors-message', function () {
 })->name('chancellors-message');
 
 
-Route::get('contact-us/', function () {
-    return view('contact-us');
-})->name('contact-us');
 
+Route::get('contact-us', [ContactUsController::class, 'index'])->name('contact-us');
+Route::post('contact-us', [ContactUsController::class, 'contact-us'])->name('contact-us');
 
 Route::get('dean-academics', function () {
     return view('dean-academics');
@@ -46,6 +46,7 @@ Route::get('dean-academics', function () {
 
 
 Route::get('image-gallery', [GalleryController::class, 'image_gallery'])->name('image-gallery');
+Route::get('media-gallery', [GalleryController::class, 'media_gallery'])->name('media-gallery');
 
 
 Route::get('index', function () {
@@ -53,9 +54,6 @@ Route::get('index', function () {
 })->name('index');
 
 
-Route::get('media-gallery', function () {
-    return view('media-gallery');
-})->name('media-gallery');
 
 
 Route::get('mission-vission', function () {
