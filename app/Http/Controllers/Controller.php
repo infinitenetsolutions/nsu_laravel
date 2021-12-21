@@ -10,4 +10,9 @@ use Illuminate\Routing\Controller as BaseController;
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+
+    function url()
+    {
+        return "https://nsuniv.ac.in/assets/images/upload/";
+    }
 }

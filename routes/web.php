@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\GalleryController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -44,9 +45,7 @@ Route::get('dean-academics', function () {
 
 
 
-Route::get('image-gallery', function () {
-    return view('image-gallery');
-})->name('image-gallery');
+Route::get('image-gallery', [GalleryController::class, 'image_gallery'])->name('image-gallery');
 
 
 Route::get('index', function () {
@@ -92,5 +91,3 @@ Route::get('registrars-message', function () {
 Route::get('vice-chancellors-message', function () {
     return view('vice-chancellors-message');
 })->name('vice-chancellors-message');
-
-
