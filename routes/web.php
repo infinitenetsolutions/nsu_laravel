@@ -61,7 +61,7 @@ Route::get('media-gallery', function () {
 
 Route::get('mission-vission', function () {
     return view('mission-vission');
-})->name('mission-vission');
+})->name('mission-vision');
 
 
 Route::get('placements', function () {
@@ -94,3 +94,11 @@ Route::get('vice-chancellors-message', function () {
 })->name('vice-chancellors-message');
 
 
+Route::get('transport', function () {
+    return view('transport');
+})->name('transport');
+
+
+Route::get('event-detail', function () {
+    return view('event-detail');
+})->name('event-detail');

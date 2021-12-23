@@ -7620,7 +7620,7 @@ This file contains the common styles of this theme.
                         }
                         
                         .panel-group.accordion-stylished-left-border .panel:not(:last-child):before {
-                            border-left: 1px dashed #cccccc;
+                            border-left: 1px dashed #c90315;
                             content: "";
                             height: 100%;
                             left: 14px;
@@ -10375,4 +10375,19 @@ This file contains the common styles of this theme.
                             float: right;
                         }
                         
-                        f
+                        .side-bars {
+                            background: linear-gradient( 90deg, rgba(255, 82, 65, 1) 0%, rgba(199, 0, 19, 1) 100%)!important;
+                        }
+                        
+                        .side-bars .border:after,
+                        .side-bars .border:before {
+                            background: linear-gradient( 90deg, rgba(255, 255, 255) 0%, rgba(255, 255, 255) 100%)!important
+                        }
+                        
+                        .p-text {
+                            color: red;
+                        }
+                        
+                        .side-bars ul li a {
+                            color: #fff
+                        }
