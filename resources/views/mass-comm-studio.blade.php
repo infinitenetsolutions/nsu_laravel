@@ -58,20 +58,20 @@
                       <div class="double-line-bottom-theme-colored-2 mt-10 border"></div>
                       <div class="categories">
                         <ul class="list-border">
-                          <li><a href="#"> LIBRARY </a></li>
-                          <li><a href="#"> IT INFRASTRUCTURE </a></li>
-                          <li><a href="#"> CLASSROOM </a></li>
-                          <li><a href="#"> LABORATORY </a></li>
-                          <li><a href="#"> ACCOMMODATION </a></li>
-                          <li><a href="#"> AUDITORIUM</a></li>
-                          <li><a href="#"> CANTEEN </a></li>
-                          <li><a href="#"> TRANSPORT </a></li>
-                          <li><a href="#"> SPORTS </a></li>
-                          <li><a href="#"> CONFERENCE ROOM </a></li>
-                          <li><a href="#"> COURT </a></li>
-                          <li><a href="#"> TRAINING KITCHEN</a></li>
-                          <li><a href="#"> FITNESS CENTER </a></li>
-                          <li><a href="#"> MASS COMM. STUDIO </a></li>
+                            <li><a href="{{ route('library') }}">Library</a></li>
+                                <li><a href="{{ route('it-infrastructure') }}">IT Infrastructure</a></li>
+                                <li><a href="{{ route('class-room') }}">Classroom</a></li>
+                                <li><a href="{{ route('laboratory') }}">Laboratory</a></li>
+                                <li><a href="{{ route('accommodation') }}"> ACCOMMODATION</a></li>
+                                <li><a href="{{ route('auditorium') }}"> AUDITORIUM</a></li>
+                                <li><a href="{{ route('canteen') }}"> CANTEEN</a></li>
+                                <li><a href="{{ route('transport') }}"> TRANSPORT</a></li>
+                                <li><a href="{{ route('sports') }}"> SPORTS</a></li>
+                                <li><a href="{{ route('conference-room') }}"> CONFERENCE ROOM</a></li>
+                                <li><a href="{{ route('moot-court') }}"> MOOT COURT</a></li>
+                                <li><a href="{{ route('traning-kitchen') }}"> TRAINING KITCHEN</a></li>
+                                <li><a href="{{ route('fitness-center') }}"> FITNESS CENTER</a></li>
+                                <li><a href="{{ route('mass-comm-studio') }}"> MASS COMM. STUDIO</a></li>
                          
                          
                         </ul>

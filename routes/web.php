@@ -64,9 +64,7 @@ Route::get('mission-vission', function () {
 })->name('mission-vission');
 
 
-Route::get('placements', function () {
-    return view('placements');
-})->name('placements');
+
 
 
 Route::get('proctor', function () {
@@ -156,3 +154,15 @@ Route::get('mass-comm-studio', function () {
 })->name('mass-comm-studio');
 
 
+
+Route::get('placements', function () {
+    return view('placements');
+})->name('placements');
+
+Route::get('appointment-letter', function () {
+    return view('appointment-letter');
+})->name('appointment-letter');
+
+Route::get('our-eateemed-recruiters', function () {
+    return view('our-eateemed-recruiters');
+})->name('our-eateemed-recruiters');

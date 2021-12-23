@@ -111,28 +111,28 @@ background: linear-gradient(90deg, rgba(255,82,65,1) 0%, rgba(199,0,19,1) 100%)!
 
                         <li><a href="#home">Infrastructure</a>
                             <ul class="dropdown">
-                                <li><a href="page-course-gird">Library</a></li>
-                                <li><a href="page-course-list">IT Infrastructure</a></li>
-                                <li><a href="page-course-details">Classroom</a></li>
-                                <li><a href="page-course-details">Laboratory</a></li>
-                                <li><a href="page-course-details"> ACCOMMODATION</a></li>
-                                <li><a href="page-course-details"> AUDITORIUM</a></li>
-                                <li><a href="page-course-details"> CANTEEN</a></li>
-                                <li><a href="page-course-details"> TRANSPORT</a></li>
-                                <li><a href="page-course-details"> SPORTS</a></li>
-                                <li><a href="page-course-details"> CONFERENCE ROOM</a></li>
-                                <li><a href="page-course-details"> MOOT COURT</a></li>
-                                <li><a href="page-course-details"> TRAINING KITCHEN</a></li>
-                                <li><a href="page-course-details"> FITNESS CENTER</a></li>
-                                <li><a href="page-course-details"> MASS COMM. STUDIO</a></li>
+                                <li><a href="{{ route('library') }}">Library</a></li>
+                                <li><a href="{{ route('it-infrastructure') }}">IT Infrastructure</a></li>
+                                <li><a href="{{ route('class-room') }}">Classroom</a></li>
+                                <li><a href="{{ route('laboratory') }}">Laboratory</a></li>
+                                <li><a href="{{ route('accommodation') }}"> ACCOMMODATION</a></li>
+                                <li><a href="{{ route('auditorium') }}"> AUDITORIUM</a></li>
+                                <li><a href="{{ route('canteen') }}"> CANTEEN</a></li>
+                                <li><a href="{{ route('transport') }}"> TRANSPORT</a></li>
+                                <li><a href="{{ route('sports') }}"> SPORTS</a></li>
+                                <li><a href="{{ route('conference-room') }}"> CONFERENCE ROOM</a></li>
+                                <li><a href="{{ route('moot-court') }}"> MOOT COURT</a></li>
+                                <li><a href="{{ route('traning-kitchen') }}"> TRAINING KITCHEN</a></li>
+                                <li><a href="{{ route('fitness-center') }}"> FITNESS CENTER</a></li>
+                                <li><a href="{{ route('mass-comm-studio') }}"> MASS COMM. STUDIO</a></li>
                             </ul>
                         </li>
                         <li><a href="#home">Placement</a>
                             <ul class="dropdown">
                                 <li><a href="page-course-gird"> PLACEMENTS</a></li>
                                 <li><a href="page-course-list"> APPOINTMENT LETTER</a></li>
-                                <li><a href="page-course-details"> OUR ESTEEMED RECRUITERS</a></li>
-                                <li><a href="page-course-details"> OUR ESTEEMED RECRUITERS</a></li>
+                                <li><a href="{{ route('library') }}"> OUR ESTEEMED RECRUITERS</a></li>
+                                <li><a href="{{ route('library') }}"> OUR ESTEEMED RECRUITERS</a></li>
 
                             </ul>
                         </li>
@@ -140,11 +140,11 @@ background: linear-gradient(90deg, rgba(255,82,65,1) 0%, rgba(199,0,19,1) 100%)!
                             <ul class="dropdown">
                                 <li><a href="page-course-gird"> ANTI RAGGING CELL</a></li>
                                 <li><a href="page-course-list"> ACADEMIC CALENDAR</a></li>
-                                <li><a href="page-course-details"> DOWNLOADS</a></li>
-                                <li><a href="page-course-details"> LOGIN</a></li>
-                                <li><a href="page-course-details"> PH.D RESULT 2021</a></li>
-                                <li><a href="page-course-details"> DOWNLOADS</a></li>
-                                <li><a href="page-course-details"> DOWNLOADS</a></li>
+                                <li><a href="{{ route('library') }}"> DOWNLOADS</a></li>
+                                <li><a href="{{ route('library') }}"> LOGIN</a></li>
+                                <li><a href="{{ route('library') }}"> PH.D RESULT 2021</a></li>
+                                <li><a href="{{ route('library') }}"> DOWNLOADS</a></li>
+                                <li><a href="{{ route('library') }}"> DOWNLOADS</a></li>
                             </ul>
                         </li>
                         <li><a href="#home">Gallery</a>
