@@ -29,15 +29,14 @@
                                 <h3 class="line-bottom mt-0 mb-30">Interested in discussing?</h3>
 
                                 <!-- Contact Form -->
-                                <form id="contact_form" action="{{ route('contact-us') }}" 
-                                    class="" method="post">
+                                <form  action="{{ route('contact-us') }}" method="post">
 
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <div class="form-group">
                                                 <label>Name <small>*</small></label>
-                                                <input name="name" class="form-control" type="text"
-                                                    placeholder="Enter Name" required="">
+                                                <input name="name" class="form-control" type="text" placeholder="Enter Name"
+                                                    required="">
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
@@ -53,14 +52,14 @@
                                         <div class="col-sm-6">
                                             <div class="form-group">
                                                 <label>Subject <small>*</small></label>
-                                                <input name="form_subject" class="form-control required" type="text"
+                                                <input name="subject" class="form-control required" type="text"
                                                     placeholder="Enter Subject">
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-group">
                                                 <label>Phone</label>
-                                                <input name="form_phone" class="form-control" type="text"
+                                                <input name="phone" class="form-control" type="text"
                                                     placeholder="Enter Phone">
                                             </div>
                                         </div>
@@ -68,7 +67,7 @@
 
                                     <div class="form-group">
                                         <label>Message</label>
-                                        <textarea name="form_message" class="form-control required" rows="5"
+                                        <textarea name="massage" class="form-control required" rows="5"
                                             placeholder="Enter Message"></textarea>
                                     </div>
                                     <div class="form-group">
@@ -115,11 +114,11 @@
                                     </div>
                                 </div>
                                 <!-- <div class="icon-box media mb-15"> <a class="media-left pull-left flip mr-20" href="#"> <i class="pe-7s-film text-theme-colored"></i></a>
-                                              <div class="media-body">
-                                                <h5 class="mt-0">Make a Video Call</h5>
-                                                <p>ThemeMascotSkype</p>
-                                              </div>
-                                            </div> -->
+                                                                      <div class="media-body">
+                                                                        <h5 class="mt-0">Make a Video Call</h5>
+                                                                        <p>ThemeMascotSkype</p>
+                                                                      </div>
+                                                                    </div> -->
                             </div>
                         </div>
                     </div>

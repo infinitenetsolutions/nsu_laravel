@@ -37,7 +37,7 @@ Route::get('chancellors-message', function () {
 
 
 Route::get('contact-us', [ContactUsController::class, 'index'])->name('contact-us');
-Route::post('contact-us', [ContactUsController::class, 'contact-us'])->name('contact-us');
+Route::post('contact-us', [ContactUsController::class, 'contact'])->name('contact-us');
 
 Route::get('dean-academics', function () {
     return view('dean-academics');
@@ -89,3 +89,66 @@ Route::get('registrars-message', function () {
 Route::get('vice-chancellors-message', function () {
     return view('vice-chancellors-message');
 })->name('vice-chancellors-message');
+
+
+Route::get('library', function () {
+    return view('library');
+})->name('library');
+
+Route::get('it-infrastructure', function () {
+    return view('it-infrastructure');
+})->name('it-infrastructure');
+
+Route::get('class-room', function () {
+    return view('class-room');
+})->name('class-room');
+
+
+Route::get('laboratory', function () {
+    return view('laboratory');
+})->name('laboratory');
+
+
+Route::get('accommodation', function () {
+    return view('accommodation');
+})->name('accommodation');
+
+Route::get('auditorium', function () {
+    return view('auditorium');
+})->name('auditorium');
+
+Route::get('canteen', function () {
+    return view('canteen');
+})->name('canteen');
+
+
+Route::get('transport', function () {
+    return view('transport');
+})->name('transport');
+
+Route::get('sports', function () {
+    return view('sports');
+})->name('sports');
+
+Route::get('conference-room', function () {
+    return view('conference-room');
+})->name('conference-room');
+
+Route::get('moot-court', function () {
+    return view('moot-court');
+})->name('moot-court');
+
+
+Route::get('traning-kitchen', function () {
+    return view('traning-kitchen');
+})->name('traning-kitchen');
+
+
+Route::get('fitness-center', function () {
+    return view('fitness-center');
+})->name('fitness-center');
+
+
+Route::get('mass-comm-studio', function () {
+    return view('mass-comm-studio');
+})->name('mass-comm-studio');

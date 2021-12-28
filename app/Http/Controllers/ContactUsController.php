@@ -11,6 +11,7 @@ function index(){
 return view('contact-us');
 }
 function  contact(Request $request){
+    dd($request);
     DB::table('contactus_tbl')->insert($request->except('_token'));
     return view('thankyou');
 }

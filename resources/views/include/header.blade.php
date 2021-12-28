@@ -5,7 +5,7 @@
         <!-- head -->
         <div class="header-top bg-theme-colored2 sm-text-center" style="background: rgb(255,82,65);
 background: linear-gradient(90deg, rgba(255,82,65,1) 0%, rgba(199,0,19,1) 100%)!important;
-                padding: 5px 0;">
+        padding: 5px 0;">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -26,14 +26,14 @@ background: linear-gradient(90deg, rgba(255,82,65,1) 0%, rgba(199,0,19,1) 100%)!
                                             <span id="university" class="text-white"></span>
                                         </b><br>
                                         <!-- <b><sub style="font-size:15px;color:#fff;">Jamshedpur,
-                                                        Jharkhand</sub></b> -->
+                                                Jharkhand</sub></b> -->
 
                                     </a> </li>
                                 <!-- <li class="m-0 pl-10 pr-10">
-                                            <a href="#" class="text-white"><i
-                                                    class="fa fa-envelope-o text-white mr-5"></i>
-                                                contact@yourdomain.com</a>
-                                        </li> -->
+                                    <a href="#" class="text-white"><i
+                                            class="fa fa-envelope-o text-white mr-5"></i>
+                                        contact@yourdomain.com</a>
+                                </li> -->
                             </ul>
                         </div>
                     </div>
@@ -67,9 +67,9 @@ background: linear-gradient(90deg, rgba(255,82,65,1) 0%, rgba(199,0,19,1) 100%)!
             <div class="container">
                 <nav id="menuzord-right" class="menuzord default no-bg">
                     <!-- <a class="menuzord-brand switchable-logo pull-left flip mb-15" href="index-mp-layout1.html">
-              <img class="logo-default" src="images/logo-wide-white.png" alt="">
-              <img class="logo-scrolled-to-fixed" src="images/logo-wide.png" alt="">
-            </a> -->
+      <img class="logo-default" src="images/logo-wide-white.png" alt="">
+      <img class="logo-scrolled-to-fixed" src="images/logo-wide.png" alt="">
+    </a> -->
                     <ul class="menuzord-menu">
                         <li class="active"><a href="#home">Home</a> </li>
                         <li><a href="#home">About</a>
@@ -92,11 +92,11 @@ background: linear-gradient(90deg, rgba(255,82,65,1) 0%, rgba(199,0,19,1) 100%)!
                                 <li><a href="page-course-details.html"> PROFILE OF FACULTY MEMBERS</a></li>
                                 <li><a href="page-course-details.html"> TEACHING & LEARNING RESOURCES</a></li>
                                 <!-- <li><a href="#home">NIRF</a>
-                                            <ul class="dropdown">
-                                                <li><a href="page-course-gird.html"> Management</a></li>
-                                                <li><a href="page-course-gird.html"> Over All</a></li>
-                                            </ul>
-                                        </li> -->
+                                    <ul class="dropdown">
+                                        <li><a href="page-course-gird.html"> Management</a></li>
+                                        <li><a href="page-course-gird.html"> Over All</a></li>
+                                    </ul>
+                                </li> -->
 
                                 <li class="submenus"><a href="#" class="link">NIRF
 
@@ -261,8 +261,8 @@ background: linear-gradient(90deg, rgba(255,82,65,1) 0%, rgba(199,0,19,1) 100%)!
     </li>
     <li><a href="#home">Gallery</a>
         <ul class="dropdown">
-            <li><a href="{{ route('image-gallery') }}">UNIVERSITY GALLERY</a></li>
-            <li><a href="{{ route('media-gallery') }}">MEDIA GALLERY</a></li>
+            <li><a href="page-course-gird.html">UNIVERSITY GALLERY</a></li>
+            <li><a href="page-course-list.html">MEDIA GALLERY</a></li>
 
         </ul>
     </li>
@@ -271,7 +271,7 @@ background: linear-gradient(90deg, rgba(255,82,65,1) 0%, rgba(199,0,19,1) 100%)!
 
     </li>
 
-    <li><a href="{{ route('contact-us') }}">Contact</a>
+    <li><a href="#home">Contact</a>
 
     </li>
 
