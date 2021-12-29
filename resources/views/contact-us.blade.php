@@ -60,7 +60,7 @@
                                             <div class="form-group">
                                                 <label>Phone</label>
                                                 <input name="phone" class="form-control" type="text"
-                                                    placeholder="Enter Phone">
+                                                    placeholder="Enter Phone">                                                   
                                             </div>
                                         </div>
                                     </div>

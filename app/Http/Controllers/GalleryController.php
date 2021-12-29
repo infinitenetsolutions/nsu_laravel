@@ -13,8 +13,8 @@ class GalleryController extends Controller
         $images = DB::table('gallery_tbl')->get();
 
         $gallery_title = DB::table('gallery_tbl')
-            ->select('gallery_title')
-            ->groupBy('gallery_title')
+            ->select('title')
+            ->groupBy('title')
             ->get();
 
         return view('image-gallery', ['url' => $this->url(), 'images' => $images, 'gallery_title' => $gallery_title]);

@@ -261,8 +261,8 @@ background: linear-gradient(90deg, rgba(255,82,65,1) 0%, rgba(199,0,19,1) 100%)!
     </li>
     <li><a href="#home">Gallery</a>
         <ul class="dropdown">
-            <li><a href="page-course-gird.html">UNIVERSITY GALLERY</a></li>
-            <li><a href="page-course-list.html">MEDIA GALLERY</a></li>
+            <li><a href="{{ route('image-gallery') }}">UNIVERSITY GALLERY</a></li>
+            <li><a href="{{ route('media-gallery') }}">MEDIA GALLERY</a></li>
 
         </ul>
     </li>
