@@ -58,6 +58,8 @@
     <script src="js/revolution-slider/js/jquery.themepunch.tools.min.js"></script>
     <script src="js/revolution-slider/js/jquery.themepunch.revolution.min.js"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body class="has-fixed-footer">
@@ -74,65 +76,83 @@
         {{ $body }}
         @include('include.footer')
         <!-- JS | Custom script for all pages -->
+
+        <!-- Footer Scripts -->
+        <!-- JS | Custom script for all pages -->
         <script src="js/custom.js"></script>
 
         <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  
       (Load Extensions only on Local File Systems ! 
        The following part can be removed on Server for On Demand Loading) -->
-        <script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.actions.min.js"></script>
-        <script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.carousel.min.js"></script>
-        <script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.kenburn.min.js"></script>
-        <script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.layeranimation.min.js">
+        <script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.actions.min.js">
         </script>
-        <script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.migration.min.js"></script>
-        <script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.navigation.min.js"></script>
-        <script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.parallax.min.js"></script>
-        <script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.slideanims.min.js"></script>
-        <script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.video.min.js"></script>
+        <script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.carousel.min.js">
+        </script>
+        <script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.kenburn.min.js">
+        </script>
+        <script type="text/javascript"
+            src="js/revolution-slider/js/extensions/revolution.extension.layeranimation.min.js"></script>
+        <script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.migration.min.js">
+        </script>
+        <script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.navigation.min.js">
+        </script>
+        <script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.parallax.min.js">
+        </script>
+        <script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.slideanims.min.js">
+        </script>
+        <script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.video.min.js">
+        </script>
 
-        <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <!-- moving netaji -->
         <script>
             $(document).ready(function() {
-                setTimeout(function() {
-                    setTimeout(function() {
-                        var netaji = "etaji";
-                        var netaji_str = netaji.split("");
-                        var el_netaji = document.getElementById('netaji');
-                        (function animate() {
-                            netaji_str.length > 0 ? el_netaji.innerHTML += netaji_str.shift() :
-                                clearTimeout(running);
-                            var running = setTimeout(animate, 500);
-                        })();
-                    }, 1000);
-                    setTimeout(function() {
-                        var subhas = "ubhas";
-                        var subhas_str = subhas.split("");
-                        var el_subhas = document.getElementById('subhas');
-                        (function animate() {
-                            subhas_str.length > 0 ? el_subhas.innerHTML += subhas_str.shift() :
-                                clearTimeout(running);
-                            var running = setTimeout(animate, 500);
-                        })();
-                    }, 3500);
-                    setTimeout(function() {
-                        var university = "niversity";
-                        var university_str = university.split("");
-                        var el_university = document.getElementById('university');
-                        (function animate() {
-                            university_str.length > 0 ? el_university.innerHTML += university_str
-                                .shift() : clearTimeout(running);
-                            var running = setTimeout(animate, 500);
-                        })();
-                    }, 6000);
-                }, 3000);
-            });
+        setTimeout(function() {
+            setTimeout(function() {
+                var netaji = "etaji";
+                var netaji_str = netaji.split("");
+                var el_netaji = document.getElementById('netaji');
+                (function animate() {
+                    netaji_str.length > 0 ? el_netaji.innerHTML += netaji_str.shift() : clearTimeout(running); 
+                    var running = setTimeout(animate, 500);
+                })();
+            }, 1000);
+            setTimeout(function() {
+                var subhas = "ubhas";
+                var subhas_str = subhas.split("");
+                var el_subhas = document.getElementById('subhas');
+                (function animate() {
+                    subhas_str.length > 0 ? el_subhas.innerHTML += subhas_str.shift() : clearTimeout(running); 
+                    var running = setTimeout(animate, 500);
+                })();
+            }, 3500);
+            setTimeout(function() {
+                var university = "niversity";
+                var university_str = university.split("");
+                var el_university = document.getElementById('university');
+                (function animate() {
+                    university_str.length > 0 ? el_university.innerHTML += university_str.shift() : clearTimeout(running); 
+                    var running = setTimeout(animate, 500);
+                })();
+            }, 6000);
+        }, 3000);
+    });
         </script>
 
         <!-- //moving netaji -->
 
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+            var bLazy = new Blazy({
+                    // Options
+                    container:'.b-lazy'
+                });
+            $(document).on('click',function(){
+            	document.getElementsByTagName('audio')[0].play();
+            });
+        </script>
 </body>
 
 </html>

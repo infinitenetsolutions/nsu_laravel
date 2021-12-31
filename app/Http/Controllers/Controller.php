@@ -13,6 +13,6 @@ class Controller extends BaseController
 
     function url()
     {
-        return "https://nsuniv.ac.in/assets/images/upload/";
+        return "https://nsuniv.ac.in/laravel_admin/public/upload/";
     }
 }

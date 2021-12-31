@@ -1796,7 +1796,7 @@ padding-bottom: 10px; */
     color: #666666;
     font-size: 11px;
     font-weight: 600;
-    padding: 0px 20px 0px 25px;
+    padding: 5px 20px 5px 25px;
     text-transform: uppercase;
 }
 
@@ -7052,6 +7052,8 @@ blockquote p {
 */
 
 .styled-icons a {
+    border-radius: 20px;
+    border: 1px solid #ffffff;
     color: #333333;
     font-size: 18px;
     height: 32px;
@@ -7620,7 +7622,7 @@ blockquote p {
 }
 
 .panel-group.accordion-stylished-left-border .panel:not(:last-child):before {
-    border-left: 1px dashed #c90315;
+    border-left: 1px dashed #cccccc;
     content: "";
     height: 100%;
     left: 14px;
@@ -10302,7 +10304,7 @@ input.input-circled {
 }
 /* fixed footer */
 
-footer#footer.fixed-footer {
+footer#footer.fixed-footers {
     bottom: 0;
     left: 0;
     position: fixed;
@@ -10336,7 +10338,7 @@ body.has-fixed-footer .main-content {
 }
 
 .menuzord-menu .color-orange {
-    font-size: 11px;
+    font-size: 12px;
     color: #e8312e;
     font-weight: 700;
     font-family: 'Roboto Slab';
@@ -10375,19 +10377,47 @@ body.has-fixed-footer .main-content {
     float: right;
 }
 
-.side-bars {
-    background: linear-gradient( 90deg, rgba(255, 82, 65, 1) 0%, rgba(199, 0, 19, 1) 100%)!important;
-}
+.contact-section .contact-detail {
+    color: #fff;
+  }
 
-.side-bars .border:after,
-.side-bars .border:before {
-    background: linear-gradient( 90deg, rgba(255, 255, 255) 0%, rgba(255, 255, 255) 100%)!important
-}
+  .contact-section .widget h5 {
+    color: #fff;
+    background: linear-gradient(90deg, rgba(255, 82, 65, 1) 0%, rgba(199, 0, 19, 1) 100%) !important;
+    border-radius: 30px;
+    padding: 3px 10px;
+  }
 
-.p-text {
-    color: red;
-}
 
-.side-bars ul li a {
-    color: #fff
-}
+  .videoplayer {
+    width: 100%;
+    max-height: 90vh;
+    padding: 0;
+    overflow: hidden;
+    margin-bottom: 0;
+  }
+
+  .videoplayer video {
+    width: 100%;
+  }
+
+
+  @media only screen and (max-width: 767px) {
+    .menuzord-brand {
+      width: 150px !important;
+      margin: 17px 0;
+    }
+
+    .menuzord-brand img {
+      max-height: 150px;
+    }
+
+
+    .contact-section {
+      display: none;
+    }
+  }
+
+  * {
+    font-family: 'Roboto Slab';
+  }
