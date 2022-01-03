@@ -42,7 +42,7 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-2">
-          <a class="menuzord-brand pull-left flip sm-pull-center mb-15" href="index-mp-layout1.html"><img src="https://nsuniv.ac.in/assets/images/logo.png
+          <a class="menuzord-brand pull-left flip sm-pull-center mb-15" href="{{ route('index') }}"><img src="{{ asset('images/flogo.png') }} 
 " alt=""></a>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-10 contact-section">
@@ -60,9 +60,11 @@
               <div class="widget no-border sm-text-center mt-10 m-0">
                 <i
                   class="pe-7s-mail-open text-theme-colored2 font-48 mt-0 mr-15 mr-sm-0 sm-display-block pull-left flip sm-pull-none"></i>
-                <a href="#" class="font-12 contact-detail text-uppercase">Start Your Career With Us</a>
-                <h5 class="font-13 m-0"><a href="" class="text-white"> Toll Free :1800-8899-022 <i
-                      class="fa fa-angle-double-right"></i></a></h5>
+                <a href="#" class="font-12 contact-detail text-uppercase">Get Start Enquiry</a>
+                <h5 class="font-13 m-0"><a href="" class="text-white" class="btn btn-primary text-white"
+                    class="btn btn-primary text-white" data-toggle="modal" data-target=".bs-example-modal-lg">Get
+                    Started <i class="fa fa-angle-double-right"></i></a></h5>
+
               </div>
             </div>
             <div class="col-xs-12 col-sm-4 col-md-3">
@@ -129,42 +131,54 @@
   <div class="header-nav">
     <div class="header-nav-wrapper navbar-scrolltofixed"
       style="z-index: 999; position: static; top: auto;background:#000; width:100%;">
-      <div class="container">
+      <div class="container-fluid">
+        <div class="col-md-12 img-fluid">
+          <ul class="list-inline sm-text-center mt-5">
+            <li>
+              <b style="font-size:17px;" class="all-time-shadow">
+                <span class="theme-orange pr-2 pl-2" style="background: #c70013;color:#fff;padding:5px 10px;">N</span>
+                <span id="netaji" class="text-white"></span>
+                <span class="theme-orange pr-2 pl-2" style="background: #c70013;color:#fff;padding:5px 10px;">S</span>
+                <span id="subhas" class="text-white"></span>
+                <span class="theme-orange pr-2 pl-2" style="background: #c70013;color:#fff;padding:5px 10px;">U</span>
+                <span id="university" class="text-white"></span>
+              </b>
+              <!-- <br>
+                                    <b><sub style="font-size:15px;color:#fff;">Jamshedpur, Jharkhand</sub></b> -->
+            </li>
+            <!-- <li> <i class="fa fa-phone text-theme-colored"></i> Call Us at <a href="#">+(012) 345 6789</a> </li>
+            <li> <i class="fa fa-envelope-o text-theme-colored"></i> <a href="#">contact@yourdomain.com</a> </li> -->
+          </ul>
+        </div>
+
         <nav id="menuzord" class="menuzord default menuzord-responsive">
           <!-- <a href="javascript:void(0)" class="showhide" style="display: none;">
         <em></em><em></em><em></em>
       </a> -->
+
+
           <ul class="menuzord-menu menuzord-right menuzord-indented scrollable" style="max-height: 400px;">
             <li class="active"><a href="#home">Home</a> </li>
             <li><a href="#home">About<span class="indicator"></span></a>
               <ul class="dropdown" style="right: auto; display: none;">
 
                 <b class="color-orange">- OVERVIEW -</b>
-                <li><a href="page-course-gird.html"> WHO WE ARE</a></li>
-                <li><a href="page-course-list.html"> MISSION &amp; VISION</a></li>
-                <li><a href="page-course-details.html"> CHANCELLOR'S MESSAGE</a></li>
-                <li><a href="page-course-details.html"> VICE CHANCELLOR'S MESSAGE</a></li>
-                <li><a href="page-course-details.html"> PRO VICE CHANCELLOR'S MESSAGE</a></li>
-                <li><a href="page-course-details.html"> REGISTRAR'S MESSAGE</a></li>
-                <li><a href="page-course-details.html"> DEAN STUDENTS WELFARE</a></li>
-                <li><a href="page-course-details.html"> PROCTOR</a></li>
-                <li><a href="page-course-details.html"> HEAD OF ADMISSION</a></li>
-                <li><a href="page-course-details.html"> MEET OUR H.O.D</a></li>
-                <!-- <b class="color-orange" >- NSU AT A GLANCE -</b> -->
-                <!-- <b class="color-orange" >- OVERVIEW -</b> -->
+                <?php $abouts = DB::table('pages')->where('page_type','about')->get();
+                ?>
+                @foreach($abouts as $about)
+                <li><a href="{{ route('about', $about->title )  }}"> {{ $about->sub_title }}</a></li>
+                @endforeach
+
+                <li>
+                  <b class="color-orange">- NSU AT A GLANCE -</b>
+                </li>
                 <li><a href="page-course-details.html"> THE GOVERNING BODY</a></li>
                 <li><a href="page-course-details.html"> PROFILE OF FACULTY MEMBERS</a></li>
                 <li><a href="page-course-details.html"> TEACHING &amp; LEARNING RESOURCES</a></li>
-                <!-- <li><a href="#home">NIRF</a>
-                                          <ul class="dropdown">
-                                              <li><a href="page-course-gird.html"> Management</a></li>
-                                              <li><a href="page-course-gird.html"> Over All</a></li>
-                                          </ul>
-                                      </li> -->
+
 
                 <li class="submenus"><a href="#" class="link">NIRF
 
-                    <!-- <span class="indicator" style="display:none!important;"><i class="fa fa-angle-right" style="display:none!important;"></i></span> -->
                     <span class="indicator"><i class="fa fa-angle-right"></i></span>
                   </a>
                   <ul class="dropdown" style="display: none;">
@@ -288,20 +302,12 @@
 
             <li><a href="#home">Infrastructure<span class="indicator"></span></a>
               <ul class="dropdown" style="right: auto;">
-                <li><a href="page-course-gird.html">Library</a></li>
-                <li><a href="page-course-list.html">IT Infrastructure</a></li>
-                <li><a href="page-course-details.html">Classroom</a></li>
-                <li><a href="page-course-details.html">Laboratory</a></li>
-                <li><a href="page-course-details.html"> ACCOMMODATION</a></li>
-                <li><a href="page-course-details.html"> AUDITORIUM</a></li>
-                <li><a href="page-course-details.html"> CANTEEN</a></li>
-                <li><a href="page-course-details.html"> TRANSPORT</a></li>
-                <li><a href="page-course-details.html"> SPORTS</a></li>
-                <li><a href="page-course-details.html"> CONFERENCE ROOM</a></li>
-                <li><a href="page-course-details.html"> MOOT COURT</a></li>
-                <li><a href="page-course-details.html"> TRAINING KITCHEN</a></li>
-                <li><a href="page-course-details.html"> FITNESS CENTER</a></li>
-                <li><a href="page-course-details.html"> MASS COMM. STUDIO</a></li>
+                <?php $infrastructures = DB::table('pages')->where('page_type','infrastructure')->get();
+                ?>
+                @foreach($infrastructures as $infrastructure)
+                <li><a href="{{ route('infrastructure', $infrastructure->title )  }}"> {{ $infrastructure->sub_title
+                    }}</a></li>
+                @endforeach
               </ul>
             </li>
             <li><a href="#home">Placement<span class="indicator"></span></a>
@@ -315,19 +321,20 @@
             </li>
             <li><a href="#home">Student<span class="indicator"></span></a>
               <ul class="dropdown" style="right: auto;">
-                <li><a href="page-course-gird.html"> ANTI RAGGING CELL</a></li>
-                <li><a href="page-course-list.html"> ACADEMIC CALENDAR</a></li>
-                <li><a href="page-course-details.html"> DOWNLOADS</a></li>
-                <li><a href="page-course-details.html"> LOGIN</a></li>
-                <li><a href="page-course-details.html"> PH.D RESULT 2021</a></li>
+                <?php $students = DB::table('pages')->where('page_type','student')->get();
+                ?>
+                @foreach($students as $student)
+                <li><a href="{{ route('student', $student->title )  }}"> {{ $student->sub_title }}</a></li>
+                @endforeach
+
 
 
               </ul>
             </li>
             <li><a href="#home">Gallery<span class="indicator"></span></a>
               <ul class="dropdown" style="right: auto;">
-                <li><a href="page-course-gird.html">UNIVERSITY GALLERY</a></li>
-                <li><a href="page-course-list.html">MEDIA GALLERY</a></li>
+                <li><a href="{{ route('image-gallery') }}">UNIVERSITY GALLERY</a></li>
+                <li><a href="{{ route('media-gallery') }}">MEDIA GALLERY</a></li>
 
               </ul>
             </li>
@@ -344,9 +351,11 @@
           </ul>
 
         </nav>
+
       </div>
     </div>
-    <div style="display: none; width: 1349px; height: 70.5625px; float: none;"></div>
+
   </div>
-  </div>
+
 </header>
+@include('include.popup')

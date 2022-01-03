@@ -9,10 +9,13 @@ use Illuminate\Routing\Controller as BaseController;
 
 class Controller extends BaseController
 {
-    use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
     function url()
     {
-        return "https://nsuniv.ac.in/laravel_admin/public/upload/";
+        return "http://127.0.0.1:8002/upload/";
     }
+
+    use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+
+  
 }

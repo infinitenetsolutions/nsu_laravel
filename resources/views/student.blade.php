@@ -6,7 +6,7 @@
     <div class="main-content">
         <!-- Section: inner-header -->
         <section class="inner-header divider layer-overlay overlay-theme-colored-7"
-            data-bg-img="{{$url.'about/'.$data->image_name}}">
+        data-bg-img="{{$url.'student/'.$data->image_name}}">
             <div class="container pt-120 pb-60">
                 <!-- Section Content -->
                 <div class="section-content">
@@ -15,7 +15,7 @@
                             <h2 class="text-theme-colored2 font-36">{{ $data->sub_title }}</h2>
                             <ol class="breadcrumb text-left mt-10 white">
                                 <li><a href="{{ route('index') }}">Home</a></li>
-                                <li><a href="#">About</a></li>
+                                <li><a href="#">Student</a></li>
                                 <li class="active">{{ $data->title }}</li>
                             </ol>
                         </div>
@@ -45,7 +45,7 @@
                             <div class="box-hover-effect about-video">
                                 <div class="effect-wrapper">
                                     <div class="thumb">
-                                        <img class="img-fullwidth" src="{{$url.'about/'.$data->image_name}}"
+                                        <img class="img-fullwidth" src="{{$url.'student/'.$data->image_name}}"
                                             alt="project">
                                     </div>
 
@@ -56,7 +56,7 @@
                                 </div>
                                 <hr>
                                 <div class="thumb">
-                                    <img class="img-fullwidth" src="{{$url.'about/'.$data->image_name1}}"
+                                    <img class="img-fullwidth" src="{{$url.'student/'.$data->image_name1}}"
                                         alt="project">
                                 </div>
                             </div>
@@ -71,7 +71,7 @@
                                     <div class="categories">
                                         <ul class="list-border">
                                             @foreach ($quicks as $quick)
-                                            <li><a href="{{ route('about',$quick->title) }}"> {{ $quick->sub_title }}
+                                            <li><a href="{{ route('student',$quick->title) }}"> {{ $quick->sub_title }}
                                                 </a></li>
                                             @endforeach
 

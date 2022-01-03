@@ -68,7 +68,7 @@
                                                         <div class="flexslider">
                                                             <ul class="slides">
                                                                 <?php $images = DB::table('gallery_tbl')
-                                                                    ->where('gallery_title', $title->title)
+                                                                    ->where('title', $title->title)
                                                                     ->get(); ?>
                                                                 @foreach ($images as $image)
                                                                     <li><a href="{{ $url . $image->image_name }}"
@@ -93,7 +93,7 @@
                                                             </div>
 
                                                         </div>
-                                                        <span class="text-danger">{{ $title->gallery_title }}</span>
+                                                        <span class="text-danger">{{ $title->title }}</span>
 
                                                     </div>
                                                 </div>

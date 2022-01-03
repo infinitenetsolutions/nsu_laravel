@@ -328,20 +328,20 @@ var THEMEMASCOT = {};
         /* ---------------------------------------------------------------------- */
         /* ------------------------------ Preloader  ---------------------------- */
         /* ---------------------------------------------------------------------- */
-        TM_preLoaderClickDisable: function() {
-            var $preloader = $('#preloader');
-            $preloader.children('#disable-preloader').on('click', function(e) {
-                $preloader.fadeOut();
-                return false;
-            });
-        },
+        // TM_preLoaderClickDisable: function() {
+        //     var $preloader = $('#preloader');
+        //     $preloader.children('#disable-preloader').on('click', function(e) {
+        //         $preloader.fadeOut();
+        //         return false;
+        //     });
+        // },
 
-        TM_preLoaderOnLoad: function() {
-            var $preloader = $('#preloader');
-            if( $preloader.length > 0 ) {
-                $preloader.delay(200).fadeOut('slow');
-            }
-        },
+        // TM_preLoaderOnLoad: function() {
+        //     var $preloader = $('#preloader');
+        //     if( $preloader.length > 0 ) {
+        //         $preloader.delay(200).fadeOut('slow');
+        //     }
+        // },
 
 
         /* ---------------------------------------------------------------------- */

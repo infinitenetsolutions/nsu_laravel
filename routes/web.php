@@ -1,8 +1,11 @@
 <?php
 
+use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\StructureController;
+use App\Http\Controllers\StudentController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -15,9 +18,10 @@ Route::get('about', function () {
 
 
 
-Route::get('anti-ragging-cell', function () {
-    return view('anti-ragging-cell');
-})->name('anti-ragging-cell');
+Route::get('student/{name}', [StudentController::class, 'index'])->name('student');
+Route::get('infrastructure/{name}', [StructureController::class, 'index'])->name('infrastructure');
+Route::get('about/{name}', [AboutController::class, 'index'])->name('about');
+
 
 
 Route::get('career', function () {

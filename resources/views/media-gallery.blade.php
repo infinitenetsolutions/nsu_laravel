@@ -43,18 +43,18 @@
                                         @foreach ($images as $title)
                                             <div class="gallery-item">
                                                 <div class="thumb">
-                                                    <img class="img-fullwidth" src="{{$url.$title->gallery_image_name}}" alt="project">
+                                                    <img class="img-fullwidth" src="{{$url.$title->image_name}}" alt="project">
                                                     <div class="overlay-shade"></div>
                                                     <div class="text-holder">
-                                                        <div class="title text-center">{{$title->gallery_title}}</div>
+                                                        <div class="title text-center">{{$title->title}}</div>
                                                     </div>
                                                     <div class="icons-holder">
                                                         <div class="icons-holder-inner">
                                                             <div
                                                                 class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
-                                                                <a href="{{$url.$title->gallery_image_name}}" data-lightbox-gallery="gallery"
+                                                                <a href="{{$url.$title->image_name}}" data-lightbox-gallery="gallery"
                                                                     title="Your Title Here"><i class="fa fa-picture-o"></i></a>
-                                                                    <a href="{{$url.$title->gallery_image_name}}" data-lightbox-gallery="gallery"
+                                                                    <a href="{{$url.$title->image_name}}" data-lightbox-gallery="gallery"
                                                                     title="Your Title Here"><i class="fa fa-link"></i></a>
                                                             </div>
                                                         </div>
