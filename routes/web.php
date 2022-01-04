@@ -1,7 +1,10 @@
 <?php
 
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\ApplyOnlineController;
+use App\Http\Controllers\CareerController;
 use App\Http\Controllers\ContactUsController;
+use App\Http\Controllers\CourseController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\StructureController;
@@ -21,12 +24,16 @@ Route::get('about', function () {
 Route::get('student/{name}', [StudentController::class, 'index'])->name('student');
 Route::get('infrastructure/{name}', [StructureController::class, 'index'])->name('infrastructure');
 Route::get('about/{name}', [AboutController::class, 'index'])->name('about');
+Route::get('course/{name}', [CourseController::class, 'index'])->name('course');
+Route::get('admission/{name}', [ApplyOnlineController::class, 'index'])->name('admission');
+Route::get('contact/contact-us', [ContactUsController::class, 'index'])->name('contact');
+Route::post('contact-us', [ContactUsController::class, 'contact'])->name('contact-us');
+
+Route::get('career/career', [CareerController::class, 'index'])->name('career');
 
 
 
-Route::get('career', function () {
-    return view('career');
-})->name('career');
+
 
 Route::get('course-details', function () {
     return view('course-details');
@@ -39,8 +46,6 @@ Route::get('chancellors-message', function () {
 
 
 
-Route::get('contact-us', [ContactUsController::class, 'index'])->name('contact-us');
-Route::post('contact-us', [ContactUsController::class, 'contact'])->name('contact-us');
 
 Route::get('dean-academics', function () {
     return view('dean-academics');

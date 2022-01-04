@@ -51,7 +51,11 @@
               <div class="widget no-border sm-text-center mt-10 m-0">
                 <i
                   class="pe-7s-map-marker text-theme-colored2 font-48 mt-0 mr-15 mr-sm-0 sm-display-block pull-left flip sm-pull-none"></i>
-                <a href="#" class="font-12 contact-detail text-uppercase"> Virtual Tour</a>
+
+                <a class="font-12 contact-detail text-uppercase" href="#" data-toggle="modal" data-target="#myModal">
+                  Virtual Tour</a>
+
+
                 <h5 class="font-13 m-0"><a href="" class="text-white">Tour <i class="fa fa-angle-double-right"></i></a>
                 </h5>
               </div>
@@ -158,7 +162,7 @@
 
 
           <ul class="menuzord-menu menuzord-right menuzord-indented scrollable" style="max-height: 400px;">
-            <li class="active"><a href="#home">Home</a> </li>
+            <li class="active"><a href="{{ route('index') }}">Home</a> </li>
             <li><a href="#home">About<span class="indicator"></span></a>
               <ul class="dropdown" style="right: auto; display: none;">
 
@@ -189,11 +193,29 @@
                 <li><a href="page-course-details.html"> NSS</a></li>
               </ul>
             </li>
-
+            {{-- course page start --}}
             <li><a href="javascript:void(0)">Courses <span class="indicator"></span></a>
-              <div class="megamenu megamenu-bg-img" style="right: 0px;">
+              <div class="megamenu megamenu-bg-img">
                 <div class="megamenu-row">
-                  <div class="col3">
+
+                  
+                  <?php    $programs=DB::table('course_tbl')->distinct()->get(['program']);          ?>
+
+                  @foreach ( $programs as $program)
+
+                  <?php  $courses = DB::table('course_tbl')->where('program',$program->program)->get();
+                   ?>
+                  <div class="col-sm-4">
+                    <ul class="list-unstyled list-dashed">
+                      <b class="color-orange">-<?php echo $program->program ?>-</b>
+                      @foreach($courses as $course)
+                      <li><a href="shortcode-accordion.html">Ph.D</a></li>
+                      @endforeach
+                    </ul>
+                  </div>
+                  @endforeach
+
+                  {{-- <div class="col-sm-3">
                     <ul class="list-unstyled list-dashed">
                       <b class="color-orange">- CENTRE OF RESEARCH -</b>
                       <li><a href="shortcode-accordion.html">Ph.D</a></li>
@@ -215,34 +237,8 @@
 
                     </ul>
                   </div>
-                  <div class="col3">
-                    <ul class="list-unstyled list-dashed">
-                      <b class="color-orange">- SCHOOL OF IT -</b>
-                      <li><a href="shortcode-call-to-actions.html"> BCA</a></li>
-                      <li><a href="shortcode-charts.html">MCA</a></li>
-
-                      <b class="color-orange">- SCHOOL OF LAW -</b>
-                      <li><a href="shortcode-columns-grids.html"> LL.B</a></li>
-                      <li><a href="shortcode-divider.html">BBA LL.B (HONS.)</a></li>
-
-                      <b class="color-orange">- SCHOOL OF ALLIED SCIENCE B. Sc M. Sc-</b>
-                      <li><a href="shortcode-dropcaps.html">B. Sc (BOTANY)</a></li>
-                      <li><a href="shortcode-datetime-datepicker.html"> B. Sc
-                          (ZOOLOGY)</a></li>
-                      <li><a href="shortcode-datetime-timepicker.html"> B. Sc
-                          (MATHEMATICS)</a></li>
-                      <li><a href="shortcode-datetime-datetimepicker.html"> B. Sc
-                          (PHYSICS)</a></li>
-                      <li><a href="shortcode-datetime-datepair.html"> B. Sc
-                          (CHEMISTRY)</a></li>
-                      <li><a href="shortcode-flickr-feed.html"> B. Sc IN AGRICULTURE</a>
-                      </li>
-                      <li><a href="shortcode-flipbox.html">M. Sc (BOTANY)</a></li>
-                      <li><a href="shortcode-forms.html"> M. Sc (ZOOLOGY)</a></li>
-
-                    </ul>
-                  </div>
-                  <div class="col3">
+                 
+                  <div class="col-sm-3">
                     <ul class="list-unstyled list-dashed">
                       <li><a href="shortcode-funfacts.html">M. Sc (MATHEMATICS)</a></li>
                       <li><a href="shortcode-iconbox.html">M. Sc (PHYSICS)</a></li>
@@ -263,7 +259,7 @@
                           SCIENCE</a></li>
                     </ul>
                   </div>
-                  <div class="col3">
+                  <div class="col-sm-3">
                     <ul class="list-unstyled list-dashed">
 
                       <b class="color-orange">- SCHOOL OF NURSING -</b>
@@ -286,16 +282,21 @@
 
 
                     </ul>
-                  </div>
+                  </div> --}}
+
+
                 </div>
               </div>
             </li>
 
-            <li><a href="#home">Apply Online<span class="indicator"></span></a>
+            <li><a href="#home">Apply Admission<span class="indicator"></span></a>
               <ul class="dropdown" style="right: auto;">
                 <b class="color-orange">- ADMISSION PROCEDURE -</b>
-                <li><a href="page-course-gird.html">Offline Admission</a></li>
-                <li><a href="page-course-list.html">Online Admission</a></li>
+                <?php $admissions = DB::table('pages')->where('page_type','admission')->get();
+                ?>
+                @foreach($admissions as $admission)
+                <li><a href="{{ route('admission', $admission->title )  }}"> {{ $admission->sub_title }}</a></li>
+                @endforeach
 
               </ul>
             </li>
@@ -339,11 +340,11 @@
               </ul>
             </li>
 
-            <li><a href="#home">Career</a>
+            <li><a href="{{ route('career') }}">Career</a>
 
             </li>
 
-            <li><a href="#home">Contact</a>
+            <li><a href="{{ route('contact') }}">Contact</a>
 
             </li>
 

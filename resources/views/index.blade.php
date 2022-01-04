@@ -7,7 +7,9 @@
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-body">
-                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!4v1580704861797!6m8!1m7!1sCAoSLEFGMVFpcE5SNWxBeEZ1Wks4Y0tiSFVQd2lvT01oVTl5VWRwa3BFbTdiSDVj!2m2!1d22.809599581886!2d86.264062143551!3f36.707148350228515!4f1.820868563873006!5f0.7820865974627469" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe> -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!4v1580704861797!6m8!1m7!1sCAoSLEFGMVFpcE5SNWxBeEZ1Wks4Y0tiSFVQd2lvT01oVTl5VWRwa3BFbTdiSDVj!2m2!1d22.809599581886!2d86.264062143551!3f36.707148350228515!4f1.820868563873006!5f0.7820865974627469"
+                        width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                 </div>
                 <!-- Modal footer -->
                 <div class="modal-footer">
@@ -33,7 +35,7 @@
                 <video class="b-lazy b-loaded" controls="true" title="RKGIT::Top private engineering college in AKTU"
                     autoplay="" loop="" muted="">
                     <source type="video/mp4" src="https://www.rkgit.edu.in/assets/videos/main.mp4">
-                </video> --&gt;
+                </video>
                 <!-- slider start here -->
             </figure>
 
@@ -1091,7 +1093,9 @@
             <!-- Divider: Map -->
             <section>
                 <!-- Google Map HTML Codes -->
-                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5456.163483134849!2d144.95177475051227!3d-37.81589041361766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4dd5a05d97%3A0x3e64f855a564844d!2s121+King+St%2C+Melbourne+VIC+3000%2C+Australia!5e0!3m2!1sen!2sbd!4v1556130803137!5m2!1sen!2sbd" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5456.163483134849!2d144.95177475051227!3d-37.81589041361766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4dd5a05d97%3A0x3e64f855a564844d!2s121+King+St%2C+Melbourne+VIC+3000%2C+Australia!5e0!3m2!1sen!2sbd!4v1556130803137!5m2!1sen!2sbd"
+                    width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </section>
             <section>
                 <div class="container pt-0 pb-0">

@@ -12,10 +12,8 @@ class Controller extends BaseController
 
     function url()
     {
-        return "http://127.0.0.1:8002/upload/";
+        return "http://127.0.0.1:8001/upload/";
     }
 
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
-
-  
 }

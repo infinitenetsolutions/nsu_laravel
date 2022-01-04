@@ -6,7 +6,7 @@
     <div class="main-content">
         <!-- Section: inner-header -->
         <section class="inner-header divider layer-overlay overlay-theme-colored-7"
-            data-bg-img="{{$url.'about/'.$data->image_name}}">
+            data-bg-img="{{$url.'about/'.$data->header_image}}">
             <div class="container pt-120 pb-60">
                 <!-- Section Content -->
                 <div class="section-content">

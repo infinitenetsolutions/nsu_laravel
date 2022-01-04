@@ -4,7 +4,7 @@
             <!-- Start main-content -->
             <div class="main-content">
                 <!-- Section: inner-header -->
-                <section class="inner-header divider layer-overlay overlay-theme-colored-7" data-bg-img="images/bg/bg1.jpg">
+                <section class="inner-header divider layer-overlay overlay-theme-colored-7" data-bg-img="{{ asset('images/bg/bg1.jpg')}}">
                     <div class="container pt-120 pb-60">
                         <!-- Section Content -->
                         <div class="section-content">
@@ -96,21 +96,21 @@
                                             class="fa fa-map-o"></i></a>
                                     <div class="media-body">
                                         <h5 class="mt-0">Our Office Location</h5>
-                                        <p>#405, Lan Streen, Los Vegas, USA</p>
+                                        <p>Pokhari,Near Bhilai Pahadi, Jamshedpur,Jharkhand</p>
                                     </div>
                                 </div>
                                 <div class="icon-box media mb-15"> <a class="media-left pull-left flip mr-15" href="#"> <i
                                             class="fa fa-phone"></i></a>
                                     <div class="media-body">
                                         <h5 class="mt-0">Contact Number</h5>
-                                        <p><a href="tel:+325-12345-65478">+325-12345-65478</a></p>
+                                        <p><a href="tel:1800-8899-022">1800-8899-022</a></p>
                                     </div>
                                 </div>
                                 <div class="icon-box media mb-15"> <a class="media-left pull-left flip mr-15" href="#"> <i
                                             class="fa fa-envelope-o"></i></a>
                                     <div class="media-body">
                                         <h5 class="mt-0">Email Address</h5>
-                                        <p><a href="mailto:supporte@yourdomin.com">supporte@yourdomin.com</a></p>
+                                        <p><a href="mailto:info@nsuniv.ac.in"> info@nsuniv.ac.in</a></p>
                                     </div>
                                 </div>
                                 <!-- <div class="icon-box media mb-15"> <a class="media-left pull-left flip mr-20" href="#"> <i class="pe-7s-film text-theme-colored"></i></a>
@@ -128,15 +128,10 @@
                 <section>
                     <div class="container-fluid pt-0 pb-0">
                         <div class="row">
-
-                            <!-- Google Map HTML Codes -->
-                            <div id="map-canvas-multipointer" data-mapstyle="default" data-height="500" data-zoom="12"
-                                data-marker="images/map-marker.png">
-                            </div>
-                            <!-- Google Map Javascript Codes -->
-                            <script src="http://maps.google.com/maps/api/js?key=AIzaSyAYWE4mHmR9GyPsHSOVZrSCOOljk8DU9B4"></script>
-                            <script src="js/google-map-init-multilocation.js"></script>
-
+                       
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7355.6382560983575!2d86.263782!3d22.809165!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x19d60b141b6c5fb4!2sNetaji+Subhas+Institute+Of+Business+Management!5e0!3m2!1sen!2sin!4v1537525654674" class="w-100 border-0" height="450" allowfullscreen=""></iframe>
+                   
+        
                         </div>
                     </div>
                 </section>
