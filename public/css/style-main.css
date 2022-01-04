@@ -1831,7 +1831,7 @@ padding-bottom: 10px; */
 }
 
 .menuzord-menu>li>.megamenu .megamenu-row ul li a {
-    display: block;
+    /* display: block; */
     padding: 8px 0;
     -webkit-transition: padding 0.2s linear;
     -o-transition: padding 0.2s linear;
@@ -10771,6 +10771,13 @@ menu>li>.megamenu {
 
     background: linear-gradient(to right, #c70013 0%, #ff0000b2 100%);
 }
-.side-bars a{
+
+.side-bars a {
     color: white;
+}
+
+@media (max-width:576px) {
+    .nsu_getstated {
+        display: none;
+    }
 }

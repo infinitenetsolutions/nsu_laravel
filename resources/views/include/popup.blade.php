@@ -9,8 +9,8 @@
         </div>
         <div class="container-fluid">
           <div class="row">
-            <div class="col-md-6">
-              <img src="images/nsu_ban2.jpeg" alt="" style="height: 570px;width: 425px;">
+            <div class="col-md-6 nsu_getstarted">
+              <img src="{{ asset('images/nsu_getstarted.jpeg') }}" alt="" style="height: 570px;width: 425px;">
             </div>
             <div class="col-md-6">
               <div class="bg-lightest p-25">
