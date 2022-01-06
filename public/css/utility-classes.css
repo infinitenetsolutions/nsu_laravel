@@ -994,6 +994,8 @@ footer.bg-deep {
 
 .img-fullwidth {
     width: 100% !important;
+    min-height: 300px;
+    max-height: 300px;
 }
 
 

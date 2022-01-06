@@ -10781,3 +10781,7 @@ menu>li>.megamenu {
         display: none;
     }
 }
+
+.float-right{
+    float: right;
+}

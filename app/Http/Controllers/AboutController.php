@@ -14,4 +14,10 @@ class AboutController extends Controller
         $quick_link = DB::table('pages')->where('page_type', 'about')->get();
         return view('about', ['data' => $data[0], 'quicks' => $quick_link, 'url' => $this->url()]);
     }
+
+    function faculty($name){
+        $data = DB::table('faculty_tbl')->where('type',$name)->paginate(12);
+        return view('faculty-members', ['data' => $data, 'url' => $this->url()]);
+    }
+  
 }
