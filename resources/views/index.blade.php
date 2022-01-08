@@ -57,7 +57,7 @@
                              @endif
                               
                                 <!-- <img src="images/signature.png" alt="" class="mt-10 mb-15"> -->
-                                <div><a href="#" class="btn btn-theme-colored mb-sm-30">Read More</a></div>
+                                <div><a href="{{ route('about','who-we-are') }}" class="btn btn-theme-colored mb-sm-30">Read More</a></div>
                             </div>
                             <div class="col-md-6">
                                 <div class="box-hover-effect about-video">
