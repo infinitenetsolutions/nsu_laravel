@@ -54,7 +54,7 @@
 
                                 @if($about->title=="who-we-are")
                                 <p>
-                                    <?php echo substr($about->description,7,1000) ?>
+                                    <?php echo substr($about->description,29,1000) ?>
                                 </p>
 
                                 <!-- <img src="images/signature.png" alt="" class="mt-10 mb-15"> -->
