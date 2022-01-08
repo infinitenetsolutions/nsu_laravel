@@ -52,9 +52,9 @@
                                                         <div class="icons-holder-inner">
                                                             <div
                                                                 class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
-                                                                <a href="{{$url.$title->image_name}}" data-lightbox-gallery="gallery"
+                                                                <a href="{{$url.'mediagallery/'.$title->image_name}}" data-lightbox-gallery="gallery"
                                                                     title="Your Title Here"><i class="fa fa-picture-o"></i></a>
-                                                                    <a href="{{$url.$title->image_name}}" data-lightbox-gallery="gallery"
+                                                                    <a href="{{$url.'mediagallery/'.$title->image_name}}" data-lightbox-gallery="gallery"
                                                                     title="Your Title Here"><i class="fa fa-link"></i></a>
                                                             </div>
                                                         </div>

@@ -119,7 +119,15 @@
                                         @foreach ( $programs as $program)
 
                                         <li><a href="#"><b>- {{ $program->program }} -</b></a>
-                                            <br><a href="#"><i class="fa fa-angle-double-right"></i> PH.D</a>
+                                            <?php  $courses = DB::table('course_tbl')->where('program',$program->program)->where('is_deleted','1')->get();
+                                            ?>
+
+                                            @foreach($courses as $course)
+                                        <li><a
+                                                href="{{ route('course',['course'=>$course->course,'id'=>$course->id]) }}"><i
+                                                    class="fa fa-angle-double-right"></i>{{
+                                                $course->course }}</a></li>
+                                        @endforeach
                                         </li>
                                         @endforeach
                                     </ul>

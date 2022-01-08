@@ -60,7 +60,8 @@
                                                         <li><i class="fa fa-user-o mr-5 text-theme-colored2"></i>{{
                                                             $career->sub_title}}
                                                         </li>
-                                                        <li title="number of jaobs"><i class="fa fa-briefcase mr-5 text-theme-colored2"></i>{{
+                                                        <li title="number of jaobs"><i
+                                                                class="fa fa-briefcase mr-5 text-theme-colored2"></i>{{
                                                             $career->num_job }}
                                                         </li>
                                                         <li><i class="fa fa-user-tie mr-5 text-theme-colored2"></i> 895

@@ -362,7 +362,6 @@ blockquote.gray.bg-theme-colored footer {
 */
 
 .btn-default.btn-theme-colored {
-    color: #212331;
     background-color: #fff;
     border-color: #212331;
 }
@@ -665,7 +664,7 @@ fieldset[disabled] .btn-gray.btn-theme-colored.focus {
     color: #fff;
     /* background-color: #212331;
     border-color: #212331; */
-    background: linear-gradient( 90deg, rgba(255, 82, 65, 1) 0%, rgba(199, 0, 19, 1) 100%)!important;
+    background:  #c70013 !important;
 }
 
 .btn-theme-colored:focus,
