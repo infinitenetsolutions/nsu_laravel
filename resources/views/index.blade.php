@@ -51,23 +51,11 @@
 
                                 <div class="double-line-bottom-theme-colored-2"></div>
                                 <!-- <h3 class="font-weight-500 font-30 font- mt-10">Make Your Dream<span class="text-theme-colored"> Education</span> Site with Our LearnPro Template</h3> -->
-                                <p>Netaji Subhas University is the first premier and one of the best University in
-                                    Jharkhand, with a venerable legacy, highest academic standards, diverse educational
-                                    programmes, distinguished faculty, illustrious alumni, varied co-curricular
-                                    activities
-                                    and modern infrastructure stands as the pride of Jharkhand and Eastern India. It is
-                                    an
-                                    unit of Sitwanto Devi Mahila Kalyan Sansthan.
-
-                                    This is also one of the best University in Jamshedpur which emerges as a symbol of
-                                    excellence, integrity and openness of mansa (thought), vaacha (speech) and karmana
-                                    (action).
-
-                                    Sri, Madan Mohan Singh, the Chancellor of the University, realising the importance
-                                    of
-                                    distinguished faculty to act as role models, relentlessly searched for talent all
-                                    over
-                                    the country and roped in people of eminence for this University.</p>
+                             
+                             @if($about->title=="who-we-are")
+                             <p><?php echo substr($about->description,7,1000) ?></p>
+                             @endif
+                              
                                 <!-- <img src="images/signature.png" alt="" class="mt-10 mb-15"> -->
                                 <div><a href="#" class="btn btn-theme-colored mb-sm-30">Read More</a></div>
                             </div>
@@ -1090,7 +1078,7 @@
                 </div>
             </section>
 
-          
+
             <section>
                 <div class="container pt-0 pb-0">
                     <div class="row">

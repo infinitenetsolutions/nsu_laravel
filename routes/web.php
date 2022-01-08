@@ -20,6 +20,7 @@ Route::get('about', function () {
     return view('about');
 })->name('about');
 
+Route::get('/', [IndexController::class, 'index'])->name('index');
 
 
 Route::get('student/{name}', [StudentController::class, 'index'])->name('student');
@@ -60,9 +61,6 @@ Route::get('image-gallery', [GalleryController::class, 'image_gallery'])->name('
 Route::get('media-gallery', [GalleryController::class, 'media_gallery'])->name('media-gallery');
 
 
-Route::get('index', function () {
-    return view('index');
-})->name('index');
 
 
 
