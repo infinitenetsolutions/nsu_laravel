@@ -9247,10 +9247,10 @@ border-color: fade(@black, 04%) transparent transparent transparent;
 
 .team-members .team-details {
     background: #fff none repeat scroll 0 0;
-    bottom: -100px;
+    bottom: -150px;
     padding: 10px 15px;
     position: absolute;
-    transition: all 300ms ease-in-out 0s;
+    transition: all 400ms ease-in-out 0s;
     width: 100%;
 }
 

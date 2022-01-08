@@ -26,6 +26,7 @@ Route::get('student/{name}', [StudentController::class, 'index'])->name('student
 Route::get('infrastructure/{name}', [StructureController::class, 'index'])->name('infrastructure');
 Route::get('about/{name}', [AboutController::class, 'index'])->name('about');
 Route::get('about/faculty/{name}', [AboutController::class, 'faculty'])->name('faculty');
+Route::get('about/faculty/faculty-details/{id}', [AboutController::class, 'faculty_details'])->name('faculty-details');
 
 
 Route::get('course/{name}', [CourseController::class, 'index'])->name('course');
