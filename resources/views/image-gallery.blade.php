@@ -72,7 +72,7 @@
                                                                     ->get(); ?>
                                                                 @foreach ($images as $image)
                                                                     <li><a href="{{ $url .'gallery/'. $image->image_name }}"
-                                                                            title="{{ $image->title }}"><img width="150px" height="84px"
+                                                                            title="{{ $image->title }}"><img width="150px" height="180px"
                                                                                 src="{{ $url .'gallery/'. $image->image_name }}"
                                                                                 alt=""></a></li>
                                                                 @endforeach
