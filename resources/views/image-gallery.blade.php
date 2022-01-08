@@ -43,7 +43,7 @@
                                         <!-- Portfolio Item Start -->
                                         <div class="gallery-item video">
                                             <div class="thumb">
-                                                <img class="img-fullwidth"  width="150px" height="157px" src="images/gallery/4.jpg" alt="project">
+                                                <img class="img-fullwidth"  width="150px" height="180px" src="images/gallery/4.jpg" alt="project">
                                                 <div class="overlay-shade"></div>
                                                 <div class="icons-holder">
                                                     <div class="icons-holder-inner">
@@ -93,7 +93,7 @@
                                                             </div>
 
                                                         </div>
-                                                        <span class="text-danger">{{ $title->title }}</span>
+                                                        <span class="text-white "><b> {{ $title->title }} </b></span>
 
                                                     </div>
                                                 </div>
