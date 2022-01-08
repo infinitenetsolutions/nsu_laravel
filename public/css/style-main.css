@@ -10776,12 +10776,35 @@ menu>li>.megamenu {
     color: white;
 }
 
+
+.close {
+    opacity: 1;
+}
+
+.sticky-nav-header {
+    display: none;
+}
+
+.scroll-to-fixed-fixed .sticky-nav-header {
+    display: block;
+}
+@media(min-width:576px) {
+
+    .menuzord-brand {
+        margin: 3px 0px !important;
+    }
+}
+
+.contact-section .widget h5 a {
+    font-size: 14px;
+}
+
 @media (max-width:576px) {
     .nsu_getstated {
         display: none;
     }
 }
 
-.float-right{
+.float-right {
     float: right;
 }

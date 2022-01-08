@@ -29,7 +29,7 @@ Route::get('about/faculty/{name}', [AboutController::class, 'faculty'])->name('f
 Route::get('about/faculty/faculty-details/{id}', [AboutController::class, 'faculty_details'])->name('faculty-details');
 
 
-Route::get('course/{name}', [CourseController::class, 'index'])->name('course');
+Route::get('course/{course}/{id}', [CourseController::class, 'index'])->name('course');
 Route::get('admission/{name}', [ApplyOnlineController::class, 'index'])->name('admission');
 Route::get('contact/contact-us', [ContactUsController::class, 'index'])->name('contact');
 Route::post('contact-us', [ContactUsController::class, 'contact'])->name('contact-us');
@@ -41,10 +41,6 @@ Route::get('placement/requiters', [PlacementController::class, 'requiters'])->na
 
 
 
-
-Route::get('course-details', function () {
-    return view('course-details');
-})->name('course-details');
 
 
 Route::get('chancellors-message', function () {

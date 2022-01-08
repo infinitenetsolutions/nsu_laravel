@@ -56,7 +56,7 @@
                                                         <i class="fa fa-map-marker text-theme-colored2 font-24 mt-5"></i>
                                                     </div>
                                                     <div class="media-body">
-                                                        <p>Village 856 Broadway New York</p>
+                                                        <p>{{ $data->address }}</p>
                                                     </div>
                                                 </div>
                                             </li>
@@ -72,7 +72,7 @@
                                             <i class="fa fa-phone text-theme-colored2 font-24 mt-5"></i>
                                         </div>
                                         <div class="media-body">
-                                            <p><span>Phone:</span> +262 695 2601<br><span>Email:</span> {{ $data->emailid }}</p>
+                                            <p><span>Phone:</span> {{ $data->phone }}<br><span>Email:</span> {{ $data->emailid }}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -85,7 +85,7 @@
                                             <i class="fa fa-download text-theme-colored2 font-24 mt-5"></i>
                                         </div>
                                         <div class="media-body">
-                                            <a href="{{ $url.'teacher/'.$data->resume }}" class="text-underline"><i class="fa fa-file-pdf-o mr-5"></i>Download
+                                            <a target="_blank" href="{{ $url.'teacher/'.$data->resume }}" class="text-underline"><i class="fa fa-file-pdf-o mr-5"></i>Download
                                                 PDF</a>
                                         </div>
                                     </div>

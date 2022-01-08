@@ -8,9 +8,12 @@
           <div class="widget text-white">
             <ul class="list-inline xs-text-center text-white">
               <li class="m-0 pl-10 pr-10"> <a href="#" class="text-white"><i class="fa fa-phone text-white"></i>
-                  1800-8899-022</a> </li>
-              <li class="m-0 pl-10 pr-10">
-                <a href="#" class="text-white"><i class="fa fa-envelope-o text-white mr-5"></i> info@nsuniv.ac.in</a>
+                  1800-8899-022 </a> </li>
+              /<li class="m-0 pl-10 pr-10"> <a href="#" class="text-white"><i
+                    class="fa fa-envelope-o text-white mr-5"></i> info@nsuniv.ac.in</a></li>
+              /<li class="m-0 pl-10 pr-10"> <a href="#" class="text-white"><i class="fa fa-clock-o text-white mr-5"></i>
+                  <?php echo date("D M Y");?>
+                </a>
               </li>
             </ul>
           </div>
@@ -36,116 +39,114 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-2">
-          <a class="menuzord-brand pull-left flip sm-pull-center mb-15" href="{{ route('index') }}"><img src="{{ asset('images/flogo.png') }} 
-" alt=""></a>
+          <a class="menuzord-brand pull-left flip sm-pull-center mb-15" href="index-mp-layout1.html"><img src="https://nsuniv.ac.in/assets/images/logo.png
+            " alt=""></a>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-10 contact-section">
-          <div class="row">
-            <div class="col-xs-12 col-sm-4 col-md-3">
-              <div class="widget no-border sm-text-center mt-10 m-0">
-                <i
-                  class="pe-7s-map-marker text-theme-colored2 font-48 mt-0 mr-15 mr-sm-0 sm-display-block pull-left flip sm-pull-none"></i>
+          <div class="row" style="margin: 25px 0;">
 
-                <a class="font-12 contact-detail text-uppercase" href="#" data-toggle="modal" data-target="#myModal">
-                  Virtual Tour</a>
+            <div class="col-xl-3 col-lg-3 col-md-12 pt-2 text-white">
+              <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+              Start Your Career With Us<a href="" target="_blank" class="hover-orange verdana-text all-time-shadow">
+              </a><br>
+              <b>Toll Free :</b> 1800-8899-022
 
-
-                <h5 class="font-13 m-0"><a href="" class="text-white">Tour <i class="fa fa-angle-double-right"></i></a>
-                </h5>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-3">
-              <div class="widget no-border sm-text-center mt-10 m-0">
-                <i
-                  class="pe-7s-mail-open text-theme-colored2 font-48 mt-0 mr-15 mr-sm-0 sm-display-block pull-left flip sm-pull-none"></i>
-                <a href="#" class="font-12 contact-detail text-uppercase">Get Start Enquiry</a>
-                <h5 class="font-13 m-0"><a href="" class="text-white" class="btn btn-primary text-white"
-                    class="btn btn-primary text-white" data-toggle="modal" data-target=".bs-example-modal-lg">Get
-                    Started <i class="fa fa-angle-double-right"></i></a></h5>
-
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-3">
-              <div class="widget no-border sm-text-center mt-10 m-0">
-                <i
-                  class="pe-7s-mail-open text-theme-colored2 font-48 mt-0 mr-15 mr-sm-0 sm-display-block pull-left flip sm-pull-none"></i>
-                <a href="#" class="font-12 contact-detail text-uppercase">Call us for more details</a>
-                <h5 class="font-13 m-0"><a href="" class="text-white"> +(012) 345 6789 <i
-                      class="fa fa-angle-double-right"></i></a></h5>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-3">
-              <div class="widget no-border sm-text-center mt-10 m-0">
-                <i
-                  class="pe-7s-map-marker text-theme-colored2 font-48 mt-0 mr-15 mr-sm-0 sm-display-block pull-left flip sm-pull-none"></i>
-                <a href="#" class="font-12 contact-detail text-uppercase">Education Loan Facility</a>
-                <h5 class="font-13 m-0"><a href="" class="text-white"> Loan <i class="fa fa-angle-double-right"></i></a>
-                </h5>
-              </div>
             </div>
 
-            <div class="col-xs-12 col-sm-4 col-md-3">
-              <div class="widget no-border sm-text-center mt-10 m-0">
-                <i
-                  class="pe-7s-headphones text-theme-colored2 font-48 mt-0 mr-15 mr-sm-0 sm-display-block pull-left flip sm-pull-none"></i>
-                <a href="#" class="font-12 contact-detail text-uppercase">Antiragging Cell</a>
-                <h5 class="font-13 m-0"><a href="" class="text-white"> info@nsuniv.ac.in <i
-                      class="fa fa-angle-double-right"></i></a></h5>
-              </div>
+            <div class="col-xl-3 col-lg-3 col-md-12 pt-2 text-white">
+
+              <i class="fa fa-whatsapp all-time-shadow font-size-head"></i><a
+                href="https://api.whatsapp.com/send?phone=919386817857&text=&source=&data=" target="_blank"
+                class="hover-orange verdana-text all-time-shadow text-white"> <b>9386817857</b></a> <b>/</b>
+              <a href="tel:9334666453"
+                class="hover-orange verdana-text all-time-shadow text-white"><b>9334666453</b></a>
+              <br />
+              <a href="tel:9386467619" class="hover-orange verdana-text all-time-shadow text-white">
+                <b>9386467619</b></a> <b>/</b>
+              <a href="tel:9334833167"
+                class="hover-orange verdana-text all-time-shadow text-white"><b>9334833167</b></a>
+
             </div>
-            <div class="col-xs-12 col-sm-4 col-md-3">
-              <div class="widget no-border sm-text-center mt-10 m-0">
-                <i
-                  class="pe-7s-mail-open text-theme-colored2 font-48 mt-0 mr-15 mr-sm-0 sm-display-block pull-left flip sm-pull-none"></i>
-                <a href="#" class="font-12 contact-detail text-uppercase"> Academic Calendar</a>
-                <h5 class="font-13 m-0"><a href="" class="text-white">Calendar <i
-                      class="fa fa-angle-double-right"></i></a></h5>
-              </div>
+
+            <div class="col-xl-3 col-lg-3 col-md-12 pt-2 text-white">
+              <i class="fa fa-envelope all-time-shadow font-size-head"></i><a href="mailto:info@nsuniv.ac.in"
+                class="hover-orange verdana-text all-time-shadow tex-white"> <b
+                  class="text-white">info@nsuniv.ac.in</b></a>
+              <br>
+              <a href="" target="_blank" class="hover-orange verdana-text all-time-shadow">
+                <blink><b class="button text-white">Education Loan Facility</b></blink>
+              </a>
             </div>
-            <div class="col-xs-12 col-sm-4 col-md-3">
-              <div class="widget no-border sm-text-center mt-10 m-0">
-                <i
-                  class="pe-7s-mail-open text-theme-colored2 font-48 mt-0 mr-15 mr-sm-0 sm-display-block pull-left flip sm-pull-none"></i>
-                <a href="#" class="font-12 contact-detail text-uppercase">Placements</a>
-                <h5 class="font-13 m-0"><a href="" class="text-white"> Placements <i
-                      class="fa fa-angle-double-right"></i></a></h5>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-3">
-              <div class="widget no-border sm-text-center mt-10 m-0">
-                <i
-                  class="pe-7s-map-marker text-theme-colored2 font-48 mt-0 mr-15 mr-sm-0 sm-display-block pull-left flip sm-pull-none"></i>
-                <a href="#" class="font-12 contact-detail text-uppercase"> Student Login</a>
-                <h5 class="font-13 m-0"><a href="" class="text-white"> Login <i
-                      class="fa fa-angle-double-right"></i></a></h5>
-              </div>
+
+            <div class="col-xl-3 col-lg-3 col-md-12 pt-2 text-white">
+              <i class="fa fa-snowflake-o  all-time-shadow font-size-head" aria-hidden="true"></i>
+              Covid Norms <a href="" target="_blank" class="hover-orange verdana-text all-time-shadow"> </a><br>
+              <b>COVID-19 </b>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
   <div class="header-nav">
     <div class="header-nav-wrapper navbar-scrolltofixed"
       style="z-index: 999; position: static; top: auto;background:#000; width:100%;">
-      <div class="container-fluid">
-        <div class="col-md-12 img-fluid">
-          <ul class="list-inline sm-text-center mt-5">
-            <li>
-              <b style="font-size:17px;" class="all-time-shadow">
-                <span class="theme-orange pr-2 pl-2" style="background: #c70013;color:#fff;padding:5px 10px;">N</span>
-                <span id="netaji" class="text-white"></span>
-                <span class="theme-orange pr-2 pl-2" style="background: #c70013;color:#fff;padding:5px 10px;">S</span>
-                <span id="subhas" class="text-white"></span>
-                <span class="theme-orange pr-2 pl-2" style="background: #c70013;color:#fff;padding:5px 10px;">U</span>
-                <span id="university" class="text-white"></span>
-              </b>
+      <!-- sticky nav -->
+      <div class="sticky-nav-header header-top sm-text-center" style="background: #c70013;padding: 18px 0;">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <ul class="list-inline sm-text-center mt-5">
+                <li>
+                  <b style="font-size:23px;" class="all-time-shadow">
+                    <span class="theme-orange pr-2 pl-2"
+                      style="background: #ffffff;color: #c70013;padding: 0px 5px;">N</span>
+                    <span id="netaji" class="text-white"></span>
+                    <span class="theme-orange pr-2 pl-2"
+                      style="background: #ffffff;color: #c70013;/* padding:5px 10px; */padding: 0px 5px;">S</span>
+                    <span id="subhas" class="text-white"></span>
+                    <span class="theme-orange pr-2 pl-2"
+                      style="background: #ffffff;color: #c70013;/* padding:5px 10px; */padding: 0px 5px;">U</span>
+                    <span id="university" class="text-white"></span>
+                  </b>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <div class="widget text-white">
+                <ul class="list-inline xs-text-center text-white">
+                  <li class="m-0 pl-10 pr-10"> <a href="#" class="text-white"
+                      style="font-size: 17px;line-height: 44px;"><i class="fa fa-phone text-white"></i>
+                      1800-8899-022</a> </li>
+                  / <li class="m-0 pl-10 pr-10"><a href="#" class="text-white"
+                      style="font-size: 17px;line-height: 44px;"><i class="fa fa-envelope-o text-white mr-5"></i>
+                      info@nsuniv.ac.in</a>
+                    /
+                  <li class="m-0 pl-10 pr-10"><a href="#" class="text-white"
+                      style="font-size: 17px;line-height: 44px;"><i class="fa fa-snowflake-o text-white mr-5"></i> Covid
+                      Norms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-2 pr-0">
 
-            </li>
+              <div class="widget">
+                <ul class="styled-icons icon-sm pull-right flip sm-pull-none sm-text-center mt-5">
+                  <li><a href="#"><i class="fa fa-facebook text-white"></i></a></li>
 
-          </ul>
+                  <li><a href="#"><i class="fa fa-instagram text-white"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin text-white"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <!-- //sticky nav -->
+
+      <div class="container-fluid">
+
 
         <nav id="menuzord" class="menuzord default menuzord-responsive">
 
@@ -201,7 +202,7 @@
 
                   @foreach ( $programs as $program)
 
-                  <?php  $courses = DB::table('course_tbl')->where('program',$program->program)->get();
+                  <?php  $courses = DB::table('course_tbl')->where('program',$program->program)->where('is_deleted','1')->get();
                    ?>
                   <div class="col-sm-4">
                     <ul class="list-unstyled list-dashed">
@@ -209,7 +210,7 @@
                         <?php echo $program->program ?>-
                       </b>
                       @foreach($courses as $course)
-                      <li><a href="shortcode-accordion.html">Ph.D</a></li>
+                      <li><a href="{{ route('course',['course'=>$course->course,'id'=>$course->id]) }}">{{ $course->course }}</a></li>
                       @endforeach
                     </ul>
                   </div>
