@@ -51,29 +51,32 @@
 
                                 <div class="double-line-bottom-theme-colored-2"></div>
                                 <!-- <h3 class="font-weight-500 font-30 font- mt-10">Make Your Dream<span class="text-theme-colored"> Education</span> Site with Our LearnPro Template</h3> -->
-                             
-                             @if($about->title=="who-we-are")
-                             <p><?php echo substr($about->description,7,1000) ?></p>
-                             @endif
-                              
+
+                                @if($about->title=="who-we-are")
+                                <p>
+                                    <?php echo substr($about->description,7,1000) ?>
+                                </p>
+
                                 <!-- <img src="images/signature.png" alt="" class="mt-10 mb-15"> -->
-                                <div><a href="{{ route('about','who-we-are') }}" class="btn btn-theme-colored mb-sm-30">Read More</a></div>
+                                <div><a href="{{ route('about','who-we-are') }}"
+                                        class="btn btn-theme-colored mb-sm-30">Read More</a></div>
                             </div>
                             <div class="col-md-6">
                                 <div class="box-hover-effect about-video">
                                     <div class="effect-wrapper">
                                         <div class="thumb">
-                                            <img class="img-responsive img-fullwidth" src="images/about/about-nsu.jpg"
+                                            <img class="img-responsive img-fullwidth" src="{{ $url.'aobut/'.$about->image_name }}"
                                                 alt="">
                                         </div>
                                         <div class="video-button"></div>
-                                        <a class="hover-link" data-lightbox-gallery="youtube-video"
-                                            href="https://www.youtube.com/watch?v=F3QpgXBtDeo"
+                                        <a class="hover-link" data-lightbox-gallery="{{ $about->permalink }}"
                                             title="Youtube Video">Youtube
                                             Video</a>
                                     </div>
                                 </div>
                             </div>
+                            @endif
+
                         </div>
                     </div>
                 </div>
