@@ -50,7 +50,7 @@
                                                         <div
                                                             class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
                                                             <a class="popup-youtube"
-                                                                href="http://www.youtube.com/watch?v=0O2aH4XLbto"><i
+                                                                href="https://www.youtube.com/watch?v=C61pgS4W6X8"><i
                                                                     class="fa fa-youtube-play"></i></a>
                                                         </div>
                                                     </div>
