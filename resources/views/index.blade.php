@@ -65,7 +65,7 @@
                                 <div class="box-hover-effect about-video">
                                     <div class="effect-wrapper">
                                         <div class="thumb">
-                                            <img class="img-responsive img-fullwidth" src="{{ $url.'aobut/'.$about->image_name }}"
+                                            <img class="img-responsive img-fullwidth" src="{{ $url.'about/'.$about->image_name }}"
                                                 alt="">
                                         </div>
                                         <div class="video-button"></div>
