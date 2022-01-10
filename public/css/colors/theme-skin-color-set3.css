@@ -1019,6 +1019,7 @@ ul.list.theme-colored2.check-circle li:before,
 ul.list.theme-colored2.check li:before,
 .list-icon.theme-colored2 li i {
     color: #fc4e3f;
+    margin-top: 8px;
 }
 
 

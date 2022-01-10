@@ -130,23 +130,17 @@
                 <div class="container pt-50 pb-40">
                     <div class="section-title">
                         <div class="row">
-                            <div class="col-md-4">
-                                <h3 class="text-uppercase font-weight-600 mt-0">About <span
-                                        class="text-theme-colored2">Learnpro</span></h3>
-                                <div class="double-line-bottom-theme-colored-2"></div>
-                                <p class="font-16 mt-20">Lorem ipsum dolor sit amet, consecte turadipie sicing elit.
-                                    Quas voluptatem maiores eaques Quasvolu ptatem maiores</p>
-                                <ul class="list theme-colored2 angle-double-right">
-                                    <li>We achieved most leading universtiy award 2017</li>
-                                    <li>We always try to provide our best quality education</li>
-                                    <li>Over 2000+ students has completed graduation</li>
-                                    <li>Best online course provide university this year</li>
-                                </ul>
-                                <a href="#"
-                                    class="btn btn-colored btn-theme-colored2 text-white btn-lg pl-40 pr-40 mt-10">Read
-                                    More</a>
-                            </div>
-                            <div class="col-md-4">
+                            <div class="col-md-3">
+                                <div class="top-course-thumb mt-sm-30">
+                                  <img class="img-fullwidth" src="https://nsuniv.ac.in/assets/images/upload/IMG_4625.JPG" alt="">
+                                  <div class="desc-box">
+                                    <h4 class="title">Admission for Spring</h4>
+                                    <h4 class="off">40% Off</h4>
+                                    <a href="#" class="signup text-theme-colored-2">Signup Now</a>
+                                  </div>
+                                </div>
+                              </div>
+                            <div class="col-md-5">
                                 <h3 class="text-uppercase font-weight-600 mt-0 mt-sm-30">Video <span
                                         class="text-theme-colored2">Tour</span></h3>
                                 <div class="double-line-bottom-theme-colored-2"></div>
