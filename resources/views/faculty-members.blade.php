@@ -33,7 +33,7 @@
                         <div class="team-members border-bottom-theme-colored2px text-center maxwidth400 mb-30">
                             <div class="team-thumb">
                                 <a href="{{ route('faculty-details',$faculty->id) }}">
-                                    <img class="img-fullwidth" alt="" src="{{ $url.'teacher/'.$faculty->image_name }}">
+                                    <img height="300px" class="img-fullwidth" alt="" src="{{ $url.'teacher/'.$faculty->image_name }}">
                                 </a>
                                 <div class="team-overlay"></div>
                                 <ul class="styled-icons team-social icon-sm">
