@@ -31,7 +31,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="thumb">
-                                        <img class="img-fluid" src="{{ $url.'teacher/'.$data->image_name }}" alt="">
+                                        <img height="450px" class="img-fluid" src="{{ $url.'teacher/'.$data->image_name }}" alt="">
                                     </div>
                                 </div>
                                 <div class="col-md-8">
