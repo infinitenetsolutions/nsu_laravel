@@ -1,5 +1,13 @@
 <!-- Header -->
+<?php
+$home_url='';
 
+if ($_SERVER['HTTP_HOST']=="127.0.0.1:8000") {
+
+$home_url="http://127.0.0.1:8001/upload/";
+}else {
+  $home_url="https://www.nsuniv.ac.in/nsuadmin/public/upload/";
+} ?>
 <header id="header" class="header">
   <div class="header-top sm-text-center" style="background:#000;">
     <div class="container">
@@ -176,7 +184,7 @@
                 <li>
                   <b class="color-orange">- NSU AT A GLANCE -</b>
                 </li>
-                <li><a href="page-course-details.html"> THE GOVERNING BODY</a></li>
+                <li><a href="{{ route('govbody') }}"> THE GOVERNING BODY</a></li>
                 <li><a href="page-course-details.html"> TEACHING &amp; LEARNING RESOURCES</a></li>
 
 
@@ -185,11 +193,24 @@
                     <span class="indicator"><i class="fa fa-angle-right"></i></span>
                   </a>
                   <ul class="dropdown" style="display: none;">
-                    <li><a href="page-course-gird.html"> Management</a></li>
-                    <li><a href="page-course-gird.html"> Over All</a></li>
+                    <?php  $studentpdfs = DB::table('pdf')->where('type','aboutpdf' )->limit(2)->get();
+                      ?>
+                    @foreach($studentpdfs as $studentpdf)
+                    <li><a target="_blank" href="{{ $home_url.'pdf/'.$studentpdf->images   }}"> {{ $studentpdf->title
+                        }}</a>
+                    </li>
+                    @endforeach
                   </ul>
                 </li>
-                <li><a href="page-course-details.html"> NSS</a></li>
+
+                <?php  $studentpdfs = DB::table('pdf')->where('type','aboutpdf' )->limit(10)->skip(2)->get();
+                      ?>
+                    @foreach($studentpdfs as $studentpdf)
+                    <li><a target="_blank" href="{{ $home_url.'pdf/'.$studentpdf->images   }}"> {{ $studentpdf->title
+                        }}</a>
+                    </li>
+                    @endforeach
+              
               </ul>
             </li>
             {{-- course page start --}}
@@ -210,7 +231,8 @@
                         <?php echo $program->program ?>-
                       </b>
                       @foreach($courses as $course)
-                      <li><a href="{{ route('course',['course'=>$course->course,'id'=>$course->id]) }}">{{ $course->course }}</a></li>
+                      <li><a href="{{ route('course',['course'=>$course->course,'id'=>$course->id]) }}">{{
+                          $course->course }}</a></li>
                       @endforeach
                     </ul>
                   </div>
@@ -262,7 +284,12 @@
                 @foreach($students as $student)
                 <li><a href="{{ route('student', $student->title )  }}"> {{ $student->sub_title }}</a></li>
                 @endforeach
-
+                <?php $studentpdfs = DB::table('pdf')->where('type','studentpdf')->get();
+                ?>
+                @foreach($studentpdfs as $studentpdf)
+                <li><a target="_blank" href="{{ $home_url.'pdf/'.$studentpdf->images   }}"> {{ $studentpdf->title }}</a>
+                </li>
+                @endforeach
 
 
               </ul>

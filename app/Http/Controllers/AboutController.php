@@ -15,14 +15,21 @@ class AboutController extends Controller
         return view('about', ['data' => $data[0], 'quicks' => $quick_link, 'url' => $this->url()]);
     }
 
-    function faculty($name){
-        $data = DB::table('faculty_tbl')->where('type',$name)->where('is_deleted','1')->paginate(12);
+    function faculty($name)
+    {
+        $data = DB::table('faculty_tbl')->where('type', $name)->where('is_deleted', '1')->paginate(12);
         return view('faculty-members', ['data' => $data, 'url' => $this->url()]);
     }
-    
-    function faculty_details($id){
-        $data = DB::table('faculty_tbl')->where('id',$id)->where('is_deleted','1')->paginate(12);
+
+    function faculty_details($id)
+    {
+        $data = DB::table('faculty_tbl')->where('id', $id)->where('is_deleted', '1')->paginate(12);
         return view('faculty-details', ['data' => $data[0], 'url' => $this->url()]);
     }
-  
+
+    function govbody()
+    {
+        $govbody = DB::table('govbody')->get();
+        return view('govbody', ['data' => $govbody]);
+    }
 }

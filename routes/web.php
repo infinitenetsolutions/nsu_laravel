@@ -28,6 +28,7 @@ Route::get('infrastructure/{name}', [StructureController::class, 'index'])->name
 Route::get('about/{name}', [AboutController::class, 'index'])->name('about');
 Route::get('about/faculty/{name}', [AboutController::class, 'faculty'])->name('faculty');
 Route::get('about/faculty/faculty-details/{id}', [AboutController::class, 'faculty_details'])->name('faculty-details');
+Route::get('about/government/body', [AboutController::class, 'govbody'])->name('govbody');
 
 
 Route::get('course/{course}/{id}', [CourseController::class, 'index'])->name('course');
@@ -38,6 +39,7 @@ Route::get('career/career', [CareerController::class, 'index'])->name('career');
 Route::get('placements/{name}', [PlacementController::class, 'index'])->name('placement');
 Route::get('placement/appointment', [PlacementController::class, 'appointment'])->name('appointment');
 Route::get('placement/requiters', [PlacementController::class, 'requiters'])->name('requiters');
+
 
 
 
@@ -161,3 +163,8 @@ Route::get('fitness-center', function () {
 Route::get('mass-comm-studio', function () {
     return view('mass-comm-studio');
 })->name('mass-comm-studio');
+
+Route::get('trans', function () {
+    return view('transport');
+});
+
