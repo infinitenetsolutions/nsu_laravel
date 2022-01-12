@@ -219,7 +219,7 @@ $home_url="http://127.0.0.1:8001/upload/";
                 <div class="megamenu-row">
 
 
-                  <?php    $programs=DB::table('course_tbl')->distinct()->get(['program']);          ?>
+                  <?php    $programs=DB::table('course_tbl')->orderBy('program','ASC')->distinct()->get(['program']);          ?>
 
                   @foreach ( $programs as $program)
 
