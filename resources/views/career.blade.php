@@ -211,8 +211,5 @@
 function show(id){
 $("#show"+id).toggle();
 }
-
-$('.owl-carousel-1col').carousel({
-    interval: false;
-}); 
+         
 </script>

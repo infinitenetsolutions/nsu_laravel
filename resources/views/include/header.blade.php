@@ -223,7 +223,7 @@ $home_url="http://127.0.0.1:8001/upload/";
 
                   @foreach ( $programs as $program)
 
-                  <?php  $courses = DB::table('course_tbl')->where('program',$program->program)->where('is_deleted','1')->get();
+                  <?php  $courses = DB::table('course_tbl')->where('program',$program->program)->where('is_deleted','1')->orderBy('id','ASC')->get();
                    ?>
                   <div class="col-sm-4">
                     <ul class="list-unstyled list-dashed">

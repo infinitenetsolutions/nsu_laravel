@@ -9,9 +9,17 @@ class IndexController extends Controller
 {
     function index()
     {
-        $about=Db::table('pages')->get();
+
+        // currently not in use because of that time running video 
         $slider = DB::table('slider_tbl')->get();
-        return view('index', ['sliders' => $slider, 'url' => $this->url(),'about'=>$about[0]]);
+
+        // first of the home page after the slider video
+        $about = DB::table('pages')->get();
+
+        // university head  after video tour and upcoming events 
+
+        $head_of_university = DB::table('faculty_tbl')->where('type', 'hou')->limit(4)->get();
+
+        return view('index', ['sliders' => $slider, 'url' => $this->url(), 'about' => $about[0],'hou'=>$head_of_university]);
     }
-    
 }

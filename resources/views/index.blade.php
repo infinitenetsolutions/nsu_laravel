@@ -65,8 +65,8 @@
                                 <div class="box-hover-effect about-video">
                                     <div class="effect-wrapper">
                                         <div class="thumb">
-                                            <img class="img-responsive img-fullwidth" src="{{ $url.'about/'.$about->image_name }}"
-                                                alt="">
+                                            <img class="img-responsive img-fullwidth"
+                                                src="{{ $url.'about/'.$about->image_name }}" alt="">
                                         </div>
                                         <div class="video-button"></div>
                                         <a class="hover-link" data-lightbox-gallery="{{ $about->permalink }}"
@@ -132,14 +132,15 @@
                         <div class="row">
                             <div class="col-md-3">
                                 <div class="top-course-thumb mt-sm-30">
-                                  <img class="img-fullwidth" src="https://nsuniv.ac.in/assets/images/upload/IMG_4625.JPG" alt="">
-                                  <div class="desc-box">
-                                    <h4 class="title">Admission for Spring</h4>
-                                    <h4 class="off">40% Off</h4>
-                                    <a href="#" class="signup text-theme-colored-2">Signup Now</a>
-                                  </div>
+                                    <img class="img-fullwidth"
+                                        src="https://nsuniv.ac.in/assets/images/upload/IMG_4625.JPG" alt="">
+                                    <div class="desc-box">
+                                        <h4 class="title">Admission for Spring</h4>
+                                        <h4 class="off">40% Off</h4>
+                                        <a href="#" class="signup text-theme-colored-2">Signup Now</a>
+                                    </div>
                                 </div>
-                              </div>
+                            </div>
                             <div class="col-md-5">
                                 <h3 class="text-uppercase font-weight-600 mt-0 mt-sm-30">Video <span
                                         class="text-theme-colored2">Tour</span></h3>
@@ -240,6 +241,9 @@
                     </div>
                     <div class="row">
                         <div class="team-members">
+                            @foreach ($hou as $university_head )
+                                
+                      
                             <div class="col-md-3">
                                 <div class="team-members maxwidth400 mb-30">
                                     <div class="team-thumb">
@@ -263,76 +267,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
-                                <div class="team-members maxwidth400 mb-30">
-                                    <div class="team-thumb">
-                                        <img src="images/teachers/t2.jpg" alt="" class="img-fullwidth">
-                                    </div>
-                                    <div class="team-bottom-part bg-silver-deep p-15 pb-0">
-                                        <h4
-                                            class="text-uppercase font-raleway text-theme-colored title-border font-weight-600 line-bottom-center m-0">
-                                            Prof. (Dr). GOURANGA CHARAN NANDA <span class="text-gray font-13 ml-5">-
-                                                Vice Chancellor</span></h4>
-                                        <p class="font-13 mt-10 mb-10">NETAJI SUBHAS UNIVERSITY, a highly progressive
-                                            and enterprising university pledged to provide quality education with great
-                                            emphasis on traditional values. Quality in education is what makes learning
-                                            a </p>
-                                        <ul class="styled-icons icon-theme-colored2">
-                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3">
-                                <div class="team-members maxwidth400 mb-30">
-                                    <div class="team-thumb">
-                                        <img src="images/teachers/t3.jpg" alt="" class="img-fullwidth">
-                                    </div>
-                                    <div class="team-bottom-part bg-silver-deep p-15 pb-0">
-                                        <h4
-                                            class="text-uppercase font-raleway text-theme-colored title-border font-weight-600 line-bottom-center m-0">
-                                            Dr. ACHARYA RISHI RAJAN <span class="text-gray font-13 ml-5">- Pro Vice
-                                                Chancellor</span></h4>
-                                        <p class="font-13 mt-10 mb-10">NETAJI SUBHAS UNIVERSITY, a highly progressive
-                                            and enterprising university pledged to provide quality education with great
-                                            emphasis on traditional values. Quality in education is what makes learning
-                                            a pleasure. </p>
-                                        <ul class="styled-icons icon-theme-colored2">
-                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="team-members maxwidth400 mb-30">
-                                    <div class="team-thumb">
-                                        <img src="images/teachers/t4.jpg" alt="" class="img-fullwidth">
-                                    </div>
-                                    <div class="team-bottom-part bg-silver-deep p-15 pb-0">
-                                        <h4
-                                            class="text-uppercase font-raleway text-theme-colored title-border font-weight-600 line-bottom-center m-0">
-                                            Mr. Nagendra Singh <span class="text-gray font-13 ml-5">- Registrar</span>
-                                        </h4>
-                                        <p class="font-13 mt-10 mb-10">NETAJI SUBHAS UNIVERSITY, a highly progressive
-                                            and enterprising university pledged to provide quality education with great
-                                            emphasis on traditional values. Quality in education is what makes learning
-                                            a pleasure.</p>
-                                        <ul class="styled-icons icon-theme-colored2">
-                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>

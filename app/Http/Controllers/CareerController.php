@@ -10,7 +10,7 @@ class CareerController extends Controller
 {
     function index()
     {
-        $data = DB::table('career_tbl')->get();
+        $data = DB::table('career_tbl')->where('is_deleted','1')->get();
         return view('career', ['data' => $data,  'url' => $this->url()]);
     }
     function store(Request $request)
