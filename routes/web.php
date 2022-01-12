@@ -36,6 +36,8 @@ Route::get('admission/{name}', [ApplyOnlineController::class, 'index'])->name('a
 Route::get('contact/contact-us', [ContactUsController::class, 'index'])->name('contact');
 Route::post('contact-us', [ContactUsController::class, 'contact'])->name('contact-us');
 Route::get('career/career', [CareerController::class, 'index'])->name('career');
+Route::post('career/applied', [CareerController::class, 'store'])->name('career_applied');
+
 Route::get('placements/{name}', [PlacementController::class, 'index'])->name('placement');
 Route::get('placement/appointment', [PlacementController::class, 'appointment'])->name('appointment');
 Route::get('placement/requiters', [PlacementController::class, 'requiters'])->name('requiters');
