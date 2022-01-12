@@ -98,7 +98,7 @@
                                     <div class="panel-heading">
                                         <div class="panel-title"> <a class="collapsed" data-toggle="collapse"
                                                 href="#toggle{{ $transport->id }}" aria-expanded="false"><span
-                                                    class="open-sub"></span> <big> {{ $transport->name.' - '.$transport->bus_no  }} (Route - {{ $transport->from .'TO'. $transport->to .'VIA'. $transport->via }} (for - {{  $transport->type }} ))</big> </a>
+                                                    class="open-sub"></span> <big> {{ $transport->name.' - '.$transport->bus_no  }} (Route - {{ $transport->from .' TO '. $transport->to .' VIA '. $transport->via }} ( for - {{  $transport->type }} ))</big> </a>
                                         </div>
                                     </div>
                                     <div id="toggle{{ $transport->id }}" class="panel-collapse collapse" aria-expanded="false"
