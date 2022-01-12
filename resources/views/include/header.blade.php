@@ -227,7 +227,7 @@ $home_url="http://127.0.0.1:8001/upload/";
                    ?>
                   <div class="col-sm-4">
                     <ul class="list-unstyled list-dashed">
-                      <b class="color-orange">-
+                      <b class="color-orange text-uppercase">-
                         <?php echo $program->program ?>-
                       </b>
                       @foreach($courses as $course)
