@@ -100,11 +100,11 @@ $home_url="http://127.0.0.1:8001/upload/";
     <div class="header-nav-wrapper navbar-scrolltofixed"
       style="z-index: 999; position: static; top: auto;background:#000; width:100%;">
       <!-- sticky nav -->
-      <div class="sticky-nav-header header-top sm-text-center" style="background: #c70013;padding: 18px 0;">
+      <div class="sticky-nav-header header-top sm-text-center" style="background: #c70013;padding: 10px 0;">
         <div class="container">
           <div class="row">
             <div class="col-md-4">
-              <ul class="list-inline sm-text-center mt-5">
+              <ul class="list-inline sm-text-center ">
                 <li>
                   <b style="font-size:23px;" class="all-time-shadow">
                     <span class="theme-orange pr-2 pl-2"

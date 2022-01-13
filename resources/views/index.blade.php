@@ -242,8 +242,8 @@
                     <div class="row">
                         <div class="team-members">
                             @foreach ($hou as $university_head )
-                                
-                      
+
+
                             <div class="col-md-3">
                                 <div class="team-members maxwidth400 mb-30">
                                     <div class="team-thumb">
@@ -252,12 +252,14 @@
                                     <div class="team-bottom-part bg-silver-deep p-15 pb-0">
                                         <h4
                                             class="text-uppercase font-raleway text-theme-colored title-border font-weight-600 line-bottom-center m-0">
-                                            Mr. M. M. Singh <span class="text-gray font-13 ml-5">- Chancellor</span>
+                                            {{ $university_head->name }} <span class="text-gray font-13 ml-5">- {{
+                                                $university_head->designation }}</span>
                                         </h4>
-                                        <p class="font-13 mt-10 mb-10">NETAJI SUBHAS UNIVERSITY, a highly progressive
-                                            and enterprising university pledged to provide quality education with great
-                                            emphasis on traditional values. Quality in education is what makes learning
-                                            a pleasure.</p>
+                                        <p class="font-13 mt-10 mb-10 ">
+                                            <?php echo substr($university_head->description,0,130) ?> <a
+                                                href="{{ route('about','chancellors-message') }}" class="text-danger">
+                                                Read more</a>
+                                        </p>
                                         <ul class="styled-icons icon-theme-colored2">
                                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -290,84 +292,28 @@
                     <div class="row">
                         <div class="col-md-12 mb-30">
                             <div class="owl-carousel-2col boxed" data-dots="true">
-
+                                @foreach ( $testimonials as $testimonial)
                                 <div class="item">
                                     <div class="testimonial pt-10">
                                         <div class="thumb pull-left mb-0 mr-0">
                                             <img class="img-thumbnail img-circle" alt=""
-                                                src="images/testimonials/43.jpg" style="width:100px">
+                                                src="{{ $url.'testimonial/'.$testimonial->testimonial_image }}"
+                                                style="width:100px">
                                         </div>
                                         <div class="testimonial-content">
-                                            <h4 class="text-white font-weight-300 mt-0">As a student of NSU, I not only
-                                                got the chance to showcase my potential in academics but also the other
-                                                co-curricular activity which are an active part of the learning
-                                                enviroment. This was perfectly aided through the cooperation of the
-                                                excellent faculty and peer group.</h4>
-                                            <h5 class="text-theme-colored2 mt-10 font-16 mb-0">Ranjana Ghosh MBA
-                                                (2017-19)</h5>
-                                            <h6 class="text-gray-darkgray mt-5">Full Time Content Writer </h6>
+                                            <h4 class="text-white font-weight-300 mt-0">
+                                                <?php echo $testimonial->message ?>
+                                            </h4>
+                                            <h5 class="text-theme-colored2 mt-10 font-16 mb-0">{{
+                                                $testimonial->testimonial_name }} - {{ $testimonial->testimonial_course
+                                                }}
+                                                ({{ $testimonial->testimonial_batch }})</h5>
+                                            <h6 class="text-gray-darkgray mt-5">{{ $testimonial->testimonial_company }}
+                                            </h6>
                                         </div>
                                     </div>
                                 </div>
-
-
-                                <div class="item">
-                                    <div class="testimonial pt-10">
-                                        <div class="thumb pull-left mb-0 mr-0">
-                                            <img class="img-thumbnail img-circle" alt=""
-                                                src="images/testimonials/43.jpg" style="width:100px">
-                                        </div>
-                                        <div class="testimonial-content">
-                                            <h4 class="text-white font-weight-300 mt-0">As a student of NSU, I not only
-                                                got the chance to showcase my potential in academics but also the other
-                                                co-curricular activity which are an active part of the learning
-                                                enviroment. This was perfectly aided through the cooperation of the
-                                                excellent faculty and peer group.</h4>
-                                            <h5 class="text-theme-colored2 mt-10 font-16 mb-0">Ranjana Ghosh MBA
-                                                (2017-19)</h5>
-                                            <h6 class="text-gray-darkgray mt-5">Full Time Content Writer </h6>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="item">
-                                    <div class="testimonial pt-10">
-                                        <div class="thumb pull-left mb-0 mr-0">
-                                            <img class="img-thumbnail img-circle" alt=""
-                                                src="images/testimonials/43.jpg" style="width:100px">
-                                        </div>
-                                        <div class="testimonial-content">
-                                            <h4 class="text-white font-weight-300 mt-0">As a student of NSU, I not only
-                                                got the chance to showcase my potential in academics but also the other
-                                                co-curricular activity which are an active part of the learning
-                                                enviroment. This was perfectly aided through the cooperation of the
-                                                excellent faculty and peer group.</h4>
-                                            <h5 class="text-theme-colored2 mt-10 font-16 mb-0">Ranjana Ghosh MBA
-                                                (2017-19)</h5>
-                                            <h6 class="text-gray-darkgray mt-5">Full Time Content Writer </h6>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="item">
-                                    <div class="testimonial pt-10">
-                                        <div class="thumb pull-left mb-0 mr-0">
-                                            <img class="img-thumbnail img-circle" alt=""
-                                                src="images/testimonials/43.jpg" style="width:100px">
-                                        </div>
-                                        <div class="testimonial-content">
-                                            <h4 class="text-white font-weight-300 mt-0">As a student of NSU, I not only
-                                                got the chance to showcase my potential in academics but also the other
-                                                co-curricular activity which are an active part of the learning
-                                                enviroment. This was perfectly aided through the cooperation of the
-                                                excellent faculty and peer group.</h4>
-                                            <h5 class="text-theme-colored2 mt-10 font-16 mb-0">Ranjana Ghosh MBA
-                                                (2017-19)</h5>
-                                            <h6 class="text-gray-darkgray mt-5">Full Time Content Writer </h6>
-                                        </div>
-                                    </div>
-                                </div>
-
+                                @endforeach
                             </div>
                         </div>
                     </div>
@@ -469,36 +415,18 @@
                                 <div class="gallery-isotope default-animation-effect grid-4 gutter clearfix"
                                     data-lightbox="gallery">
                                     <!-- Portfolio Item Start -->
-                                    <div class="gallery-item">
-                                        <div class="thumb">
-                                            <img alt="project" src="images/gallery/gallery-sm1.jpg"
-                                                class="img-fullwidth">
-                                            <div class="overlay-shade"></div>
-                                            <div class="icons-holder">
-                                                <div class="icons-holder-inner">
-                                                    <div
-                                                        class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
-                                                        <a href="images/gallery/gallery-lg1.jpg"
-                                                            data-lightbox-gallery="gallery"><i
-                                                                class="fa fa-picture-o"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Portfolio Item End -->
 
-                                    <!-- Portfolio Item Start -->
+                                    @foreach ($gallery as $images)
                                     <div class="gallery-item">
                                         <div class="thumb">
-                                            <img alt="project" src="images/gallery/gallery-sm2.jpg"
+                                            <img alt="project" src="{{ $url.'gallery/'.$images->image_name }}"
                                                 class="img-fullwidth">
                                             <div class="overlay-shade"></div>
                                             <div class="icons-holder">
                                                 <div class="icons-holder-inner">
                                                     <div
                                                         class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
-                                                        <a href="images/gallery/gallery-lg2.jpg"
+                                                        <a href="{{ $url.'gallery/'.$images->image_name }}"
                                                             data-lightbox-gallery="gallery"><i
                                                                 class="fa fa-picture-o"></i></a>
                                                     </div>
@@ -507,206 +435,9 @@
                                         </div>
                                     </div>
                                     <!-- Portfolio Item End -->
+                                    @endforeach
+                                 
 
-                                    <!-- Portfolio Item Start -->
-                                    <div class="gallery-item">
-                                        <div class="thumb">
-                                            <img alt="project" src="images/gallery/gallery-sm3.jpg"
-                                                class="img-fullwidth">
-                                            <div class="overlay-shade"></div>
-                                            <div class="icons-holder">
-                                                <div class="icons-holder-inner">
-                                                    <div
-                                                        class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
-                                                        <a href="images/gallery/gallery-lg3.jpg"
-                                                            data-lightbox-gallery="gallery"><i
-                                                                class="fa fa-picture-o"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Portfolio Item End -->
-
-                                    <!-- Portfolio Item Start -->
-                                    <div class="gallery-item">
-                                        <div class="thumb">
-                                            <img alt="project" src="images/gallery/gallery-sm4.jpg"
-                                                class="img-fullwidth">
-                                            <div class="overlay-shade"></div>
-                                            <div class="icons-holder">
-                                                <div class="icons-holder-inner">
-                                                    <div
-                                                        class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
-                                                        <a href="images/gallery/gallery-lg4.jpg"
-                                                            data-lightbox-gallery="gallery"><i
-                                                                class="fa fa-picture-o"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Portfolio Item End -->
-
-                                    <!-- Portfolio Item Start -->
-                                    <div class="gallery-item">
-                                        <div class="thumb">
-                                            <img alt="project" src="images/gallery/gallery-sm5.jpg"
-                                                class="img-fullwidth">
-                                            <div class="overlay-shade"></div>
-                                            <div class="icons-holder">
-                                                <div class="icons-holder-inner">
-                                                    <div
-                                                        class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
-                                                        <a href="images/gallery/gallery-lg5.jpg"
-                                                            data-lightbox-gallery="gallery"><i
-                                                                class="fa fa-picture-o"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Portfolio Item End -->
-
-                                    <!-- Portfolio Item Start -->
-                                    <div class="gallery-item">
-                                        <div class="thumb">
-                                            <img alt="project" src="images/gallery/gallery-sm6.jpg"
-                                                class="img-fullwidth">
-                                            <div class="overlay-shade"></div>
-                                            <div class="icons-holder">
-                                                <div class="icons-holder-inner">
-                                                    <div
-                                                        class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
-                                                        <a href="images/gallery/gallery-lg6.jpg"
-                                                            data-lightbox-gallery="gallery"><i
-                                                                class="fa fa-picture-o"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Portfolio Item End -->
-
-                                    <!-- Portfolio Item Start -->
-                                    <div class="gallery-item">
-                                        <div class="thumb">
-                                            <img alt="project" src="images/gallery/gallery-sm7.jpg"
-                                                class="img-fullwidth">
-                                            <div class="overlay-shade"></div>
-                                            <div class="icons-holder">
-                                                <div class="icons-holder-inner">
-                                                    <div
-                                                        class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
-                                                        <a href="images/gallery/gallery-lg7.jpg"
-                                                            data-lightbox-gallery="gallery"><i
-                                                                class="fa fa-picture-o"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Portfolio Item End -->
-
-                                    <!-- Portfolio Item Start -->
-                                    <div class="gallery-item">
-                                        <div class="thumb">
-                                            <img alt="project" src="images/gallery/gallery-sm8.jpg"
-                                                class="img-fullwidth">
-                                            <div class="overlay-shade"></div>
-                                            <div class="icons-holder">
-                                                <div class="icons-holder-inner">
-                                                    <div
-                                                        class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
-                                                        <a href="images/gallery/gallery-lg8.jpg"
-                                                            data-lightbox-gallery="gallery"><i
-                                                                class="fa fa-picture-o"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Portfolio Item End -->
-
-                                    <!-- Portfolio Item Start -->
-                                    <div class="gallery-item">
-                                        <div class="thumb">
-                                            <img alt="project" src="images/gallery/gallery-sm9.jpg"
-                                                class="img-fullwidth">
-                                            <div class="overlay-shade"></div>
-                                            <div class="icons-holder">
-                                                <div class="icons-holder-inner">
-                                                    <div
-                                                        class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
-                                                        <a href="images/gallery/gallery-lg9.jpg"
-                                                            data-lightbox-gallery="gallery"><i
-                                                                class="fa fa-picture-o"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Portfolio Item End -->
-
-                                    <!-- Portfolio Item Start -->
-                                    <div class="gallery-item">
-                                        <div class="thumb">
-                                            <img alt="project" src="images/gallery/gallery-sm10.jpg"
-                                                class="img-fullwidth">
-                                            <div class="overlay-shade"></div>
-                                            <div class="icons-holder">
-                                                <div class="icons-holder-inner">
-                                                    <div
-                                                        class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
-                                                        <a href="images/gallery/gallery-lg10.jpg"
-                                                            data-lightbox-gallery="gallery"><i
-                                                                class="fa fa-picture-o"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Portfolio Item End -->
-
-                                    <!-- Portfolio Item Start -->
-                                    <div class="gallery-item">
-                                        <div class="thumb">
-                                            <img alt="project" src="images/gallery/gallery-sm11.jpg"
-                                                class="img-fullwidth">
-                                            <div class="overlay-shade"></div>
-                                            <div class="icons-holder">
-                                                <div class="icons-holder-inner">
-                                                    <div
-                                                        class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
-                                                        <a href="images/gallery/gallery-lg11.jpg"
-                                                            data-lightbox-gallery="gallery"><i
-                                                                class="fa fa-picture-o"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Portfolio Item End -->
-
-                                    <!-- Portfolio Item Start -->
-                                    <div class="gallery-item">
-                                        <div class="thumb">
-                                            <img alt="project" src="images/gallery/gallery-sm12.jpg"
-                                                class="img-fullwidth">
-                                            <div class="overlay-shade"></div>
-                                            <div class="icons-holder">
-                                                <div class="icons-holder-inner">
-                                                    <div
-                                                        class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
-                                                        <a href="images/gallery/gallery-lg12.jpg"
-                                                            data-lightbox-gallery="gallery"><i
-                                                                class="fa fa-picture-o"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Portfolio Item End -->
                                 </div>
                             </div>
                         </div>
