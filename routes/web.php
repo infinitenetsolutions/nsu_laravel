@@ -5,20 +5,16 @@ use App\Http\Controllers\ApplyOnlineController;
 use App\Http\Controllers\CareerController;
 use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\CourseController;
+use App\Http\Controllers\EventController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\LatestNewsController;
+use App\Http\Controllers\NoticeBoardController;
 use App\Http\Controllers\PlacementController;
 use App\Http\Controllers\StructureController;
 use App\Http\Controllers\StudentController;
 use Illuminate\Support\Facades\Route;
 
-
-Route::get('/', [IndexController::class, 'index'])->name('index');
-
-
-Route::get('about', function () {
-    return view('about');
-})->name('about');
 
 Route::get('/', [IndexController::class, 'index'])->name('index');
 
@@ -41,6 +37,9 @@ Route::post('career/applied', [CareerController::class, 'store'])->name('career_
 Route::get('placements/{name}', [PlacementController::class, 'index'])->name('placement');
 Route::get('placement/appointment', [PlacementController::class, 'appointment'])->name('appointment');
 Route::get('placement/requiters', [PlacementController::class, 'requiters'])->name('requiters');
+Route::get('news/latestnews/{id}', [LatestNewsController::class, 'index'])->name('news');
+Route::get('events/event/{id}', [EventController::class, 'index'])->name('event');
+Route::get('noticeboard/notice/{id}', [NoticeBoardController::class, 'index'])->name('noticeboard');
 
 
 
@@ -169,4 +168,3 @@ Route::get('mass-comm-studio', function () {
 Route::get('trans', function () {
     return view('transport');
 });
-
