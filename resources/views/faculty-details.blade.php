@@ -34,10 +34,10 @@
                                         <img height="450px" class="img-fluid" src="{{ $url.'teacher/'.$data->image_name }}" alt="">
                                     </div>
                                 </div>
-                                <div class="col-md-8">
+                                <div class="col-md-8 text-justify">
                                     <h4 class="name font-24 mt-0 mb-0">{{ $data->name }}</h4>
                                     <h5 class="mt-5">{{ $data->designation }}</h5>
-                                    <p class="text-justify" ><?php echo $data->description ?></p>
+                                    <p  ><?php echo $data->description ?></p>
                                     <ul class="styled-icons icon-dark icon-theme-colored2 icon-sm mt-15 mb-0">
                                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                         <li><a href="#"><i class="fa fa-skype"></i></a></li>
