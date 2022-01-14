@@ -44,7 +44,7 @@
                 <div class="container">
                     <div class="section-content">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-6 text-justify">
                                 <h5 class="text-uppercase text-gray-darkgray mb-15" style="font-size: 24px;
                       color: #333333!important;
                       font-weight: 900;">About <span class="text-theme-colored2">us</span></h5>
