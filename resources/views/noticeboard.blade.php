@@ -54,8 +54,8 @@
                                 <p>{{ $get_event->name }}</p>
                             </li>
                             <li>
-                                <h5>Host:</h5>
-                                <p>Netaji Subhas University.</p>
+                                <h5>Download:</h5>
+                                <p> <a  target="_blank"  href="{{ $url.'noticeboard/' . $get_event->images }}">Download Notice</a>.</p>
                             </li>
                             <li>
                                 <h5>Department:</h5>
