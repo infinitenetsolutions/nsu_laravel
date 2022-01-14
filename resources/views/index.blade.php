@@ -155,7 +155,7 @@
                                 <h3 class="text-uppercase font-weight-600 mt-0 mt-sm-30">Notice <span
                                         class="text-theme-colored2">Board</span></h3>
                                 <div class="double-line-bottom-theme-colored-2"></div>
-                                <marquee behavior="scroll" direction="up">
+                                <marquee class="bg-info" behavior="scroll" direction="up" style="height: 315px; padding: 10px">
                                     @foreach ($noticeboard as $event )
 
                                     <article>
@@ -171,7 +171,7 @@
                                             <a href="{{ route('noticeboard',$event->id) }}">
                                                 <div class="event-content pt-5">
                                                     <h5 class="media-heading font-16 font-weight-600 mb-5"><a
-                                                            href="{{ route('noticeboard',$event->id) }}">Admission
+                                                            href="{{ route('noticeboard',$event->id) }}">
                                                             {{ $event->name}}</a></h5>
                                                     <span class="mr-10"><i
                                                             class="fa fa-clock-o text-theme-colored2"></i> {{

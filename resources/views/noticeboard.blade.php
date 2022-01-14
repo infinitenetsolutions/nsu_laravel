@@ -47,10 +47,10 @@
         <section>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <ul>
                             <li>
-                                <h5>Name of event:</h5>
+                                <h5>Name of Notice:</h5>
                                 <p>{{ $get_event->name }}</p>
                             </li>
                             <li>
@@ -58,21 +58,18 @@
                                 <p>Netaji Subhas University.</p>
                             </li>
                             <li>
-                                <h5>Location:</h5>
+                                <h5>Department:</h5>
                                 <p>{{ $get_event->title }}</p>
                             </li>
                             <li>
-                                <h5>Date:</h5>
+                                <h5>Last Date:</h5>
                                 <p>{{ $get_event->timing }}</p>
                             </li>
                             <li>
-                                <h5>Start Time:</h5>
-                                <p>{{ $get_event->start }}</p>
+                                <h5>Notice  Date:</h5>
+                                <p>{{ $get_event->created_at }}</p>
                             </li>
-                            <li>
-                                <h5>End Time:</h5>
-                                <p>{{ $get_event->end }}</p>
-                            </li>
+                          
                             <li>
                                 <h5>Website:</h5>
                                 <p>https://nsuniv.ac.in/</p>
@@ -88,13 +85,55 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-5">
                         <div class="owl-carousel-1col" data-nav="true">
                             <div class="item">
-                                <img width="360" height="500" src="{{ $url.'event/'.$get_event->images }}" alt="">
+                                <a href="{{ $url.'noticeboard/' . $get_event->images }}"
+                                    target="_blank">
+                                    <object
+                                        data="{{ $url.'noticeboard/' . $get_event->images  }}"
+                                        type="application/pdf" width="100%" height="100%">
+
+                                    </object></a>
                             </div>
 
                         </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h3 class="text-uppercase font-weight-600 mt-0 mt-sm-30">Notice <span
+                                class="text-theme-colored2">Board</span></h3>
+                        <div class="double-line-bottom-theme-colored-2"></div>
+                        <marquee class="bg-info" behavior="scroll" direction="up" style="height: 390px; padding: 10px">
+                            @foreach ($noticeboard as $event )
+
+                            <article>
+                                <div class="event-small media sm-maxwidth400 mt-0 mb-0 pt-0 pb-15">
+                                    <div class="event-date text-center">
+                                        <ul class="text-white">
+                                            <li class="font-18 font-weight-700 border-bottom">{{
+                                                explode('-',$event->timing)[2] }}</li>
+                                            <li class="font-14 text-center text-uppercase mt-5">{{ date_format(
+                                                date_create($event->timing),"M") }}</li>
+                                        </ul>
+                                    </div>
+                                    <a href="{{ route('noticeboard',$event->id) }}">
+                                        <div class="event-content pt-5">
+                                            <h5 class="media-heading font-16 font-weight-600 mb-5"><a
+                                                    href="{{ route('noticeboard',$event->id) }}">
+                                                    {{ $event->name}}</a></h5>
+                                            <span class="mr-10"><i
+                                                    class="fa fa-clock-o text-theme-colored2"></i> {{
+                                                $event->created_at }} &nbsp; &nbsp;
+
+                                                <span> <i class="fa fa-map-marker text-theme-colored2"></i> {{
+                                                    $event->title}}</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                            @endforeach
+                        </marquee>
                     </div>
                 </div>
                 <div class="row mt-60">
@@ -105,7 +144,7 @@
                     </div>
 
                 </div>
-                <div class="row mt-40">
+                {{-- <div class="row mt-40">
                     <div class="col-md-12">
                         <h3 class="mb-20">More data</h3>
                         <div class="double-line-bottom-theme-colored-2"></div>
@@ -131,105 +170,11 @@
 
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </section>
 
-        <!-- Section: Registration Form -->
-        {{-- <section class="divider parallax layer-overlay overlay-white-8" data-bg-img="images/bg/bg1.jpg">
-            <div class="container-fluid">
-                <div class="section-title">
-                    <div class="row">
-                        <div class="col-md-6 col-md-offset-3 text-center">
-                            <h3 class="title text-theme-colored">Registration Form</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3">
-                        <form id="booking-form" name="booking-form" action="includes/event-register.php" method="post"
-                            enctype="multipart/form-data">
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="form-group">
-                                        <input type="text" placeholder="Enter Name" name="register_name" required=""
-                                            class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <input type="text" placeholder="Enter Email" name="register_email"
-                                            class="form-control" required="">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <input type="text" placeholder="Enter Phone" name="register_phone"
-                                            class="form-control" required="">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label>Ticket types</label>
-                                        <select name="ticket_type" class="form-control">
-                                            <option>One Person</option>
-                                            <option>Two Person</option>
-                                            <option>Family Pack</option>
-                                            <option>Premium</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label>Event types</label>
-                                        <select name="event_type" class="form-control">
-                                            <option>Event 1</option>
-                                            <option>Event 2</option>
-                                            <option>Event 3</option>
-                                            <option>All package</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12">
-                                    <div class="form-group text-center">
-                                        <input name="form_botcheck" class="form-control" type="hidden" value="" />
-                                        <button data-loading-text="Please wait..."
-                                            class="btn btn-dark btn-theme-colored btn-sm btn-block mt-20 pt-10 pb-10"
-                                            type="submit">Register now</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                        <!-- Job Form Validation-->
-                        <script type="text/javascript">
-                            $("#booking-form").validate({
-                submitHandler: function(form) {
-                  var form_btn = $(form).find('button[type="submit"]');
-                  var form_result_div = '#form-result';
-                  $(form_result_div).remove();
-                  form_btn.before('<div id="form-result" class="alert alert-success" role="alert" style="display: none;"></div>');
-                  var form_btn_old_msg = form_btn.html();
-                  form_btn.html(form_btn.prop('disabled', true).data("loading-text"));
-                  $(form).ajaxSubmit({
-                    dataType:  'json',
-                    success: function(data) {
-                      if( data.status == 'true' ) {
-                        $(form).find('.form-control').val('');
-                      }
-                      form_btn.prop('disabled', false).html(form_btn_old_msg);
-                      $(form_result_div).html(data.message).fadeIn('slow');
-                      setTimeout(function(){ $(form_result_div).fadeOut('slow') }, 6000);
-                    }
-                  });
-                }
-              });
-                        </script>
-                    </div>
-                </div>
-            </div>
-        </section> --}}
-
-
+       
     </div>
     <!-- end main-content -->
 
