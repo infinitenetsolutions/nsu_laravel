@@ -224,7 +224,7 @@ $home_url="http://127.0.0.1:8001/upload/";
 
                   <?php  $courses = DB::table('course_tbl')->where('program',$program->program)->where('is_deleted','1')->orderBy('id','ASC')->get();
                    ?>
-                  <div class="col-sm-4">
+                  <div class="col-sm-3">
                     <ul class="list-unstyled list-dashed">
                       <b class="color-orange text-uppercase">-
                         <?php echo $program->program ?>-
