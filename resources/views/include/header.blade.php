@@ -218,7 +218,7 @@ $home_url="http://127.0.0.1:8001/upload/";
                 <div class="megamenu-row">
 
 
-                  <?php    $programs=DB::table('course_tbl')->orderBy('program','ASC')->distinct()->get(['program']);          ?>
+                  <?php    $programs=DB::table('course_tbl')->select('program')->where('is_deleted','1')->groupBy('program')->orderBy(DB::raw('count(id) '), 'DESC')->get();         ?>
 
                   @foreach ( $programs as $program)
 
