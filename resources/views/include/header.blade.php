@@ -18,8 +18,8 @@ $home_url="http://127.0.0.1:8001/upload/";
               <li class="m-0 pl-10 pr-10"> <a href="#" class="text-white"><i class="fa fa-phone text-white"></i>
                   1800-8899-022 </a> </li>
               /<li class="m-0 pl-10 pr-10"> <a href="#" class="text-white"><i
-                    class="fa fa-envelope-o text-white mr-5"></i> info@nsuniv.ac.in</a></li>
-              /<li class="m-0 pl-10 pr-10"> <a href="#" class="text-white"><i class="fa fa-clock-o text-white mr-5"></i>
+                    class="fa fa-envelope-o text-white "></i> info@nsuniv.ac.in</a></li>
+              /<li class="m-0 pl-10 pr-10"> <a href="#" class="text-white"><i class="fa fa-clock-o text-white "></i>
                   <?php echo date("D M Y");?>
                 </a>
               </li>
@@ -29,11 +29,10 @@ $home_url="http://127.0.0.1:8001/upload/";
         <div class="col-md-6 pr-0">
           <div class="widget">
             <ul class="styled-icons icon-sm pull-right flip sm-pull-none sm-text-center mt-5">
-              <li><a href="#"><i class="fa fa-facebook text-white"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter text-white"></i></a></li>
-              <li><a href="#"><i class="fa fa-google-plus text-white"></i></a></li>
-              <li><a href="#"><i class="fa fa-instagram text-white"></i></a></li>
-              <li><a href="#"><i class="fa fa-linkedin text-white"></i></a></li>
+              <li><a target="_blank" href="https://api.whatsapp.com/send?phone=9386817857&text=&source=&data="><i class="fa fa-whatsapp text-white"></i></a></li>
+              <li><a target="_blank" href="https://www.facebook.com/nsu.jamshedpur/"><i class="fa fa-facebook text-white"></i></a></li>
+              <li><a target="_blank" href="https://www.youtube.com/channel/UCjndfC0cVjGnscin5RZgaFA"><i class="fa fa-youtube text-white"></i></a></li>
+              <li><a target="_blank" href="https://www.instagram.com/nsujamshedpur/?hl=en"><i class="fa fa-instagram text-white"></i></a></li>
             </ul>
           </div>
         </div>
@@ -124,13 +123,11 @@ $home_url="http://127.0.0.1:8001/upload/";
                 <ul class="list-inline xs-text-center text-white">
                   <li class="m-0 pl-10 pr-10"> <a href="#" class="text-white"
                       style="font-size: 17px;line-height: 44px;"><i class="fa fa-phone text-white"></i>
-                      1800-8899-022</a> </li>
-                  / <li class="m-0 pl-10 pr-10"><a href="#" class="text-white"
-                      style="font-size: 17px;line-height: 44px;"><i class="fa fa-envelope-o text-white mr-5"></i>
-                      info@nsuniv.ac.in</a>
-                    /
+                      1800-8899-022</a></li>/<li class="m-0 pl-10 pr-10"><a href="#" class="text-white"
+                      style="font-size: 17px;line-height: 44px;"><i class="fa fa-envelope-o text-white "></i>
+                      info@nsuniv.ac.in</a> /
                   <li class="m-0 pl-10 pr-10"><a href="#" class="text-white"
-                      style="font-size: 17px;line-height: 44px;"><i class="fa fa-snowflake-o text-white mr-5"></i> Covid
+                      style="font-size: 17px;line-height: 44px;"><i class="fa fa-snowflake-o text-white mr-3"></i>Covid
                       Norms</a>
                   </li>
                 </ul>
@@ -140,10 +137,10 @@ $home_url="http://127.0.0.1:8001/upload/";
 
               <div class="widget">
                 <ul class="styled-icons icon-sm pull-right flip sm-pull-none sm-text-center mt-5">
-                  <li><a href="#"><i class="fa fa-facebook text-white"></i></a></li>
-
-                  <li><a href="#"><i class="fa fa-instagram text-white"></i></a></li>
-                  <li><a href="#"><i class="fa fa-linkedin text-white"></i></a></li>
+                  <li><a target="_blank" href="https://api.whatsapp.com/send?phone=9386817857&text=&source=&data="><i class="fa fa-whatsapp text-white"></i></a></li>
+                  <li><a target="_blank" href="https://www.facebook.com/nsu.jamshedpur/"><i class="fa fa-facebook text-white"></i></a></li>
+                  <li><a target="_blank" href="https://www.youtube.com/channel/UCjndfC0cVjGnscin5RZgaFA"><i class="fa fa-youtube text-white"></i></a></li>
+                  <li><a target="_blank" href="https://www.instagram.com/nsujamshedpur/?hl=en"><i class="fa fa-instagram text-white"></i></a></li>
                 </ul>
               </div>
             </div>
@@ -209,7 +206,7 @@ $home_url="http://127.0.0.1:8001/upload/";
                         }}</a>
                     </li>
                     @endforeach
-              
+
               </ul>
             </li>
             {{-- course page start --}}
@@ -289,6 +286,7 @@ $home_url="http://127.0.0.1:8001/upload/";
                 <li><a target="_blank" href="{{ $home_url.'pdf/'.$studentpdf->images   }}"> {{ $studentpdf->title }}</a>
                 </li>
                 @endforeach
+                <li><a href="https://nsucms.in/nsucms/student/student_login">Login</a></li>
 
 
               </ul>

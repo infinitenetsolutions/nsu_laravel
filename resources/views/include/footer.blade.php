@@ -58,11 +58,10 @@
                 href="#">https://nsuniv.ac.in/</a> </li>
           </ul>
           <ul class="styled-icons icon-sm icon-bordered icon-circled clearfix mt-10">
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-vk"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a target="_blank" href="https://api.whatsapp.com/send?phone=9386817857&text=&source=&data="><i class="fa fa-whatsapp text-white"></i></a></li>
+              <li><a target="_blank" href="https://www.facebook.com/nsu.jamshedpur/"><i class="fa fa-facebook text-white"></i></a></li>
+              <li><a target="_blank" href="https://www.youtube.com/channel/UCjndfC0cVjGnscin5RZgaFA"><i class="fa fa-youtube text-white"></i></a></li>
+              <li><a target="_blank" href="https://www.instagram.com/nsujamshedpur/?hl=en"><i class="fa fa-instagram text-white"></i></a></li>
           </ul>
         </div>
       </div>
