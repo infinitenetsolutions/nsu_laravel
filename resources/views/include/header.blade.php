@@ -269,6 +269,7 @@ $home_url="http://127.0.0.1:8001/upload/";
                 @endforeach
                 <li><a href="{{ route('appointment') }}"> APPOINTMENT LETTER</a></li>
                 <li><a href="{{ route('requiters') }}"> OUR ESTEEMED RECRUITERS</a></li>
+                <li><a href="{{ route('placement-contact') }}"> Placement Contact </a></li>
 
 
               </ul>

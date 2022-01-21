@@ -32,4 +32,7 @@ class PlacementController extends Controller
         $categories=DB::table('recruiters_tbl')->distinct()->get(['title']);  
         return view('requiters', ['data' => $data, 'categories' => $categories, 'url' => $this->url()]);
     }
+    function placement_contact(){
+        return view('placement-contact');
+    }
 }
