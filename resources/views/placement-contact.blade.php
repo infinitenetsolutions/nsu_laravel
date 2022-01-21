@@ -22,28 +22,70 @@
                 </div>
             </section>
 
+
+
             <!-- Divider: Contact -->
             <section class="divider">
                 <div class="container">
                     <div class="row pt-30">
-                        <div class="col-md-6">
-                            <h3 class="line-bottom mt-0 mb-30">Interested in discussing?</h3>
-
-                            <!-- Contact Form -->
-                            <form action="{{ route('contact-us') }}" method="post">
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12">
+                                    <div class="icon-box left media bg-deep p-30 mb-20"> <a class="media-left pull-left"
+                                            href="#"> <i class="pe-7s-map-2 text-theme-colored"></i></a>
+                                        <div class="media-body">
+                                            <h5 class="mt-0">Our Office Location</h5>
+                                            <p>#405, Lan Streen, Los Vegas, USA</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-12">
+                                    <div class="icon-box left media bg-deep p-30 mb-20"> <a class="media-left pull-left"
+                                            href="#"> <i class="pe-7s-call text-theme-colored"></i></a>
+                                        <div class="media-body">
+                                            <h5 class="mt-0">Contact Number</h5>
+                                            <p>+325 12345 65478</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-12">
+                                    <div class="icon-box left media bg-deep p-30 mb-20"> <a class="media-left pull-left"
+                                            href="#"> <i class="pe-7s-mail text-theme-colored"></i></a>
+                                        <div class="media-body">
+                                            <h5 class="mt-0">Email Address</h5>
+                                            <p>supporte@yourdomin.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-12">
+                                    <div class="icon-box left media bg-deep p-30 mb-20"> <a class="media-left pull-left"
+                                            href="#"> <i class="pe-7s-film text-theme-colored"></i></a>
+                                        <div class="media-body">
+                                            <h5 class="mt-0">Make a Video Call</h5>
+                                            <p>ThemeMascotSkype</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <h3 class="text-uppercase mt-0">Placement Contact <span class="text-theme-colored2">NSU</span></h3>                                           
+                            <div class="double-line-bottom-theme-colored-2"></div>                            <!-- Contact Form -->
+                            <form id="contact_form" name="contact_form" class=""
+                                action="includes/sendmail.php" method="post">
 
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="form-group">
                                             <label>Name <small>*</small></label>
-                                            <input name="name" class="form-control" type="text" placeholder="Enter Name"
-                                                required="">
+                                            <input name="form_name" class="form-control" type="text"
+                                                placeholder="Enter Name" required="">
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
                                             <label>Email <small>*</small></label>
-                                            <input name="email" class="form-control required email" type="email"
+                                            <input name="form_email" class="form-control required email" type="email"
                                                 placeholder="Enter Email">
                                         </div>
                                     </div>
@@ -52,23 +94,24 @@
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <label>Subject <small>*</small></label>
-                                            <input name="subject" class="form-control required" type="text"
-                                                placeholder="Enter Subject">
+                                            <label>Phone</label>
+                                            <input name="form_phone" class="form-control" type="text"
+                                                placeholder="Enter Phone">
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <label>Phone</label>
-                                            <input name="phone" class="form-control" type="text"
-                                                placeholder="Enter Phone">
+                                            <label>Subject <small>*</small></label>
+                                            <input name="form_subject" class="form-control required" type="text"
+                                                placeholder="Enter Subject">
                                         </div>
                                     </div>
+                                    
                                 </div>
 
                                 <div class="form-group">
                                     <label>Message</label>
-                                    <textarea name="massage" class="form-control required" rows="5"
+                                    <textarea name="form_message" class="form-control required" rows="5"
                                         placeholder="Enter Message"></textarea>
                                 </div>
                                 <div class="form-group">
@@ -80,55 +123,37 @@
                             </form>
 
                             <!-- Contact Form Validation-->
-
-                        </div>
-                        <div class="col-md-6">
-                            <h3 class="line-bottom mt-0">Get in touch with us</h3>
-                            <p>Aliquam officia dolor rerum enim doloremque iusto eos atque tempora dignissimos similique,
-                                quae, maxime sit accusantium delectus.</p>
-                            <ul class="styled-icons icon-dark icon-sm icon-circled mb-20">
-                                <li><a href="https://www.facebook.com/nsu.jamshedpur/" data-bg-color="#3B5998"><i
-                                            class="fa fa-facebook"></i></a></li>
-                                <li><a href="https://api.whatsapp.com/send?phone=9386817857&text=&source=&data="
-                                        data-bg-color="#25D366"><i class="fa fa-whatsapp"></i></a></li>
-                                <li><a href="https://www.instagram.com/nsujamshedpur/?hl=en" data-bg-color="#D9CCB9"><i
-                                            class="fa fa-instagram"></i></a></li>
-                                <li><a href="https://www.youtube.com/channel/UCjndfC0cVjGnscin5RZgaFA"
-                                        data-bg-color="#D71619"><i class="fa fa-youtube"></i></a></li>
-                            </ul>
-
-                            <div class="icon-box media mb-15"> <a class="media-left pull-left flip mr-20" href="#"> <i
-                                        class="fa fa-map-o"></i></a>
-                                <div class="media-body">
-                                    <h5 class="mt-0">Our Office Location</h5>
-                                    <p>Pokhari,Near Bhilai Pahadi, Jamshedpur,Jharkhand</p>
-                                </div>
-                            </div>
-                            <div class="icon-box media mb-15"> <a class="media-left pull-left flip mr-15" href="#"> <i
-                                        class="fa fa-phone"></i></a>
-                                <div class="media-body">
-                                    <h5 class="mt-0">Contact Number</h5>
-                                    <p><a href="tel:1800-8899-022">1800-8899-022</a></p>
-                                </div>
-                            </div>
-                            <div class="icon-box media mb-15"> <a class="media-left pull-left flip mr-15" href="#"> <i
-                                        class="fa fa-envelope-o"></i></a>
-                                <div class="media-body">
-                                    <h5 class="mt-0">Email Address</h5>
-                                    <p><a href="mailto:info@nsuniv.ac.in"> info@nsuniv.ac.in</a></p>
-                                </div>
-                            </div>
-                            <!-- <div class="icon-box media mb-15"> <a class="media-left pull-left flip mr-20" href="#"> <i class="pe-7s-film text-theme-colored"></i></a>
-                                                                          <div class="media-body">
-                                                                            <h5 class="mt-0">Make a Video Call</h5>
-                                                                            <p>ThemeMascotSkype</p>
-                                                                          </div>
-                                                                        </div> -->
+                            <script type="text/javascript">
+                                $("#contact_form").validate({
+                                    submitHandler: function(form) {
+                                        var form_btn = $(form).find('button[type="submit"]');
+                                        var form_result_div = '#form-result';
+                                        $(form_result_div).remove();
+                                        form_btn.before(
+                                            '<div id="form-result" class="alert alert-success" role="alert" style="display: none;"></div>'
+                                            );
+                                        var form_btn_old_msg = form_btn.html();
+                                        form_btn.html(form_btn.prop('disabled', true).data("loading-text"));
+                                        $(form).ajaxSubmit({
+                                            dataType: 'json',
+                                            success: function(data) {
+                                                if (data.status == 'true') {
+                                                    $(form).find('.form-control').val('');
+                                                }
+                                                form_btn.prop('disabled', false).html(form_btn_old_msg);
+                                                $(form_result_div).html(data.message).fadeIn('slow');
+                                                setTimeout(function() {
+                                                    $(form_result_div).fadeOut('slow')
+                                                }, 6000);
+                                            }
+                                        });
+                                    }
+                                });
+                            </script>
                         </div>
                     </div>
                 </div>
             </section>
-
             <!-- Divider: Google Map -->
             <section>
                 <div class="container-fluid pt-0 pb-0">
