@@ -41,6 +41,7 @@ Route::get('news/latestnews/{id}', [LatestNewsController::class, 'index'])->name
 Route::get('events/event/{id}', [EventController::class, 'index'])->name('event');
 Route::get('noticeboard/notice/{id}', [NoticeBoardController::class, 'index'])->name('noticeboard');
 
+Route::get('program/schools-and-institutes/{name}', [CourseController::class, 'program'])->name('program');
 
 
 

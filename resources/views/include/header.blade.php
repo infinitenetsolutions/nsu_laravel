@@ -223,11 +223,11 @@ $home_url="http://127.0.0.1:8001/upload/";
                    ?>
                   <div class="col-sm-3">
                     <ul class="list-unstyled list-dashed">
-                      <b class="color-orange text-uppercase">-
-                        <?php echo $program->program ?>-
-                      </b>
+                     <a href="{{ route('program',strtolower(str_replace(' ','-',$program->program))) }}"><b class="color-orange text-uppercase">-
+                      <?php echo $program->program ?>-
+                    </b></a> 
                       @foreach($courses as $course)
-                      <li><a href="{{ route('course',['course'=>$course->course,'id'=>$course->id]) }}">{{
+                      <li><a href="{{ route('course',['course'=>strtolower(str_replace(' ', '-', $course->course)),'id'=>$course->id]) }}">{{
                           $course->course }}</a></li>
                       @endforeach
                     </ul>
