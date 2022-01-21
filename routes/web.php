@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', [IndexController::class, 'index'])->name('index');
+Route::get('/main-index', [IndexController::class, 'main_index'])->name('main-index');
 
 
 Route::get('student/{name}', [StudentController::class, 'index'])->name('student');
