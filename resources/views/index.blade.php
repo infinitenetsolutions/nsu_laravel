@@ -5,7 +5,7 @@
         <div id="demo"></div>
 
         @include('include.requiters')
-
+    </div>
     @endslot
 
 </x-layout>

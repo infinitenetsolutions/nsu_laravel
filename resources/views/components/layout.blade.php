@@ -14,32 +14,33 @@
     <title>Netaji Subhas University | {{ $title }}</title>
 
     <!-- Favicon and Touch Icons -->
-    <link href="{{asset('images/favicon.png ')}}" rel="shortcut icon" type="image/png">
+    <link href="{{ asset('images/favicon.png ') }}" rel="shortcut icon" type="image/png">
 
     <!-- Stylesheet -->
-    <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
-    <link href="{{asset('css/animate.css')}}" rel="stylesheet" type="text/css">
-    <link href="{{asset('css/css-plugin-collections.css')}}" rel="stylesheet" />
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/animate.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/css-plugin-collections.css') }}" rel="stylesheet" />
     <!-- CSS | menuzord megamenu skins -->
-    <link href="{{asset('css/menuzord-megamenu.css')}}" rel="stylesheet" />
-    <link id="menuzord-menu-skins" href="{{asset('css/menuzord-skins/menuzord-rounded-boxed.css')}}" rel="stylesheet" />
+    <link href="{{ asset('css/menuzord-megamenu.css') }}" rel="stylesheet" />
+    <link id="menuzord-menu-skins" href="{{ asset('css/menuzord-skins/menuzord-rounded-boxed.css') }}"
+        rel="stylesheet" />
     <!-- CSS | Main style file -->
-    <link href="{{asset('css/style-main.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/style-main.css') }}" rel="stylesheet" type="text/css">
     <!-- CSS | Preloader Styles -->
     {{-- <link href="{{asset('css/preloader.css')}}" rel="stylesheet" type="text/css"> --}}
     <!-- CSS | Custom Margin Padding Collection -->
-    <link href="{{asset('css/custom-bootstrap-margin-padding.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/custom-bootstrap-margin-padding.css') }}" rel="stylesheet" type="text/css">
     <!-- CSS | Responsive media queries -->
-    <link href="{{asset('css/responsive.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/responsive.css') }}" rel="stylesheet" type="text/css">
 
 
     <!-- CSS | Theme Color -->
-    <link href="{{ asset('css/colors/theme-skin-color-set3.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/colors/theme-skin-color-set3.css') }}" rel="stylesheet" type="text/css">
 
     <!-- external javascripts -->
-    <script src="{{asset('js/jquery-2.2.4.min.js')}}"></script>
+    <script src="{{ asset('js/jquery-2.2.4.min.js') }}"></script>
     <!-- JS | jquery plugin collection for this theme -->
-    <script src="{{asset('js/jquery-plugin-collection.js')}}"></script>
+    <script src="{{ asset('js/jquery-plugin-collection.js') }}"></script>
 
 
 
@@ -60,21 +61,21 @@
         @include('include.header')
         {{ $body }}
         @include('include.footer')
-     
-        <script src="{{  asset('js/custom.js') }}"></script>
-        <script src="{{asset('js/bootstrap.min.js')}}"></script>
-        <script src="{{asset('js/jquery-ui.min.js')}}"></script>
+
+        <script src="{{ asset('js/custom.js') }}"></script>
+        <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+        <script src="{{ asset('js/jquery-ui.min.js') }}"></script>
         <script src="{{ asset('js/netajimoving.js') }}"></script>
-        
+
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
             var bLazy = new Blazy({
-                    // Options
-                    container:'.b-lazy'
-                });
-            $(document).on('click',function(){
-            	document.getElementsByTagName('audio')[0].play();
+                // Options
+                container: '.b-lazy'
+            });
+            $(document).on('click', function() {
+                document.getElementsByTagName('audio')[0].play();
             });
         </script>
 </body>
