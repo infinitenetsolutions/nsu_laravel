@@ -86,10 +86,10 @@
                                 <p>Aliquam officia dolor rerum enim doloremque iusto eos atque tempora dignissimos similique,
                                     quae, maxime sit accusantium delectus.</p>
                                 <ul class="styled-icons icon-dark icon-sm icon-circled mb-20">
-                                    <li><a href="#" data-bg-color="#3B5998"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#" data-bg-color="#02B0E8"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#" data-bg-color="#D9CCB9"><i class="fa fa-instagram"></i></a></li>
-                                    <li><a href="#" data-bg-color="#D71619"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="https://www.facebook.com/nsu.jamshedpur/" data-bg-color="#3B5998"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://api.whatsapp.com/send?phone=9386817857&text=&source=&data=" data-bg-color="#25D366"><i class="fa fa-whatsapp"></i></a></li>
+                                    <li><a href="https://www.instagram.com/nsujamshedpur/?hl=en" data-bg-color="#D9CCB9"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="https://www.youtube.com/channel/UCjndfC0cVjGnscin5RZgaFA" data-bg-color="#D71619"><i class="fa fa-youtube"></i></a></li>
                                 </ul>
 
                                 <div class="icon-box media mb-15"> <a class="media-left pull-left flip mr-20" href="#"> <i

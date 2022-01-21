@@ -14,19 +14,19 @@
                                 <h1 class="font-200 line-height-1em mt-0 mb-0 text-theme-colored text-white">404!</h1>
                                 <h2 class="mt-0">Oops! Page Not Found</h2>
                                 <p>The page you were looking for could not be found.</p>
-                                <a class="btn btn-border btn-gray btn-transparent btn-circled smooth-scroll-to-target"
-                                    href="#contact">Return Home
+                                <a class="btn btn-border btn-gray btn-transparent btn-circled"
+                                    href="{{ route('index') }}">Return Home
                                 </a>
                             </div>
                             <div class="col-md-4">
                                 <h3>Some Useful Links</h3>
                                 <div class="widget">
                                     <ul class="list-border text-white">
-                                        <li><a target="blank" href="index-mp-layout1.html">Home</a></li>
-                                        <li><a href="#">About us</a></li>
-                                        <li><a href="#">Sitemap</a></li>
-                                        <li><a href="#">Faq's</a></li>
-                                        <li><a target="blank" href="page-contact1.html">Contact</a></li>
+                                        <li><a  href="{{ route('index') }}">Home</a></li>
+                                        <li><a href="{{ route('about','who-we-are') }}">About us</a></li>
+                                        <li><a href="{{ route('career') }}">Career</a></li>
+                                        <li><a href="{{ route('contact') }}">Contact</a></li>
+
                                     </ul>
                                 </div>
                             </div>
