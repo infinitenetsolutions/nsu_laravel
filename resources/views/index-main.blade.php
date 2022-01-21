@@ -65,7 +65,8 @@
                                                     src="{{ $url . 'about/' . $about[0]->image_name }}" alt="">
                                             </div>
                                             <div class="video-button"></div>
-                                            <a class="hover-link" data-lightbox-gallery="{{ $about[0]->permalink }}"
+                                            <a class="hover-link"
+                                                data-lightbox-gallery="{{ $about[0]->permalink }}"
                                                 title="Youtube Video">Youtube
                                                 Video</a>
                                         </div>
@@ -177,7 +178,8 @@
                                                                 {{ $event->created_at }}
                                                                 &nbsp; &nbsp;
 
-                                                                <span> <i class="fa fa-map-marker text-theme-colored2"></i>
+                                                                <span> <i
+                                                                        class="fa fa-map-marker text-theme-colored2"></i>
                                                                     {{ $event->title }}</span>
                                                         </div>
                                                     </a>
@@ -214,13 +216,14 @@
                                         <div class="team-members maxwidth400 mb-30">
                                             <div class="team-thumb">
                                                 <img height="190px"
-                                                    src="{{ $url . 'teacher/' . $university_head->image_name }}" alt=""
-                                                    class="img-fullwidth">
+                                                    src="{{ $url . 'teacher/' . $university_head->image_name }}"
+                                                    alt="" class="img-fullwidth">
                                             </div>
                                             <div class="team-bottom-part bg-silver-deep p-15 pb-0">
                                                 <h4
                                                     class="text-uppercase font-raleway text-theme-colored title-border font-weight-600 line-bottom-center m-0">
-                                                    {{ $university_head->name }} <span class="text-gray font-13 ml-5">-
+                                                    {{ $university_head->name }} <span
+                                                        class="text-gray font-13 ml-5">-
                                                         {{ $university_head->designation }}</span>
                                                 </h4>
                                                 <p class="font-13 mt-10 mb-10 ">
@@ -297,9 +300,10 @@
                         <div class="section-content">
                             <div class="row">
                                 <div class="col-md-5">
-                                    <h3 class="text-uppercase line-bottom-theme-colored-2 line-height-1 mt-0 mt-sm-30"><i
-                                            class="fa fa-question-circle-o mr-10"></i>Upcoming <span
-                                            class="text-theme-colored2">Events</span></h3>
+                                    <h3 class="text-uppercase line-bottom-theme-colored-2 line-height-1 mt-0 mt-sm-30">
+                                        <i class="fa fa-question-circle-o mr-10"></i>Upcoming <span
+                                            class="text-theme-colored2">Events</span>
+                                    </h3>
                                     <div class="panel-group accordion-stylished-left-border accordion-icon-filled accordion-no-border accordion-icon-left accordion-icon-filled-theme-colored2"
                                         id="accordion6" role="tablist" aria-multiselectable="true">
                                         @foreach ($events as $event)
@@ -334,14 +338,16 @@
                                     </div>
                                 </div>
                                 <div class="col-md-7">
-                                    <h3 class="text-uppercase line-bottom-theme-colored-2 line-height-1 mt-0 mt-sm-30"><i
-                                            class="fa fa-photo mr-10"></i>See Our <span
-                                            class="text-theme-colored2">Gallery</span></h3>
+                                    <h3 class="text-uppercase line-bottom-theme-colored-2 line-height-1 mt-0 mt-sm-30">
+                                        <i class="fa fa-photo mr-10"></i>See Our <span
+                                            class="text-theme-colored2">Gallery</span>
+                                    </h3>
                                     <div class="gallery-isotope default-animation-effect grid-4 gutter clearfix"
                                         data-lightbox="gallery">
                                         <!-- Portfolio Item Start -->
 
                                         @foreach ($gallery as $images)
+
                                             <div class="gallery-item">
                                                 <div class="thumb">
                                                     <img alt="project"
@@ -377,7 +383,8 @@
                         <div class="section-title">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <h2 class="text-uppercase title">Latest <span class="text-theme-colored2">News </span>
+                                    <h2 class="text-uppercase title">Latest <span class="text-theme-colored2">News
+                                        </span>
                                     </h2>
                                     <p class="text-uppercase mb-0">See All Time Latest News</p>
                                     <div class="double-line-bottom-theme-colored-2"></div>
@@ -395,8 +402,8 @@
                                                     <div class="entry-header">
                                                         <div class="post-thumb thumb">
                                                             <img height="500px"
-                                                                src="{{ $url . 'latestnews/' . $latest->images }}" alt=""
-                                                                class="img-responsive img-fullwidth">
+                                                                src="{{ $url . 'latestnews/' . $latest->images }}"
+                                                                alt="" class="img-responsive img-fullwidth">
                                                         </div>
                                                         <div
                                                             class="entry-date media-left text-center flip bg-theme-colored border-top-theme-colored2-3px pt-5 pr-15 pb-5 pl-15">
@@ -413,7 +420,7 @@
                                                                     <h4
                                                                         class="entry-title text-white text-uppercase font-weight-600 m-0 mt-5">
                                                                         <a
-                                                                            href="blog-single-left-sidebar.html">{{  $latest->title }}</a>
+                                                                            href="blog-single-left-sidebar.html">{{ $latest->title }}</a>
                                                                     </h4>
 
                                                                 </div>
@@ -440,8 +447,8 @@
                                             <!-- <div class="double-line-bottom-theme-colored-2 mt-15 mb-10"></div> -->
                                             <!-- <p class="mb-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio cum autem assumenda.</p> -->
                                             <div class="p-30 mt-0 bg-dark-transparent-2">
-                                                <h3 class="title-pattern mt-0"><span class="text-white">Request <span
-                                                            class="text-theme-colored2"
+                                                <h3 class="title-pattern mt-0"><span class="text-white">Request
+                                                        <span class="text-theme-colored2"
                                                             style="color:#000!important;">Information</span></span></h3>
                                                 <!-- Appilication Form Start-->
                                                 <form id="reservation_form" name="reservation_form"
@@ -506,8 +513,8 @@
                                                         </div>
                                                         <div class="col-sm-12">
                                                             <div class="form-group mb-0 mt-10">
-                                                                <input name="form_botcheck" class="form-control" value=""
-                                                                    type="hidden">
+                                                                <input name="form_botcheck" class="form-control"
+                                                                    value="" type="hidden">
                                                                 <button type="submit"
                                                                     class="btn btn-colored btn-theme-colored2 text-white btn-lg btn-block"
                                                                     data-loading-text="Please wait...">Submit
@@ -545,7 +552,8 @@
                                                 <span class="input-group-btn">
                                                     <button type="submit"
                                                         class="btn btn-colored btn-theme-colored text-white btn-xs m-0"
-                                                        data-height="48px" style="padding: 10px 30px;">Apply Now</button>
+                                                        data-height="48px" style="padding: 10px 30px;">Apply
+                                                        Now</button>
                                                 </span>
                                             </div>
                                         </form>
@@ -588,3 +596,4 @@
                 <!-- end main-content -->
                 @include('include.requiters')
             </div>
+        </div>

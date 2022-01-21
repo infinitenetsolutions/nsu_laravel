@@ -3662,6 +3662,7 @@ form .error {
 
 .gallery-isotope.grid-4 .gallery-item {
     width: 25%;
+    float: left;
 }
 
 .gallery-isotope.grid-4 .gallery-item.wide {
