@@ -5,7 +5,14 @@
         
         function url_check($url)
         {
-            $array = get_headers($url);
+            $context = stream_context_create([
+                'ssl' => [
+                    'verify_peer' => false,
+                    'verify_peer_name' => false,
+                ],
+            ]);
+        
+            $array = get_headers($url,$context);
             $string = $array[0];
             if (strpos($string, '200')) {
                 return true;
@@ -58,7 +65,7 @@
                                     @if (url_check($url . 'CourseDetails/' . $data->syllabus))
                                         <li><a href="#tab3" data-toggle="tab">Syllabus(Hons)</a></li>
                                     @endif
-                                    @if (url_check($url . 'CourseDetails/' . $data->syllabus1)==true)
+                                    @if (url_check($url . 'CourseDetails/' . $data->syllabus1) == true)
                                         <li><a href="#tab7" data-toggle="tab">Syllabus(Genral)</a></li>
                                     @endif
 
@@ -89,7 +96,9 @@
                                         </ul>
                                     </div>
                                     <div class="tab-pane fade" id="tab3">
-                                        <h4 class="line-bottom-theme-colored-2 mb-20">Sullabus(Hons) - <a class="text-danger" href="{{ $url . 'CourseDetails/' . $data->syllabus }}"> Download</a> </h4>
+                                        <h4 class="line-bottom-theme-colored-2 mb-20">Sullabus(Hons) - <a
+                                                class="text-danger"
+                                                href="{{ $url . 'CourseDetails/' . $data->syllabus }}"> Download</a> </h4>
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <object data="{{ $url . 'CourseDetails/' . $data->syllabus }}" width="300"
@@ -100,11 +109,14 @@
                                         </div>
                                     </div>
                                     <div class="tab-pane fade" id="tab7">
-                                        <h4 class="line-bottom-theme-colored-2 mb-20">Syllabus(Genral)   - <a class="text-danger" href="{{ $url . 'CourseDetails/' . $data->syllabus1 }}"> Download</a> </h4>
+                                        <h4 class="line-bottom-theme-colored-2 mb-20">Syllabus(Genral) - <a
+                                                class="text-danger"
+                                                href="{{ $url . 'CourseDetails/' . $data->syllabus1 }}"> Download</a>
+                                        </h4>
                                         <div class="row">
                                             <div class="col-md-12">
-                                                <object data="{{ $url . 'CourseDetails/' . $data->syllabus1 }}" width="300"
-                                                    height="200"></object>
+                                                <object data="{{ $url . 'CourseDetails/' . $data->syllabus1 }}"
+                                                    width="300" height="200"></object>
 
                                             </div>
 
@@ -118,12 +130,15 @@
                                         </ul>
                                     </div>
                                     <div class="tab-pane fade" id="tab5">
-                                        <h4 class="line-bottom-theme-colored-2 mb-0">Fee Schedule  - <a class="text-danger" href="{{ $url . 'CourseDetails/' . $data->fee_schedule }}"> Download</a> </h4>
+                                        <h4 class="line-bottom-theme-colored-2 mb-0">Fee Schedule - <a
+                                                class="text-danger"
+                                                href="{{ $url . 'CourseDetails/' . $data->fee_schedule }}"> Download</a>
+                                        </h4>
 
                                         <div class="row">
                                             <div class="col-md-12">
-                                                <object data="{{ $url . 'CourseDetails/' . $data->fee_schedule }}" width="300"
-                                                    height="200"></object>
+                                                <object data="{{ $url . 'CourseDetails/' . $data->fee_schedule }}"
+                                                    width="300" height="200"></object>
 
                                             </div>
 
@@ -131,7 +146,9 @@
 
                                     </div>
                                     <div class="tab-pane fade" id="tab6">
-                                        <h4 class="line-bottom-theme-colored-2 mb-0">Guidline - <a class="text-danger" href="{{ $url . 'CourseDetails/' . $data->guidelines }}"> Download</a> </h4>
+                                        <h4 class="line-bottom-theme-colored-2 mb-0">Guidline - <a class="text-danger"
+                                                href="{{ $url . 'CourseDetails/' . $data->guidelines }}"> Download</a>
+                                        </h4>
                                         <div class="row">
 
                                             <div class="col-md-12">
