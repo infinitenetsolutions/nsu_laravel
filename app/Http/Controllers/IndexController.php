@@ -39,6 +39,6 @@ class IndexController extends Controller
     }
 
     function index(){
-        return view("index");
+        return view("index",['url' => $this->url()]);
     }
 }

@@ -3,6 +3,8 @@
     @slot('body')
 
         <span id="demo"></span>
+        
+        @include('include.requiters')
 
     @endslot
 

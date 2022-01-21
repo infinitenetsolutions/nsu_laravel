@@ -594,6 +594,5 @@
                 </div>
             </section> --}}
                 <!-- end main-content -->
-                @include('include.requiters')
             </div>
         </div>
