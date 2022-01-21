@@ -89,7 +89,7 @@
                                         </ul>
                                     </div>
                                     <div class="tab-pane fade" id="tab3">
-                                        <h4 class="line-bottom-theme-colored-2 mb-20">Sullabus(Hons)</h4>
+                                        <h4 class="line-bottom-theme-colored-2 mb-20">Sullabus(Hons) - <a class="text-danger" href="{{ $url . 'CourseDetails/' . $data->syllabus }}"> Download</a> </h4>
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <object data="{{ $url . 'CourseDetails/' . $data->syllabus }}" width="300"
@@ -100,7 +100,7 @@
                                         </div>
                                     </div>
                                     <div class="tab-pane fade" id="tab7">
-                                        <h4 class="line-bottom-theme-colored-2 mb-20">Sullabus(Genral)</h4>
+                                        <h4 class="line-bottom-theme-colored-2 mb-20">Syllabus(Genral)   - <a class="text-danger" href="{{ $url . 'CourseDetails/' . $data->syllabus1 }}"> Download</a> </h4>
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <object data="{{ $url . 'CourseDetails/' . $data->syllabus1 }}" width="300"
@@ -118,11 +118,11 @@
                                         </ul>
                                     </div>
                                     <div class="tab-pane fade" id="tab5">
-                                        <h4 class="line-bottom-theme-colored-2 mb-0">Fee Schedule</h4>
+                                        <h4 class="line-bottom-theme-colored-2 mb-0">Fee Schedule  - <a class="text-danger" href="{{ $url . 'CourseDetails/' . $data->fee_schedule }}"> Download</a> </h4>
 
                                         <div class="row">
                                             <div class="col-md-12">
-                                                <object data="{{ $url . 'CourseDetails/' . $data->syllabus }}" width="300"
+                                                <object data="{{ $url . 'CourseDetails/' . $data->fee_schedule }}" width="300"
                                                     height="200"></object>
 
                                             </div>
@@ -131,7 +131,7 @@
 
                                     </div>
                                     <div class="tab-pane fade" id="tab6">
-                                        <h4 class="line-bottom-theme-colored-2 mb-0">Guidline</h4>
+                                        <h4 class="line-bottom-theme-colored-2 mb-0">Guidline - <a class="text-danger" href="{{ $url . 'CourseDetails/' . $data->guidelines }}"> Download</a> </h4>
                                         <div class="row">
 
                                             <div class="col-md-12">
