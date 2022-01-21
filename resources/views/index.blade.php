@@ -2,8 +2,8 @@
     @slot('title', 'Home')
     @slot('body')
 
-        <span id="demo"></span>
-        
+        <div id="demo"></div>
+
         @include('include.requiters')
 
     @endslot
