@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class IndexController extends Controller
 {
-    function main_index()
+    function index()
     {
 
         // currently not in use because of that time running video 
@@ -35,10 +35,10 @@ class IndexController extends Controller
         // getting all events
         $noticeboard = DB::table('noticeboard')->orderBy('id', 'desc')->limit(4)->get();
 
-        return view('index-main', ['sliders' => $slider, 'url' => $this->url(), 'about' => $about, 'hou' => $head_of_university, 'testimonials' => $testimonial, 'gallery' => $gallery, 'news' => $latest_news, 'events' => $event, 'noticeboard' => $noticeboard]);
+        return view('index', ['sliders' => $slider, 'url' => $this->url(), 'about' => $about, 'hou' => $head_of_university, 'testimonials' => $testimonial, 'gallery' => $gallery, 'news' => $latest_news, 'events' => $event, 'noticeboard' => $noticeboard]);
     }
 
-    function index(){
+    function main_index(){
         return view("index",['url' => $this->url()]);
     }
 }
