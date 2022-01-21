@@ -5,14 +5,14 @@
         
         function url_check($url)
         {
-            $context = stream_context_create([
+            stream_context_set_default([
                 'ssl' => [
                     'verify_peer' => false,
                     'verify_peer_name' => false,
                 ],
             ]);
         
-            $array = get_headers($url,$context);
+            $array = get_headers($url);
             $string = $array[0];
             if (strpos($string, '200')) {
                 return true;
