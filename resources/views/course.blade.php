@@ -75,7 +75,7 @@
                                                         <tr>
                                                             <th>S.NO</th>
                                                             <th>Course Name</th>
-                                                            <th>Fee </th>
+                                                            <th>Fee (per Semester)</th>
                                                             <th>Details</th>
                                                         </tr>
                                                     </thead>
