@@ -218,7 +218,7 @@
                                             <div class="team-thumb">
                                                 <img height="190px"
                                                     src="{{ $url . 'teacher/' . $university_head->image_name }}" alt=""
-                                                    class="img-fullwidth">
+                                                    class="img-fullwidth teachers">
                                             </div>
                                             <div class="team-bottom-part bg-silver-deep p-15 pb-0">
                                                 <h4
