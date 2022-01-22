@@ -38,6 +38,48 @@
 
                                 <!-- Portfolio Gallery Grid -->
                                 <div id="grid" class="gallery-isotope default-animation-effect grid-4 gutter clearfix">
+                                    @foreach ($gallery_title as $title)
+                                    <div class="gallery-item photo">
+                                        <div class="thumb">
+
+                                            <div class="flexslider-wrapper" data-direction="vertical">
+                                                <div class="flexslider">
+                                                    <ul class="slides">
+                                                        <?php $images = DB::table('gallery_tbl')
+                                                            ->where('title', $title->title)
+                                                            ->get(); ?>
+                                                        @foreach ($images as $image)
+                                                            @if ($image->link != '')
+                                                                <li><a href="{{ $url . 'gallery/' . $image->image_name }}"
+                                                                        title="{{ $image->title }}"><img width="150px"
+                                                                            height="180px"
+                                                                            src="{{ $url . 'gallery/' . $image->image_name }}"
+                                                                            alt=""></a></li>
+                                                            @endif
+                                                        @endforeach
+
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="overlay-shade"></div>
+                                            <div class="icons-holder">
+                                                <div class="icons-holder-inner">
+                                                    <div
+                                                        class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                                                        <a href="#"><i class="fa fa-picture-o"></i>
+                                                        </a>
+
+
+                                                    </div>
+
+                                                </div>
+                                                <span class="text-white "><b> {{ $title->title }} </b></span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                @endforeach
 
                                     <!-- Portfolio Item Start -->
                                     @foreach ($images1 as $title)
@@ -65,49 +107,7 @@
                                     <!-- Portfolio Item End -->
 
                                     <!-- Portfolio Item Start -->
-                                    @foreach ($gallery_title as $title)
-                                        <div class="gallery-item photo">
-                                            <div class="thumb">
-
-                                                <div class="flexslider-wrapper" data-direction="vertical">
-                                                    <div class="flexslider">
-                                                        <ul class="slides">
-                                                            <?php $images = DB::table('gallery_tbl')
-                                                                ->where('title', $title->title)
-                                                                ->get(); ?>
-                                                            @foreach ($images as $image)
-                                                                @if ($image->link != '')
-                                                                    <li><a href="{{ $url . 'gallery/' . $image->image_name }}"
-                                                                            title="{{ $image->title }}"><img width="150px"
-                                                                                height="180px"
-                                                                                src="{{ $url . 'gallery/' . $image->image_name }}"
-                                                                                alt=""></a></li>
-                                                                @endif
-                                                            @endforeach
-
-
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="overlay-shade"></div>
-                                                <div class="icons-holder">
-                                                    <div class="icons-holder-inner">
-                                                        <div
-                                                            class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
-                                                            <a href="#"><i class="fa fa-picture-o"></i>
-                                                            </a>
-
-
-                                                        </div>
-
-                                                    </div>
-                                                    <span class="text-white "><b> {{ $title->title }} </b></span>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    @endforeach
-
+                                 
                                     <!-- Portfolio Item End -->
 
 
