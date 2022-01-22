@@ -41,67 +41,69 @@
                                 <div id="grid" class="gallery-isotope default-animation-effect grid-4 gutter clearfix">
 
                                     <!-- Portfolio Item Start -->
-                                    <div class="gallery-item video">
-                                        <div class="thumb">
-                                            <img class="img-fullwidth" width="150px" height="180px"
-                                                src="images/gallery/4.jpg" alt="project">
-                                            <div class="overlay-shade"></div>
-                                            <div class="icons-holder">
-                                                <div class="icons-holder-inner">
-                                                    <div
-                                                        class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
-                                                        <a class="popup-youtube"
-                                                            href="https://www.youtube.com/watch?v=C61pgS4W6X8"><i
-                                                                class="fa fa-youtube-play"></i></a>
+                                    @foreach ($gallery_title as $title)
+                                        <div class="gallery-item video">
+                                            <div class="thumb">
+                                                <img class="img-fullwidth" width="150px" height="180px"
+                                                    src="images/gallery/4.jpg" alt="project">
+                                                <div class="overlay-shade"></div>
+                                                <div class="icons-holder">
+                                                    <div class="icons-holder-inner">
+                                                        <div
+                                                            class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                                                            <a class="popup-youtube"
+                                                                href="https://www.youtube.com/watch?v=C61pgS4W6X8"><i
+                                                                    class="fa fa-youtube-play"></i></a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    @endforeach
                                     <!-- Portfolio Item End -->
 
                                     <!-- Portfolio Item Start -->
                                     @foreach ($gallery_title as $title)
-                                        @if ($title->link != '')
-                                            <div class="gallery-item photo">
-                                                <div class="thumb">
+                                        <div class="gallery-item photo">
+                                            <div class="thumb">
 
-                                                    <div class="flexslider-wrapper" data-direction="vertical">
-                                                        <div class="flexslider">
-                                                            <ul class="slides">
-                                                                <?php $images = DB::table('gallery_tbl')
-                                                                    ->where('title', $title->title)
-                                                                    ->get(); ?>
-                                                                @foreach ($images as $image)
+                                                <div class="flexslider-wrapper" data-direction="vertical">
+                                                    <div class="flexslider">
+                                                        <ul class="slides">
+                                                            <?php $images = DB::table('gallery_tbl')
+                                                                ->where('title', $title->title)
+                                                                ->get(); ?>
+                                                            @foreach ($images as $image)
+                                                                @if ( strlen($image->link)>20)
                                                                     <li><a href="{{ $url . 'gallery/' . $image->image_name }}"
                                                                             title="{{ $image->title }}"><img width="150px"
                                                                                 height="180px"
                                                                                 src="{{ $url . 'gallery/' . $image->image_name }}"
                                                                                 alt=""></a></li>
-                                                                @endforeach
+                                                                @endif
+                                                            @endforeach
 
 
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="overlay-shade"></div>
-                                                    <div class="icons-holder">
-                                                        <div class="icons-holder-inner">
-                                                            <div
-                                                                class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
-                                                                <a href="#"><i class="fa fa-picture-o"></i>
-                                                                </a>
-
-
-                                                            </div>
-
-                                                        </div>
-                                                        <span class="text-white "><b> {{ $title->title }} </b></span>
-
+                                                        </ul>
                                                     </div>
                                                 </div>
+                                                <div class="overlay-shade"></div>
+                                                <div class="icons-holder">
+                                                    <div class="icons-holder-inner">
+                                                        <div
+                                                            class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                                                            <a href="#"><i class="fa fa-picture-o"></i>
+                                                            </a>
+
+
+                                                        </div>
+
+                                                    </div>
+                                                    <span class="text-white "><b> {{ $title->title }} </b></span>
+
+                                                </div>
                                             </div>
-                                        @endif
+                                        </div>
                                     @endforeach
 
                                     <!-- Portfolio Item End -->
