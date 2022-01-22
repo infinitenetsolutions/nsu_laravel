@@ -74,7 +74,7 @@
                                                                 ->where('title', $title->title)
                                                                 ->get(); ?>
                                                             @foreach ($images as $image)
-                                                                @if ( strlen($image->link)>20)
+                                                                @if ( $image->link!='')
                                                                     <li><a href="{{ $url . 'gallery/' . $image->image_name }}"
                                                                             title="{{ $image->title }}"><img width="150px"
                                                                                 height="180px"
