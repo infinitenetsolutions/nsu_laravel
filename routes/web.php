@@ -33,6 +33,9 @@ Route::get('placements/{name}', [PlacementController::class, 'index'])->name('pl
 Route::get('placement/appointment', [PlacementController::class, 'appointment'])->name('appointment');
 Route::get('placement/requiters', [PlacementController::class, 'requiters'])->name('requiters');
 Route::get('placement/contact', [PlacementController::class, 'placement_contact'])->name('placement-contact');
+// for getting the data from  placement contact form
+Route::post('placement/contact', [PlacementController::class, 'contact'])->name('placement.contact');
+
 Route::get('news/latestnews/{id}', [LatestNewsController::class, 'index'])->name('news');
 Route::get('events/event/{id}', [EventController::class, 'index'])->name('event');
 Route::get('noticeboard/notice/{id}', [NoticeBoardController::class, 'index'])->name('noticeboard');

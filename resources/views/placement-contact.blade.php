@@ -34,8 +34,16 @@
                                     <div class="icon-box left media bg-deep p-30 mb-20"> <a class="media-left pull-left"
                                             href="#"> <i class="pe-7s-map-2 text-theme-colored"></i></a>
                                         <div class="media-body">
-                                            <h5 class="mt-0">Our Office Location</h5>
-                                            <p>#405, Lan Streen, Los Vegas, USA</p>
+                                            <div class="row">
+                                                <div class="col-sm-2">
+                                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <h5 class="mt-0">Our Office Location</h5>
+                                                    <p>#Pokhari,Near Bhilai Pahadi, Jamshedpur,Jharkhand</p>
+                                                </div>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
@@ -43,8 +51,15 @@
                                     <div class="icon-box left media bg-deep p-30 mb-20"> <a class="media-left pull-left"
                                             href="#"> <i class="pe-7s-call text-theme-colored"></i></a>
                                         <div class="media-body">
-                                            <h5 class="mt-0">Contact Number</h5>
-                                            <p>+325 12345 65478</p>
+                                            <div class="row">
+                                                <div class="col-sm-2">
+                                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <h5 class="mt-0">Contact Number</h5>
+                                                    <p>1800-8899-022</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -52,8 +67,15 @@
                                     <div class="icon-box left media bg-deep p-30 mb-20"> <a class="media-left pull-left"
                                             href="#"> <i class="pe-7s-mail text-theme-colored"></i></a>
                                         <div class="media-body">
-                                            <h5 class="mt-0">Email Address</h5>
-                                            <p>supporte@yourdomin.com</p>
+                                            <div class="row">
+                                                <div class="col-sm-2">
+                                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <h5 class="mt-0">Email Address</h5>
+                                                    <p> info@nsuniv.ac.in</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -61,31 +83,51 @@
                                     <div class="icon-box left media bg-deep p-30 mb-20"> <a class="media-left pull-left"
                                             href="#"> <i class="pe-7s-film text-theme-colored"></i></a>
                                         <div class="media-body">
-                                            <h5 class="mt-0">Make a Video Call</h5>
-                                            <p>ThemeMascotSkype</p>
+                                            <div class="row">
+                                                <div class="col-sm-2">
+                                                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <h5 class="mt-0">Make a Video Call</h5>
+                                                    <p> 9386817857 / 9334666453
+                                                        9386467619 / 9334833167</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-8">
-                            <h3 class="text-uppercase mt-0">Placement Contact <span class="text-theme-colored2">NSU</span></h3>                                           
-                            <div class="double-line-bottom-theme-colored-2"></div>                            <!-- Contact Form -->
-                            <form id="contact_form" name="contact_form" class=""
-                                action="includes/sendmail.php" method="post">
-
+                            <h3 class="text-uppercase mt-0">Placement Contact <span class="text-theme-colored2">NSU</span>
+                            </h3>
+                            <div class="double-line-bottom-theme-colored-2"></div> <!-- Contact Form -->
+                            @if (session('success'))
+                                <div class="alert alert-success" role="alert">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                    {{ session('success') }}
+                                </div>
+                            @endif
+                            @if (session('error'))
+                                <div class="alert alert-warning" role="alert">                                   
+                                    {{ session('error') }}
+                                </div>
+                            @endif
+                            <form id="contact_form" action="{{ route('placement.contact') }}" method="POST"
+                                class="">
+                                @csrf
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <label>Name <small>*</small></label>
-                                            <input name="form_name" class="form-control" type="text"
-                                                placeholder="Enter Name" required="">
+                                            <label>Name <small class="text-danger">*</small></label>
+                                            <input name="name" class="form-control" type="text" placeholder="Enter Name"
+                                                required="">
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <label>Email <small>*</small></label>
-                                            <input name="form_email" class="form-control required email" type="email"
+                                            <label>Email <small class="text-danger">*</small></label>
+                                            <input name="email" class="form-control required email" type="email"
                                                 placeholder="Enter Email">
                                         </div>
                                     </div>
@@ -94,28 +136,49 @@
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <label>Phone</label>
-                                            <input name="form_phone" class="form-control" type="text"
+                                            <label>Phone <small class="text-danger">*</small></label>
+                                            <input name="phone" class="form-control" type="text"
                                                 placeholder="Enter Phone">
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <label>Subject <small>*</small></label>
-                                            <input name="form_subject" class="form-control required" type="text"
-                                                placeholder="Enter Subject">
+                                            <label>Company Name <small class="text-danger">*</small></label>
+                                            <input name="company" class="form-control required" type="text"
+                                                placeholder="Enter Company Name">
                                         </div>
                                     </div>
-                                    
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label>Designation Name <small class="text-danger">*</small></label>
+                                            <input name="designation" class="form-control required" type="text"
+                                                placeholder="Enter  Designation  Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label>Country <small class="text-danger">*</small></label>
+                                            <select name="country" class="form-control required" type="text"
+                                                placeholder="Ente Name">
+                                                <option selected disabled>-Select-</option>
+                                                @foreach ($countries as $country)
+                                                    <option value="{{ $country->name }}">{{ $country->name }}</option>
+
+                                                @endforeach
+                                            </select>
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <div class="form-group">
                                     <label>Message</label>
-                                    <textarea name="form_message" class="form-control required" rows="5"
+                                    <textarea name="message" class="form-control required" rows="5"
                                         placeholder="Enter Message"></textarea>
                                 </div>
                                 <div class="form-group">
-                                    <input name="form_botcheck" class="form-control" type="hidden" value="" />
+                                    <input type="hidden" name="is_deleted" value="0" id="">
+                                    <input name="time" value="{{ date('Y-m-d h:m:s') }}" class="form-control"
+                                        type="hidden" value="" />
                                     <button type="submit" class="btn btn-dark btn-theme-colored btn-flat mr-5"
                                         data-loading-text="Please wait...">Send your message</button>
                                     <button type="reset" class="btn btn-default btn-flat btn-theme-colored">Reset</button>
@@ -123,7 +186,7 @@
                             </form>
 
                             <!-- Contact Form Validation-->
-                            <script type="text/javascript">
+                            {{-- <script type="text/javascript">
                                 $("#contact_form").validate({
                                     submitHandler: function(form) {
                                         var form_btn = $(form).find('button[type="submit"]');
@@ -131,7 +194,7 @@
                                         $(form_result_div).remove();
                                         form_btn.before(
                                             '<div id="form-result" class="alert alert-success" role="alert" style="display: none;"></div>'
-                                            );
+                                        );
                                         var form_btn_old_msg = form_btn.html();
                                         form_btn.html(form_btn.prop('disabled', true).data("loading-text"));
                                         $(form).ajaxSubmit({
@@ -144,12 +207,13 @@
                                                 $(form_result_div).html(data.message).fadeIn('slow');
                                                 setTimeout(function() {
                                                     $(form_result_div).fadeOut('slow')
-                                                }, 6000);
+                                                }, 600);
                                             }
                                         });
                                     }
                                 });
-                            </script>
+                            </script> --}}
+
                         </div>
                     </div>
                 </div>
