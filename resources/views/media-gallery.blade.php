@@ -57,7 +57,7 @@
                                                                 data-lightbox-gallery="gallery" title="Media Gallery"><i
                                                                     class="fa fa-picture-o"></i>
                                                             </a>
-                                                            <a href="{{ $url . 'mediagallery/' . $title->image_name }}"
+                                                            <a href="{{  $title->link }}"
                                                                 data-lightbox-gallery="gallery" title="Media Gallery"><i
                                                                     class="fa fa-link"></i>
                                                             </a>
