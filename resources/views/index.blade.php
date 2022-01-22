@@ -154,7 +154,7 @@
                                     <h3 class="text-uppercase font-weight-600 mt-0 mt-sm-30">Notice <span
                                             class="text-theme-colored2">Board</span></h3>
                                     <div class="double-line-bottom-theme-colored-2"></div>
-                                    <marquee class="bg-info" behavior="scroll" direction="up"
+                                    <marquee onMouseOver="this.stop()" onMouseOut="this.start()" class="bg-info" behavior="scroll" direction="up"
                                         style="height: 315px; padding: 10px">
                                         @foreach ($noticeboard as $event)
 
