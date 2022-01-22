@@ -13,8 +13,10 @@ class GalleryController extends Controller
         $images = DB::table('gallery_tbl')->paginate(12);
 
         $gallery_title = DB::table('gallery_tbl')
+        ->where('title','!=','Media')
             ->select('title')
             ->groupBy('title')
+            
             ->get();
 
         return view('image-gallery', ['url' => $this->url(), 'images1' => $images, 'gallery_title' => $gallery_title]);
