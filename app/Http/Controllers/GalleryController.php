@@ -24,7 +24,7 @@ class GalleryController extends Controller
 
     function media_gallery()
     {
-        $images = DB::table('gallery_tbl')->paginate(9);
+        $images = DB::table('gallery_tbl')->where('title','=','media')->paginate(9);
         return view('media-gallery', ['url' => $this->url(), 'images' => $images,]);
     }
 }
