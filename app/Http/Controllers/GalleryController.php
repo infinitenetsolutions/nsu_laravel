@@ -10,7 +10,7 @@ class GalleryController extends Controller
 {
     function image_gallery()
     {
-        $images = DB::table('gallery_tbl')->paginate(12);
+        $images = DB::table('gallery_tbl')->orderBy('id','desc')->paginate(12);
 
         $gallery_title = DB::table('gallery_tbl')
         ->where('title','!=','Media')
@@ -24,7 +24,7 @@ class GalleryController extends Controller
 
     function media_gallery()
     {
-        $images = DB::table('gallery_tbl')->where('title','=','media')->paginate(9);
+        $images = DB::table('gallery_tbl')->where('title','=','media')->orderBy('id','desc')->paginate(9);
         return view('media-gallery', ['url' => $this->url(), 'images' => $images,]);
     }
 }

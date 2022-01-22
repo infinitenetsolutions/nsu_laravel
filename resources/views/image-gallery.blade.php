@@ -49,7 +49,7 @@
                                                             ->where('title', $title->title)
                                                             ->get(); ?>
                                                         @foreach ($images as $image)
-                                                            @if ($image->link != '')
+                                                            @if (strlen($image->link) < 30)
                                                                 <li><a href="{{ $url . 'gallery/' . $image->image_name }}"
                                                                         title="{{ $image->title }}"><img width="150px"
                                                                             height="180px"
@@ -83,7 +83,7 @@
 
                                     <!-- Portfolio Item Start -->
                                     @foreach ($images1 as $title)
-                                        @if (strlen($title->link) < 30)
+                                        @if (strlen($title->link) > 30)
                                             <div class="gallery-item video">
                                                 <div class="thumb">
                                                     <img class="img-fullwidth" width="150px" height="180px"
@@ -94,7 +94,7 @@
                                                             <div
                                                                 class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
                                                                 <a class="popup-youtube"
-                                                                    href="https://www.youtube.com/watch?v=C61pgS4W6X8"><i
+                                                                    href="{{ $title->link }}"><i
                                                                         class="fa fa-youtube-play"></i></a>
                                                             </div>
                                                         </div>
