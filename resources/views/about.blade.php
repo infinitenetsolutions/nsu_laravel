@@ -34,7 +34,7 @@
                                     class="text-theme-colored2">NSU</span></h3>
                             <div class="double-line-bottom-theme-colored-2"></div>
                             <p class="mt-20">
-                                <?php echo $data->description ?>
+                                <?php echo substr($data->description,0,1690) ?>
                             </p>
                             <!-- <a href="#" class="btn btn-colored btn-theme-colored2 text-white btn-lg pl-40 pr-40 mt-15">Read More</a> -->
                         </div>
@@ -74,25 +74,19 @@
                                             <li><a href="{{ route('about',$quick->title) }}"> {{ $quick->sub_title }}
                                                 </a></li>
                                             @endforeach
-
                                         </ul>
                                     </div>
                                 </div>
-
-
                             </div>
                         </div>
-
-
-
+                        <div class="col-sm-12">
+                            <p class="mt-20">
+                                <?php echo substr($data->description,1681,1000000) ?>
+                            </p>
+                        </div>
                     </div>
-
-
                 </div>
         </section>
-
     </div>
-
-
     @endslot
 </x-layout>
