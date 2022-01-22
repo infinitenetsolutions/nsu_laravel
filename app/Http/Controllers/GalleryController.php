@@ -16,7 +16,7 @@ class GalleryController extends Controller
         ->where('title','!=','Media')
             ->select('title')
             ->groupBy('title')
-            
+            ->orderBy('id','desc')
             ->get();
 
         return view('image-gallery', ['url' => $this->url(), 'images1' => $images, 'gallery_title' => $gallery_title]);

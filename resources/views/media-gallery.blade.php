@@ -79,7 +79,7 @@
                                     <nav>
                                         <ul class="pagination theme-colored pull-right xs-pull-center mb-xs-40">
                                             <div class="d-flex justify-content-center">
-                                                {!! $images->links() !!}
+                                                {{ $images->links() }}
                                             </div>
                                         </ul>
                                     </nav>
