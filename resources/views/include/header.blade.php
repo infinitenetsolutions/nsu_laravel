@@ -51,44 +51,17 @@ $home_url="http://127.0.0.1:8001/upload/";
         <div class="col-xs-12 col-sm-12 col-md-10 contact-section">
           <div class="row" style="margin: 25px 0;">
 
+            <?php $headers=DB::table('header')->orderBy('prarirty','asc')->limit(4)->get() ?>
+            @foreach ($headers as $header )
             <div class="col-xl-3 col-lg-3 col-md-12 pt-2 text-white">
-              <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-              Start Your Career With Us<a href="" target="_blank" class="hover-orange verdana-text all-time-shadow">
-              </a><br>
-              <b>Toll Free :</b> 1800-8899-022
-
-            </div>
-
-            <div class="col-xl-3 col-lg-3 col-md-12 pt-2 text-white">
-
-              <i class="fa fa-whatsapp all-time-shadow font-size-head"></i><a
-                href="https://api.whatsapp.com/send?phone=919386817857&text=&source=&data=" target="_blank"
-                class="hover-orange verdana-text all-time-shadow text-white"> <b>9386817857</b></a> <b>/</b>
-              <a href="tel:9334666453"
-                class="hover-orange verdana-text all-time-shadow text-white"><b>9334666453</b></a>
-              <br />
-              <a href="tel:9386467619" class="hover-orange verdana-text all-time-shadow text-white">
-                <b>9386467619</b></a> <b>/</b>
-              <a href="tel:9334833167"
-                class="hover-orange verdana-text all-time-shadow text-white"><b>9334833167</b></a>
-
-            </div>
-
-            <div class="col-xl-3 col-lg-3 col-md-12 pt-2 text-white">
-              <i class="fa fa-envelope all-time-shadow font-size-head"></i><a href="mailto:info@nsuniv.ac.in"
-                class="hover-orange verdana-text all-time-shadow tex-white"> <b
-                  class="text-white">info@nsuniv.ac.in</b></a>
+             <?php echo $header->name ?>
               <br>
-              <a href="" target="_blank" class="hover-orange verdana-text all-time-shadow">
-                <blink><b class="button text-white">Education Loan Facility</b></blink>
+              <a href="<?php echo $header->address ?>" target="_blank" class="hover-orange verdana-text all-time-shadow">
+                <blink><b class="button text-white"><?php echo $header->designation ?></b></blink>
               </a>
             </div>
-
-            <div class="col-xl-3 col-lg-3 col-md-12 pt-2 text-white">
-              <i class="fa fa-snowflake-o  all-time-shadow font-size-head" aria-hidden="true"></i>
-              Covid Norms <a href="" target="_blank" class="hover-orange verdana-text all-time-shadow"> </a><br>
-              <b>COVID-19 </b>
-            </div>
+            @endforeach
+          
           </div>
         </div>
       </div>
