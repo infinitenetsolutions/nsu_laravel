@@ -24,9 +24,9 @@
                         <!-- <input name="form_name" class="form-control" type="text" required="" placeholder="Enter Name" aria-required="true"> -->
                       <?php $courses1=DB::table('course_tbl')->get() ?>
                         <select name="" id="" class="form-control">
-                          <option value="{{ $course->course }}">{{ $course->course }}</option>
+                          <option value="">Select Course</option>
                           @foreach ($courses1 as $course )
-                          <option value="">Course 1</option>
+                          <option value="{{ $course->course }}">{{ $course->course }}</option>
 
                           @endforeach
                         
