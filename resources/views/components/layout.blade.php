@@ -17,6 +17,7 @@
     <link href="{{ asset('images/favicon.png ') }}" rel="shortcut icon" type="image/png">
 
     <!-- Stylesheet -->
+
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/animate.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/css-plugin-collections.css') }}" rel="stylesheet" />

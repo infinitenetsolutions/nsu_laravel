@@ -10735,3 +10735,6 @@ menu>li>.megamenu {
         height: 256px !important;
     }
   }
+  .btn-outline-danger{
+      border: solid 2px #c70013;
+  }
