@@ -280,7 +280,7 @@ $home_url="http://127.0.0.1:8001/upload/";
             <li><a href="{{ route('contact') }}">Contact</a>
 
             </li>
-            <li><a class="btn btn-outline-danger" href="#">Education Loan <span class="indicator"></span></a>
+            <li><a class=" btn-outline-danger btn-sm" href="#">Education Loan <span class="indicator"></span></a>
               <ul class="dropdown" style="right: auto;">
 
                   <li><b class="color-orange text-center"> - EDUCCATION LOAN FACILITY -</b></li>
