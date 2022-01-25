@@ -56,7 +56,7 @@ $home_url="http://127.0.0.1:8001/upload/";
             <div class="col-xl-3 col-lg-3 col-md-12 pt-2 text-white">
              <?php echo $header->name ?>
               <br>
-              <a href="<?php echo $header->address ?>" target="_blank" class="hover-orange verdana-text all-time-shadow">
+              <a href="<?php echo $header->address ?>"  class="hover-orange verdana-text all-time-shadow">
                 <blink><b class="button text-white"><?php echo $header->designation ?></b></blink>
               </a>
             </div>
