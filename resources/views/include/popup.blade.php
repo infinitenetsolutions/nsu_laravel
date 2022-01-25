@@ -27,9 +27,7 @@
                           <option value="">Select Course</option>
                           @foreach ($courses1 as $course )
                           <option value="{{ $course->course }}">{{ $course->course }}</option>
-
                           @endforeach
-                        
                         </select>
                       </div>
                     </div>
