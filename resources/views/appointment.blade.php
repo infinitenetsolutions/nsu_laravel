@@ -32,7 +32,7 @@
                     <div class="col-xs-12 col-sm-6 col-md-3">
                         <div class="team-members border-bottom-theme-colored2px text-center maxwidth400 mb-30">
                             <div class="team-thumb">
-                                <img class="img-fullwidth" alt="" src="{{ asset('images/team/1.jpg') }} ">
+                                <img height="300px" class="img-fullwidth" alt="" src="{{$url.'appointment/'.$appointment->image_name }} ">
                                 <div class="team-overlay"></div>
 
                             </div>
@@ -42,7 +42,7 @@
                                 <h6 class="text-gray font-13 font-weight-400 line-bottom-centered mt-0">{{
                                     $appointment->sub_title }}
                                 </h6>
-                                <p class="hidden-md">{{$appointment->description }}</p>
+                                <a href="{{ $url.'appointment/'.$appointment->image_name2 }}" class="hidden-md text-danger"><i class="fa fa-download" aria-hidden="true"></i> Appointment-Letter</a>
                             </div>
                         </div>
                     </div>
