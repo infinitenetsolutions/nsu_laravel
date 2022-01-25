@@ -595,10 +595,9 @@ var THEMEMASCOT = {};
                 $popup_yt_vimeo_gmap.magnificPopup({
                     disableOn: 700,
                     type: 'iframe',
-                    mainClass: 'mfp-fade',
+                    mainClass: 'mfp-fade w-100',
                     removalDelay: 160,
-                    preloader: false,
-
+                    preloader: true,
                     fixedContentPos: false
                 });
             }

@@ -1,7 +1,11 @@
 <x-layout>
     @slot('title', 'About us')
     @slot('body')
-
+    <style>
+       iframe html body img{
+            width: 100% !important;
+        }
+         </style>
         <!-- Start main-content -->
         <div class="main-content">
             <!-- Section: inner-header -->
@@ -32,7 +36,7 @@
                             <div class="col-xs-12 col-sm-6 col-md-3">
                                 <div class="team-members border-bottom-theme-colored2px text-center maxwidth400 mb-30">
                                     <div class="team-thumb">
-                                        <img height="300px" class="img-fullwidth" alt=""
+                                        <img height="300px"  class="img-fullwidth" alt=""
                                             src="{{ $url . 'appointment/' . $appointment->image_name }} ">
                                         <div class="team-overlay"></div>
 
@@ -46,7 +50,7 @@
                                                     <div class="icons-holder-inner">
                                                         <div
                                                             class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
-                                                            <a class="popup-youtube"
+                                                            <a class="popup-youtube" 
                                                                 href="{{ $url . 'appointment/' . $appointment->image_name1 }}"><i
                                                                     class="fa fa-image"></i></a>
                                                         </div>
@@ -123,4 +127,5 @@
         <!-- end main-content -->
 
     @endslot
+
 </x-layout>

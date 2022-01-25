@@ -10280,8 +10280,8 @@ input.input-circled {
 }
 
 .mfp-close-btn-in .mfp-close {
-    right: 5px;
-    top: 5px;
+    /* right: 0px;
+    top: 0px; */
 }
 
 .portfolio-filter a {
