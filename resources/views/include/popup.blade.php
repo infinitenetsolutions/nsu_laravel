@@ -22,11 +22,14 @@
                     <div class="col-sm-12">
                       <div class="form-group mb-10">
                         <!-- <input name="form_name" class="form-control" type="text" required="" placeholder="Enter Name" aria-required="true"> -->
+                      <?php $courses1=DB::table('course_tbl')->get() ?>
                         <select name="" id="" class="form-control">
                           <option value="">Select Course</option>
+                          @foreach ($courses1 as $course )
                           <option value="">Course 1</option>
-                          <option value="">Course 1</option>
-                          <option value="">Course 1</option>
+
+                          @endforeach
+                        
                         </select>
                       </div>
                     </div>
