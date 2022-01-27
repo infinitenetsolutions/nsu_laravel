@@ -29,7 +29,7 @@
                     <!-- Section Content -->
                     <div class="section-content">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 <h2 class="text-theme-colored2 font-36"><?php echo $name[0]->course; ?> - <?php echo $name[0]->fullform; ?></h2>
                                 <ol class="breadcrumb text-left mt-10 white">
                                     <li><a href="#">Home</a></li>
@@ -50,7 +50,7 @@
                             <div class="single-service">
 
                                 <!-- <img src="images/course/course-details1.jpg" alt=""> -->
-                                <h3 class="text-uppercase mt-30 mb-10"><?php echo $name[0]->course; ?> - <?php echo $name[0]->fullform; ?></h3>
+                                <h3 class="text-uppercase mt-30 mb-10"><?php echo $name[0]->course; ?>  <?php echo $name[0]->fullform; ?></h3>
                                 <?php echo $data->about; ?>
 
                                 </p>
