@@ -50,7 +50,8 @@
                             <div class="single-service">
 
                                 <!-- <img src="images/course/course-details1.jpg" alt=""> -->
-                                <h3 class="text-uppercase mt-30 mb-10"><?php echo $name[0]->course; ?>  <?php echo $name[0]->fullform; ?></h3>
+                                <h3 class="text-uppercase mt-30 mb-10"><?php echo $name[0]->course; ?>  <?php echo $name[0]->fullform; ?></h3>                                <div class="double-line-bottom-theme-colored-2 mt-10 border"></div>
+
                                 <?php echo $data->about; ?>
 
                                 </p>
