@@ -24,7 +24,7 @@ Route::get('about/{name}', [AboutController::class, 'index'])->name('about');
 Route::get('about/faculty/{name}', [AboutController::class, 'faculty'])->name('faculty');
 Route::get('about/faculty/faculty-details/{id}', [AboutController::class, 'faculty_details'])->name('faculty-details');
 Route::get('about/government/body', [AboutController::class, 'govbody'])->name('govbody');
-Route::get('course/{course}/{id}', [CourseController::class, 'index'])->name('course');
+Route::get('course/schools-and-institutes/{course}/{id}', [CourseController::class, 'index'])->name('course');
 Route::get('admission/{name}', [ApplyOnlineController::class, 'index'])->name('admission');
 Route::get('contact/contact-us', [ContactUsController::class, 'index'])->name('contact');
 Route::post('contact-us', [ContactUsController::class, 'contact'])->name('contact-us');
