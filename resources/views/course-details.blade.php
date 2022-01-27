@@ -30,7 +30,7 @@
                     <div class="section-content">
                         <div class="row">
                             <div class="col-md-12">
-                                <h2 class="text-theme-colored2 font-36"><?php echo $name[0]->course; ?>  <?php echo $name[0]->fullform; ?></h2>
+                                <h2 class="text-theme-colored2 font-26"><?php echo $name[0]->course; ?>  <?php echo $name[0]->fullform; ?></h2>
                                 <ol class="breadcrumb text-left mt-10 white">
                                     <li><a href="#">Home</a></li>
                                     <li><a href="#">Courses</a></li>
