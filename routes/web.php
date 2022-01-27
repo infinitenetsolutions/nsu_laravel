@@ -7,6 +7,7 @@ use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\GalleryController;
+use App\Http\Controllers\GetStartController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\LatestNewsController;
 use App\Http\Controllers\NoticeBoardController;
@@ -42,3 +43,4 @@ Route::get('noticeboard/notice/{id}', [NoticeBoardController::class, 'index'])->
 Route::get('program/schools-and-institutes/{name}', [CourseController::class, 'program'])->name('program');
 Route::get('image-gallery', [GalleryController::class, 'image_gallery'])->name('image-gallery');
 Route::get('media-gallery', [GalleryController::class, 'media_gallery'])->name('media-gallery');
+Route::post('getstart', [GetStartController::class, 'store'])->name('getstart');
