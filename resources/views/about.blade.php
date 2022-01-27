@@ -81,7 +81,7 @@
                         </div>
                         <div class="col-sm-12">
                             <p class="mt-20">
-                                <?php echo substr($data->description,1670,1000000) ?>
+                                <?php echo substr($data->description,1684,1000000) ?>
                             </p>
                         </div>
                     </div>
