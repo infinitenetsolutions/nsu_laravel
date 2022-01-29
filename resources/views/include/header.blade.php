@@ -46,7 +46,7 @@ $home_url="http://127.0.0.1:8001/upload/";
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-2">
-          <a class="menuzord-brand pull-left flip sm-pull-center mb-15" href="index-mp-layout1.html"><img src="{{ asset('images/flogo.png')  }}" alt="nsu logo"></a>
+          <a class="menuzord-brand pull-left flip sm-pull-center mb-15" href="{{ route('index') }}"><img src="{{ asset('images/flogo.png')  }}" alt="nsu logo"></a>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-10 contact-section">
           <div class="row" style="margin: 25px 0;">
