@@ -56,7 +56,7 @@
                                                     }}</a></h5>
 
                                             <span class="pt-2"> <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                {{ $latest->created_at }} </span>
+                                                {{ $latest->updated_at }} </span>
 
 
                                         </div>
