@@ -33,7 +33,7 @@
                 <figure class="videoplayer " data-aos="fade-right">
                     <video class="b-lazy b-loaded" controls="true" title="RKGIT::Top private engineering college in AKTU"
                         autoplay="" loop="" muted="">
-                        <source type="video/mp4" src="https://www.rkgit.edu.in/assets/videos/main.mp4">
+                        <source type="video/mp4" src="{{ asset('video/main.mp4') }}">
                     </video>
                     <!-- slider start here -->
                 </figure>
