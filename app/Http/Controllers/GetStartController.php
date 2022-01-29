@@ -10,12 +10,17 @@ class GetStartController extends Controller
 {
     function store(Request $request)
     {
-        // try{
-        DB::table('get_start')->insert($request->except('_token'));
-        return redirect()->back()->with('success', 'Thank you Connecting with us');
-        // }catch(Throwable $e){
-        //     return redirect()->back()->with('error', 'Something went wrong');
-
-        // }
+        try {
+            DB::table('get_start')->insert($request->except('_token'));
+            return redirect()->back()->with('success', 'Thank you Connecting with us');
+        } catch (Throwable $e) {
+            return redirect()->back()->with('error', 'Something went wrong');
+        }
+    }
+    function getOtp()
+    {
+        $opt=rand(100000, 999999);
+        session()->put('otp',$opt);
+        return $opt;
     }
 }

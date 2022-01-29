@@ -44,3 +44,6 @@ Route::get('program/schools-and-institutes/{name}', [CourseController::class, 'p
 Route::get('image-gallery', [GalleryController::class, 'image_gallery'])->name('image-gallery');
 Route::get('media-gallery', [GalleryController::class, 'media_gallery'])->name('media-gallery');
 Route::post('getstart', [GetStartController::class, 'store'])->name('getstart');
+Route::get('getstart/getotp', [GetStartController::class, 'getOtp'])->name('getstart.getotp');
+
+
