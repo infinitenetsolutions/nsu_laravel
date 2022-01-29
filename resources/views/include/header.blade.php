@@ -130,7 +130,7 @@ $home_url="http://127.0.0.1:8001/upload/";
 
 
           <ul class="menuzord-menu menuzord-right menuzord-indented scrollable" style="max-height: 400px;">
-            <li class="active"><a href="{{ route('index') }}">Home</a> </li>
+            <li class=""><a href="{{ route('index') }}">Home</a> </li>
             <li><a href="#home">About<span class="indicator"></span></a>
               <ul class="dropdown" style="right: auto; display: none;">
 
