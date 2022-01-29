@@ -47,23 +47,22 @@
 
                                         @foreach ($news as $latest)
                                             <div class="media">
-                                                <a href="{{ route('news', ['id' => $latest->id]) }}">
-                                                    <a class="media-left pull-left flip" href="#">
-                                                        <img class="media-object thumb" width="80"
-                                                            src="{{ $url . 'latestnews/' . $get_news->images }}" alt="">
-                                                    </a>
-                                                    <div class="media-body">
-                                                        <h5 class="media-heading product-title mb-2 "><a
-                                                                href="#">{{                                                                 href="#">$latest->title }}</a>
-                                                        </h5>
-
-                                                        <span class="pt-2"> <i class="fa fa-calendar"
-                                                                aria-hidden="true"></i>
-                                                            {{ $latest->updated_at }} </span>
-
-
-                                                    </div>
+                                                <a class="media-left pull-left flip"
+                                                    href="{{ route('news', $latest->id) }}">
+                                                    <img class="media-object thumb" width="80"
+                                                        src="{{ $url . 'latestnews/' . $get_news->images }}" alt="">
                                                 </a>
+                                                <div class="media-body">
+                                                    <h5 class="media-heading product-title mb-2 "><a
+                                                            href="{{ route('news', $latest->id) }}">{{ $latest->title }}</a>
+                                                    </h5>
+
+                                                    <span class="pt-2"> <i class="fa fa-calendar"
+                                                            aria-hidden="true"></i>
+                                                        {{ $latest->updated_at }} </span>
+
+
+                                                </div>
                                             </div>
                                         @endforeach
 
