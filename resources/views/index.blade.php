@@ -322,7 +322,7 @@
                                                     <a href="{{ route('event', $event->id) }}">
                                                         <div class="event-content pt-5">
                                                             <h5 class="media-heading font-16 font-weight-600 mb-5"><a
-                                                                    href="{{ route('event', $event->id) }}">Admission
+                                                                    href="{{ route('event', $event->id) }}">
                                                                     {{ $event->name }}</a></h5>
                                                             <span class="mr-10"><i
                                                                     class="fa fa-clock-o text-theme-colored2"></i>
@@ -408,8 +408,10 @@
                                                         <div
                                                             class="entry-date media-left text-center flip bg-theme-colored border-top-theme-colored2-3px pt-5 pr-15 pb-5 pl-15">
                                                             <ul>
-                                                                <li class="font-16 text-white font-weight-600">28</li>
-                                                                <li class="font-12 text-white text-uppercase">Feb</li>
+                                                                <li class="font-16 text-white font-weight-600">{{ substr(explode('-', $latest->updated_at)[2],0,2) }}
+                                                                </li>
+                                                                <li class="font-12 text-white text-uppercase"> {{ date_format(date_create($latest->updated_at), 'M') }}
+                                                                </li>
                                                             </ul>
                                                         </div>
                                                     </div>

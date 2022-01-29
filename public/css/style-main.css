@@ -10738,3 +10738,10 @@ menu>li>.megamenu {
   .btn-outline-danger{
       border: solid 2px #c70013;
   }
+  .btn-white{
+      background-color: #ffffff;
+      color: #c70013 !important;
+  }
+  .btn-white:hover{
+    color: #c70013 !important; 
+ }
