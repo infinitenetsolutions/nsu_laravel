@@ -24,7 +24,7 @@
         <div class="main-content">
             <!-- Section: inner-header -->
             <section class="inner-header divider layer-overlay overlay-theme-colored-7"
-                data-bg-img="{{ asset('images/bg/bg1.jpg') }}">
+                data-bg-img="{{ $url.'department/'. $name[0]->images; }}">
                 <div class="container pt-120 pb-60">
                     <!-- Section Content -->
                     <div class="section-content">
