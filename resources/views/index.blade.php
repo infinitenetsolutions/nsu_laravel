@@ -31,8 +31,8 @@
 
 
                 <figure class="videoplayer " data-aos="fade-right">
-                    <video class="b-lazy b-loaded" controls="true" title="NSU::Top private engineering in jharkhand"
-                        autoplay="autoplay" loop="" muted="">
+                    <video class="b-lazy b-loaded" controls="false" title="NSU::Top private engineering in jharkhand"
+                        autoplay  loop="" muted="">
                         <source type="video/mp4" src="{{ asset('video/main.mp4') }}">
                     </video>
                     <!-- slider start here -->
