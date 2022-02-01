@@ -32,7 +32,7 @@
 
                 <figure class="videoplayer " data-aos="fade-right">
                     <video class="b-lazy b-loaded" controls="false" title="NSU::Top private engineering in jharkhand"
-                        autoplay  loop="" muted="">
+                        autoplay loop="" muted="">
                         <source type="video/mp4" src="{{ asset('video/main.mp4') }}">
                     </video>
                     <!-- slider start here -->
@@ -45,8 +45,8 @@
                             <div class="row">
                                 <div class="col-md-6 text-justify">
                                     <h5 class="text-uppercase text-gray-darkgray mb-15" style="font-size: 24px;
-                              color: #333333!important;
-                              font-weight: 900;">About <span class="text-theme-colored2">us</span></h5>
+                                  color: #333333!important;
+                                  font-weight: 900;">About <span class="text-theme-colored2">us</span></h5>
 
                                     <div class="double-line-bottom-theme-colored-2"></div>
                                     <!-- <h3 class="font-weight-500 font-30 font- mt-10">Make Your Dream<span class="text-theme-colored"> Education</span> Site with Our LearnPro Template</h3> -->
@@ -154,8 +154,8 @@
                                     <h3 class="text-uppercase font-weight-600 mt-0 mt-sm-30">Notice <span
                                             class="text-theme-colored2">Board</span></h3>
                                     <div class="double-line-bottom-theme-colored-2"></div>
-                                    <marquee onMouseOver="this.stop()" onMouseOut="this.start()" class="bg-info" behavior="scroll" direction="up"
-                                        style="height: 315px; padding: 10px">
+                                    <marquee onMouseOver="this.stop()" onMouseOut="this.start()" class="bg-info"
+                                        behavior="scroll" direction="up" style="height: 315px; padding: 10px">
                                         @foreach ($noticeboard as $event)
 
                                             <article>
@@ -408,9 +408,11 @@
                                                         <div
                                                             class="entry-date media-left text-center flip bg-theme-colored border-top-theme-colored2-3px pt-5 pr-15 pb-5 pl-15">
                                                             <ul>
-                                                                <li class="font-16 text-white font-weight-600">{{ substr(explode('-', $latest->updated_at)[2],0,2) }}
+                                                                <li class="font-16 text-white font-weight-600">
+                                                                    {{ substr(explode('-', $latest->updated_at)[2], 0, 2) }}
                                                                 </li>
-                                                                <li class="font-12 text-white text-uppercase"> {{ date_format(date_create($latest->updated_at), 'M') }}
+                                                                <li class="font-12 text-white text-uppercase">
+                                                                    {{ date_format(date_create($latest->updated_at), 'M') }}
                                                                 </li>
                                                             </ul>
                                                         </div>
@@ -614,3 +616,21 @@
     xhttp.open("GET", "{{ route('main-index') }}", true);
     xhttp.send();
 </script> --}}
+
+<script>
+    document.querySelector('video').playbackRate = 0.25;
+    $("video").click(function() {
+        //console.log(this); 
+        if (this.paused) {
+            this.play();
+        } else {
+            this.pause();
+        }
+    });
+</script>
+<style>
+    video::-webkit-media-controls {
+        display: none;
+    }
+
+</style>
