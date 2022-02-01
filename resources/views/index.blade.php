@@ -232,11 +232,12 @@
                                                         class="text-danger">
                                                         View details</a>
                                                 </p>
+                                                <?php $social_media =DB::table('social')->where('teacher_id',$university_head->id)->get(); ?>
                                                 <ul class="styled-icons icon-theme-colored2">
-                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                                    <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                                                    @foreach ($social_media as $social)
+                                                    <li><a target="_blank" href="{{ $social->link }}"><i class="fa fa-{{ $social->social }}"></i></a></li>
+                                                    @endforeach
+                                                 
                                                 </ul>
                                             </div>
                                         </div>
