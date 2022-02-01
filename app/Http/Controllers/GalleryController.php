@@ -10,11 +10,11 @@ class GalleryController extends Controller
 {
     function image_gallery()
     {
-        $images = DB::table('gallery_tbl')->orderBy('id','desc')->paginate(12);
+        $images = DB::table('gallery_tbl')->orderBy('id','desc')->where(DB::raw('LENGTH(link)'),'>','30')->paginate(12);
 
         $gallery_title = DB::table('gallery_tbl')
         ->where('title','!=','Media')
-        ->where(DB::raw('LENGTH(link)'),'>','30')
+        
             ->select('title')
             ->groupBy('title')
             ->orderBy('id','desc')
