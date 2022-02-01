@@ -4,21 +4,23 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content bg-lightest">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true"
                         style="color:#fff;border:2px solid #fff;padding: 0px 8px;border-radius: 50%;line-height: 25px;">&times;</span></button>
                 <h4 class="modal-title text-center text-white" id="myModalLabel2">Get Started</h4>
             </div>
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6 nsu_getstarted">
-                        <img src="{{ asset('images/nsu_getstarted.jpeg') }}" alt="" style="height: 570px;width: 425px;">
+                        <img src="{{ asset('images/nsu_getstarted.jpeg') }}" alt=""
+                            style="height: 570px;width: 425px;">
                     </div>
                     <div class="col-md-6">
                         <div class="bg-lightest p-25">
                             <h4 class="text-white m-0 text-capitalize" id="data"></h4>
                             <div class="line-bottom mb-30"></div>
-                            <form name="appointment_form" class="mt-30" method="post" action="{{ route('getstart') }}"
-                                novalidate="novalidate">
+                            <form name="appointment_form" class="mt-30" method="post"
+                                action="{{ route('getstart') }}" novalidate="novalidate">
                                 @csrf
                                 <div class="row">
                                     <div class="col-sm-12">
@@ -28,8 +30,8 @@
                                             <select required name="course" id="course" class="form-control">
                                                 <option value="">Select Course</option>
                                                 @foreach ($courses1 as $course)
-                                                <option value="{{ $course->course }}">{{ $course->course }}
-                                                </option>
+                                                    <option value="{{ $course->course }}">{{ $course->course }}
+                                                    </option>
                                                 @endforeach
                                             </select>
                                         </div>
@@ -90,7 +92,7 @@
                                 <div class="form-group mb-0 mt-20">
                                     <input name="created_at" class="form-control" type="hidden"
                                         value="{{ date('Y-m-d h:m:s') }}">
-                                    <button  id="submit" type="submit"
+                                    <button id="submit" type="submit"
                                         class="btn btn-border btn-transparent btn-circled btn-lg"
                                         href="#">Submit</button>
                                 </div>

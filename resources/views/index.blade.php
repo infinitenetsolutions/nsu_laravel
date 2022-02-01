@@ -456,78 +456,84 @@
                                                         <span class="text-theme-colored2"
                                                             style="color:#000!important;">Information</span></span></h3>
                                                 <!-- Appilication Form Start-->
-                                                <form id="reservation_form" name="reservation_form"
-                                                    class="reservation-form mt-20" method="post"
-                                                    action="includes/reservation.php" novalidate="novalidate">
-                                                    <div class="row">
-                                                        <div class="col-sm-12">
-                                                            <div class="form-group mb-20">
-                                                                <input placeholder="Enter Name" id="reservation_name"
-                                                                    name="reservation_name" required=""
-                                                                    class="form-control" aria-required="true"
-                                                                    type="text">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-6">
-                                                            <div class="form-group mb-20">
-                                                                <input placeholder="Email" id="reservation_email"
-                                                                    name="reservation_email" class="form-control"
-                                                                    required="" aria-required="true" type="text">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-6">
-                                                            <div class="form-group mb-20">
-                                                                <input placeholder="Phone" id="reservation_phone"
-                                                                    name="reservation_phone" class="form-control"
-                                                                    required="" aria-required="true" type="text">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-6">
-                                                            <div class="form-group mb-20">
-                                                                <div class="styled-select">
-                                                                    <select id="person_select" name="person_select"
-                                                                        class="form-control" required=""
-                                                                        aria-required="true">
-                                                                        <option value="">Choose Subject</option>
-                                                                        <option value="1 Person">Software Engineering
-                                                                        </option>
-                                                                        <option value="2 Person">Computer Science
-                                                                            engineering</option>
-                                                                        <option value="3 Person">Accounting Technologies
-                                                                        </option>
-                                                                        <option value="Family Pack">BACHELOR`S DEGREE
-                                                                        </option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-6">
-                                                            <div class="form-group mb-20">
-                                                                <input name="Date Of Birth"
-                                                                    class="form-control required date-picker"
-                                                                    placeholder="Date Of Birth" aria-required="true"
-                                                                    type="text">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-12">
-                                                            <div class="form-group">
-                                                                <textarea placeholder="Enter Message" rows="3"
-                                                                    class="form-control required" name="form_message"
-                                                                    id="form_message" aria-required="true"></textarea>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-12">
-                                                            <div class="form-group mb-0 mt-10">
-                                                                <input name="form_botcheck" class="form-control" value=""
-                                                                    type="hidden">
-                                                                <button type="submit"
-                                                                    class="btn btn-colored btn-theme-colored2 text-white btn-lg btn-block"
-                                                                    data-loading-text="Please wait...">Submit
-                                                                    Request</button>
-                                                            </div>
+                                                <form name="appointment_form" class="mt-30" method="post"
+                                                action="{{ route('getstart') }}" novalidate="novalidate">
+                                                @csrf
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <div class="form-group mb-10">
+                                                            <!-- <input name="name" class="form-control" type="text" required="" placeholder="Enter Name" aria-required="true"> -->
+                                                            <?php $courses1 = DB::table('course_tbl')->get(); ?>
+                                                            <select required name="course" id="course" class="form-control">
+                                                                <option value="">Select Course</option>
+                                                                @foreach ($courses1 as $course)
+                                                                    <option value="{{ $course->course }}">{{ $course->course }}
+                                                                    </option>
+                                                                @endforeach
+                                                            </select>
                                                         </div>
                                                     </div>
-                                                </form>
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group mb-10">
+                                                            <input required name="name" id="name" class="form-control required email"
+                                                                type="text" placeholder="Your Name" aria-required="true">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group mb-10">
+                                                            <input required name="phone" id="phone" class="form-control required"
+                                                                type="text" placeholder="Your Mobile Number" aria-required="true">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12">
+                                                        <div class="form-group mb-10">
+                                                            <input required name="email" id="email" class="form-control required"
+                                                                type="text" placeholder="Enter Email Address" aria-required="true">
+                                                        </div>
+                                                    </div>
+                
+                                                    <div class="col-sm-12">
+                                                        <div class="form-group mb-10">
+                                                            <input required name="referer" id="referer" class="form-control required"
+                                                                type="text" placeholder="Refered By" aria-required="true">
+                                                        </div>
+                                                    </div>
+                
+                                                    {{-- <div class="col-sm-12">
+                                                        <div class="form-group mb-10 text-right">
+                                                            <button id="otpbutton" onclick="sendotp()" type="button"
+                                                                class="btn btn-border btn-transparent btn-circled btn-lg">Send
+                                                                OTP</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="p-2 col-sm-12 mb-2">
+                                                        <h5 class="text-white m-0 text-bold text-capitalize " id="success"></h5>
+                
+                                                    </div>
+                
+                                                    <div id="spinner" class="col-sm-12 " style="display: none">
+                                                        <div class="form-group mb-10 text-right">
+                                                            <span type="button" class="btn font-20 btn-transparent btn-circled "> <i
+                                                                    class="fa fa-spinner fa-spin"></i>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12">
+                                                        <div class="form-group mb-10">
+                                                            <input onkeyup="otp(this.value)" readonly id="otpbox"
+                                                                name="appontment_date" class="form-control required" type="text"
+                                                                placeholder="Enter OTP" aria-required="true">
+                                                        </div>
+                                                    </div> --}}
+                                                </div>
+                                                <div class="form-group mb-0 mt-20">
+                                                    <input name="created_at" class="form-control" type="hidden"
+                                                        value="{{ date('Y-m-d h:m:s') }}">
+                                                    <button id="submit" type="submit"
+                                                        class="btn btn-colored btn-theme-colored2 text-white btn-lg btn-block"
+                                                        href="#">Submit Request</button>
+                                                </div>
+                                            </form>
                                                 <!-- Application Form End-->
 
 
