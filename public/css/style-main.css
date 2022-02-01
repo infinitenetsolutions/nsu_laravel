@@ -10709,6 +10709,7 @@ menu>li>.megamenu {
 .scroll-to-fixed-fixed .sticky-nav-header {
     display: block;
 }
+
 @media(min-width:576px) {
 
     .menuzord-brand {
@@ -10729,19 +10730,34 @@ menu>li>.megamenu {
 .float-right {
     float: right;
 }
+
 @media screen and (max-width:550px) {
     .teachers {
         max-width: 100%;
         height: 256px !important;
     }
-  }
-  .btn-outline-danger{
-      border: solid 2px #c70013;
-  }
-  .btn-white{
-      background-color: #ffffff;
-      color: #c70013 !important;
-  }
-  .btn-white:hover{
-    color: #c70013 !important; 
- }
+}
+
+.btn-outline-danger {
+    border: solid 2px #c70013;
+}
+
+.btn-white {
+    background-color: #ffffff;
+    color: #c70013 !important;
+}
+
+.btn-white:hover {
+    color: #c70013 !important;
+}
+
+.table-transport thead {
+    background-color: #c70013;
+    color: white;
+
+
+}
+
+.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+    border: 1px solid #c70013;
+}

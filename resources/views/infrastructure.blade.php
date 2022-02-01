@@ -104,9 +104,9 @@
                                     <div id="toggle{{ $transport->id }}" class="panel-collapse collapse" aria-expanded="false"
                                         style="height: 0px;">
                                         <div class="table-responsive ">
-                                            <table class="table table-bordered table-hover">
+                                            <table class="table table-bordered table-hover table-transport">
                                                 <thead>
-                                                    <tr class="bg-success ">
+                                                    <tr class="">
                                                         <th class="text-center" >#</th>
                                                         <th class="text-center" >Bus Stoppages	</th>
                                                         <th class="text-center" >Schedule Time
@@ -114,7 +114,7 @@
                 
                                                     </tr>
                                                 </thead>
-                                                <?php $transportbus=DB::table('transports')->get() ?>
+                                                <?php $transportbus=DB::table('transports')->where('bus_id', $transport->id)->get() ?>
                                                 <tbody>
                                                     @foreach ($transportbus as $stop )
                                                     <tr class="text-center">
