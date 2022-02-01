@@ -38,11 +38,16 @@
                                     <h4 class="name font-24 mt-0 mb-0">{{ $data->name }}</h4>
                                     <h5 class="mt-5">{{ $data->designation }}</h5>
                                     <p  ><?php echo $data->description ?></p>
+
+
+                                    <?php $social_media =DB::table('social')->where('teacher_id',$data->id)->get(); ?>
                                     <ul class="styled-icons icon-dark icon-theme-colored2 icon-sm mt-15 mb-0">
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        @foreach ($social_media as $social)
+                                        <li><a target="_blank" href="{{ $social->link }}"><i class="fa fa-{{ $social->social }}"></i></a></li>
+                                        @endforeach
+                                     
                                     </ul>
+                                
                                 </div>
                             </div>
                             <div class="row mt-30">
