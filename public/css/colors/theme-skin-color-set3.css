@@ -1063,7 +1063,7 @@ blockquote.gray.bg-theme-colored2 footer {
 /* -------- bg-theme-color ---------- */
 
 .bg-theme-colored2 {
-    background: linear-gradient( 90deg, rgba(255, 82, 65, 1) 0%, rgba(199, 0, 19, 1) 100%)!important;
+    background: linear-gradient( 90deg, rgba(255, 82, 65, 1) 0%, rgba(199, 0, 19, 1) 100%);
 }
 
 .bg-hover-theme-colored2:hover {
