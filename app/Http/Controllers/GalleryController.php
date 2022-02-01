@@ -14,6 +14,7 @@ class GalleryController extends Controller
 
         $gallery_title = DB::table('gallery_tbl')
         ->where('title','!=','Media')
+        ->where(DB::raw('LENGTH(link)'),'>','30')
             ->select('title')
             ->groupBy('title')
             ->orderBy('id','desc')
