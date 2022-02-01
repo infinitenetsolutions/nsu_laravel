@@ -43,8 +43,9 @@
                                         <div
                                             class="entry-date media-left text-center flip bg-theme-colored border-top-theme-colored2-3px pt-5 pr-15 pb-5 pl-15">
                                             <ul>
-                                                <li class="font-16 text-white font-weight-600">28</li>
-                                                <li class="font-12 text-white text-uppercase">Feb</li>
+                                                <li class="font-16 text-white font-weight-600">   {{ substr(explode('-', $career->start)[2], 0, 2) }}</li>
+                                                <li class="font-12 text-white text-uppercase">{{ date_format(date_create($career->start), 'M') }}
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
@@ -64,8 +65,8 @@
                                                                 class="fa fa-briefcase mr-5 text-theme-colored2"></i>{{
                                                             $career->num_job }}
                                                         </li>
-                                                        <li><i class="fa fa-user-tie mr-5 text-theme-colored2"></i> 895
-                                                            Applied</li>
+                                                        <li> <i class="fa fa-calendar  mr-5 text-theme-colored2" aria-hidden="true"></i>
+                                                        </i> Last Date : {{ $career->end }} </li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -210,6 +211,10 @@
     $(".name3").hide();
 function show(id){
 $("#show"+id).toggle();
+
+$('.carousel').carousel({
+    pause: "false"
+});
 }
          
 </script>
