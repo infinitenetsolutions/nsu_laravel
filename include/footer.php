@@ -1,13 +1,14 @@
  <!-- Footer -->
- <footer id="footer" class="footer fixed-footer" data-bg-color="#212331">
+ <footer id="footer" class="footer" data-bg-color="#212331">
     <div class="container pt-70 pb-40">
       <div class="row">
         <div class="col-sm-6 col-md-4">
           <div class="widget dark">
               <div style="text-align:center;">
-            <img class="mt-5 mb-20" alt="" src="images/flogo.png" style="width:150px;">
+            <!-- <img class="mt-5 mb-20" alt="" src="images/flogo.png" style="width:150px;"> -->
+            <img src="images/flogo.png" class="img-fluid mb-3" alt="Netaji Subhas University" style="filter: drop-shadow(9px 9px 9px #000);">
             </div>
-            <p>Netaji Subhas University is the first premier and one of the best University in Jharkhand, with a venerable legacy, highest academic standards, diverse educational programmes, distinguished faculty, illustrious alumni, varied co-curricular activities and modern infrastructure stands as the pride of Jharkhand and Eastern India. It is an unit of Sitwanto Devi Mahila Kalyan Sansthan.</p>                                   
+            <!-- <p>Netaji Subhas University is the first premier and one of the best University in Jharkhand, with a venerable legacy, highest academic standards, diverse educational programmes, distinguished faculty, illustrious alumni, varied co-curricular activities and modern infrastructure stands as the pride of Jharkhand and Eastern India. It is an unit of Sitwanto Devi Mahila Kalyan Sansthan.</p>                                    -->
 
           </div>
         </div>
@@ -61,6 +62,74 @@ Jamshedpur , Jharkhand </a> </li><br>
           </div>
         </div>
       </div>
+      <div class="row">
+            
+      <div class="col-sm-6 col-md-2">
+                <div class="widget dark">
+                    
+                    <ul class="angle-double-right list-border">
+                        <li><a href="#">Offline Admission</a></li>
+                        <li><a href="#">Online Admission</a></li>
+                        <li><a href="#">Placement</a></li>
+                       
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-2">
+                <div class="widget dark">
+                    
+                    <ul class="angle-double-right list-border">
+                        <li><a href="#">Offline Admission</a></li>
+                        <li><a href="#">Online Admission</a></li>
+                        <li><a href="#">Placement</a></li>
+                       
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-2">
+                <div class="widget dark">
+                    
+                    <ul class="angle-double-right list-border">
+                        <li><a href="#">Offline Admission</a></li>
+                        <li><a href="#">Online Admission</a></li>
+                        <li><a href="#">Placement</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-2">
+                <div class="widget dark">
+                    
+                    <ul class="angle-double-right list-border">
+                        <li><a href="#">Offline Admission</a></li>
+                        <li><a href="#">Online Admission</a></li>
+                        <li><a href="#">Placement</a></li>
+                       
+                    </ul>
+                </div>
+            </div>
+            
+        <div class="col-sm-6 col-md-2">
+                <div class="widget dark">
+                    
+                    <ul class="angle-double-right list-border">
+                        <li><a href="#">Offline Admission</a></li>
+                        <li><a href="#">Online Admission</a></li>
+                        <li><a href="#">Placement</a></li>
+                        
+                    </ul>
+                </div>
+            </div><div class="col-sm-6 col-md-2">
+                <div class="widget dark">
+                    
+                    <ul class="angle-double-right list-border">
+                        <li><a href="#">Offline Admission</a></li>
+                        <li><a href="#">Online Admission</a></li>
+                        <li><a href="#">Placement</a></li>
+                        
+                    </ul>
+                </div>
+            </div></div>
     </div>
     <div class="footer-bottom" 
     style="background: linear-gradient(
@@ -155,5 +224,17 @@ Jamshedpur , Jharkhand </a> </li><br>
 
 <!-- //moving netaji -->
 
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>
+            AOS.init();
+            var bLazy = new Blazy({
+                    // Options
+                    container:'.b-lazy'
+                });
+            $(document).on('click',function(){
+            	document.getElementsByTagName('audio')[0].play();
+            });
+        </script>
 </body>
 </html>

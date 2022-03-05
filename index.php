@@ -21,528 +21,111 @@ include "include/header.php";
   <!-- Start main-content -->
   <div class="main-content">
     <!-- Section: home -->
-    <section id="home">
-      <div class="container-fluid p-0">
-        
-        <!-- START REVOLUTION SLIDER 5.0.7 -->
-        <div id="rev_slider_home_wrapper" class="rev_slider_wrapper" data-alias="news-gallery34" style="margin:0px auto; background-color:#ffffff; padding:0px; margin-top:0px; margin-bottom:0px;">
-          <!-- START REVOLUTION SLIDER 5.0.7 fullwidth mode -->
-          <div id="rev_slider_home" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.0.7">
-            <ul>
-              <!-- SLIDE 1 -->
-              <li data-index="rs-1" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="images/bg/bg10.jpg" data-rotate="0"  data-fstransition="fade" data-saveperformance="off" data-title="Web Show" data-description="">
-                <!-- MAIN IMAGE -->
-                <img src="images/bg/bg10.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
-                <!-- LAYERS -->
-                <!-- LAYER NR. 1 -->
-                <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0 bg-theme-colored-transparent-3" 
-                  id="slide-1-layer-1" 
-                  data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-                  data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
-                  data-width="full"
-                  data-height="full"
-                  data-whitespace="normal"
-                  data-transform_idle="o:1;"
-                  data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" 
-                  data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
-                  data-start="500" 
-                  data-basealign="slide" 
-                  data-responsive_offset="on" 
-                  style="z-index: 5;background-color:rgba(0, 0, 0, 0.1);border-color:rgba(0, 0, 0, 1.00);"> 
-                </div>
-                <!-- LAYER NR. 2 -->
-                <div class="tp-caption tp-resizeme rs-parallaxlevel-0 text-white text-uppercase font-roboto-slab font-weight-700" 
-                  id="slide-1-layer-2" 
-                  data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-                  data-y="['top','top','top','top']" data-voffset="['195','195','160','170']" 
-                  data-fontsize="['58','48','42','36']"
-                  data-lineheight="['70','60','50','45']"
-                  data-fontweight="['800','700','700','700']"
-                  data-textalign="['center','center','center','center']"
-                  data-width="['700','650','600','420']"
-                  data-height="none"
-                  data-whitespace="normal"
-                  data-transform_idle="o:1;"
-                  data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
-                  data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
-                  data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
-                  data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
-                  data-start="600" 
-                  data-splitin="none" 
-                  data-splitout="none" 
-                  data-responsive_offset="on" 
-                  style="z-index: 5; white-space: nowrap; font-weight:700;">
-                  
-                </div>
-                <!-- LAYER NR. 3 -->
-                <div class="tp-caption tp-resizeme text-white rs-parallaxlevel-0" 
-                  id="slide-1-layer-3" 
-                  data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-                  data-y="['top','top','top','top']" data-voffset="['275','260','220','220']"
-                  data-fontsize="['16','16',18',16']"
-                  data-lineheight="['24','24','24','24']"
-                  data-fontweight="['400','400','400','400']"
-                  data-textalign="['center','center','center','center']"
-                  data-width="['800','650','600','460']"
-                  data-height="none"
-                  data-whitespace="nowrap"
-                  data-transform_idle="o:1;"
-                  data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
-                  data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
-                  data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
-                  data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
-                  data-start="700" 
-                  data-splitin="none" 
-                  data-splitout="none" 
-                  data-responsive_offset="on" 
-                  style="z-index: 5; white-space: nowrap;">
-                  
-                </div>
-                <!-- LAYER NR. 4 -->
-                <div class="tp-caption rs-parallaxlevel-0" 
-                  id="slide-1-layer-4" 
-                  data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-                  data-y="['top','top','top','top']" data-voffset="['350','330','290','290']" 
-                  data-width="none"
-                  data-height="none"
-                  data-whitespace="nowrap"
-                  data-transform_idle="o:1;"
-                  data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
-                  data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
-                  data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
-                  data-mask_in="x:0px;y:0px;" 
-                  data-mask_out="x:0;y:0;" 
-                  data-start="800"
-                  data-splitin="none" 
-                  data-splitout="none" 
-                  data-responsive_offset="on" 
-                  data-responsive="off"
-                  style="z-index: 5; white-space: nowrap; letter-spacing:1px;">
-                  
-                </div>
-              </li>
+   <!-- Start main-content -->
+  <div class="main-content">
+    <!-- Section: home -->
+   
+    <!-- Divider: Call To Action -->      
+          
 
-              <!-- SLIDE 2 -->
-              <li data-index="rs-2" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="images/banners/b2.jpg" data-rotate="0"  data-fstransition="fade" data-saveperformance="off" data-title="Web Show" data-description="">
-                <!-- MAIN IMAGE -->
-                <img src="images/banners/b2.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
-                <!-- LAYERS -->
-                <!-- LAYER NR. 1 -->
-                <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0 bg-theme-colored-transparent-4" 
-                  id="slide-2-layer-1" 
-                  data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-                  data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
-                  data-width="full"
-                  data-height="full"
-                  data-whitespace="normal"
-                  data-transform_idle="o:1;"
-                  data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" 
-                  data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
-                  data-start="500" 
-                  data-basealign="slide" 
-                  data-responsive_offset="on" 
-                  style="z-index: 5;background-color:rgba(0, 0, 0, 0.35);border-color:rgba(0, 0, 0, 1.00);"> 
-                </div>
-                <!-- LAYER NR. 2 -->
-                <div class="tp-caption tp-resizeme rs-parallaxlevel-0 text-white text-uppercase font-roboto-slab font-weight-700" 
-                  id="slide-2-layer-2" 
-                  data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-                  data-y="['top','top','top','top']" data-voffset="['195','195','160','170']" 
-                  data-fontsize="['58','48','42','36']"
-                  data-lineheight="['70','60','50','45']"
-                  data-fontweight="['800','700','700','700']"
-                  data-textalign="['center','center','center','center']"
-                  data-width="['700','650','600','420']"
-                  data-height="none"
-                  data-whitespace="normal"
-                  data-transform_idle="o:1;"
-                  data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
-                  data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
-                  data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
-                  data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
-                  data-start="600" 
-                  data-splitin="none" 
-                  data-splitout="none" 
-                  data-responsive_offset="on" 
-                  style="z-index: 5; white-space: nowrap; font-weight:700;">
-                  
-                </div>
-                <!-- LAYER NR. 3 -->
-                <div class="tp-caption tp-resizeme text-white rs-parallaxlevel-0" 
-                  id="slide-2-layer-3" 
-                  data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-                  data-y="['top','top','top','top']" data-voffset="['275','260','220','220']"
-                  data-fontsize="['16','16',18',16']"
-                  data-lineheight="['24','24','24','24']"
-                  data-fontweight="['400','400','400','400']"
-                  data-textalign="['center','center','center','center']"
-                  data-width="['800','650','600','460']"
-                  data-height="none"
-                  data-whitespace="nowrap"
-                  data-transform_idle="o:1;"
-                  data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
-                  data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
-                  data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
-                  data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
-                  data-start="700" 
-                  data-splitin="none" 
-                  data-splitout="none" 
-                  data-responsive_offset="on" 
-                  style="z-index: 5; white-space: nowrap;">
-                  
-                </div>
-                <!-- LAYER NR. 4 -->
-                <div class="tp-caption rs-parallaxlevel-0" 
-                  id="slide-2-layer-4" 
-                  data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-                  data-y="['top','top','top','top']" data-voffset="['350','330','290','290']" 
-                  data-width="none"
-                  data-height="none"
-                  data-whitespace="nowrap"
-                  data-transform_idle="o:1;"
-                  data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
-                  data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
-                  data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
-                  data-mask_in="x:0px;y:0px;" 
-                  data-mask_out="x:0;y:0;" 
-                  data-start="800"
-                  data-splitin="none" 
-                  data-splitout="none" 
-                  data-responsive_offset="on" 
-                  data-responsive="off"
-                  style="z-index: 5; white-space: nowrap; letter-spacing:1px;">
-                  
-                </div>
-              </li>
-
-              <!-- SLIDE 3 -->
-              <li data-index="rs-3" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="images/banners/b3.jpg" data-rotate="0"  data-fstransition="fade" data-saveperformance="off" data-title="Web Show" data-description="">
-                <!-- MAIN IMAGE -->
-                <img src="images/banners/b3.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
-                <!-- LAYERS -->
-                <!-- LAYER NR. 1 -->
-                <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0 bg-theme-colored-transparent-4" 
-                  id="slide-3-layer-1" 
-                  data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-                  data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
-                  data-width="full"
-                  data-height="full"
-                  data-whitespace="normal"
-                  data-transform_idle="o:1;"
-                  data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" 
-                  data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
-                  data-start="500" 
-                  data-basealign="slide" 
-                  data-responsive_offset="on" 
-                  style="z-index: 5;background-color:rgba(0, 0, 0, 0.35);border-color:rgba(0, 0, 0, 1.00);"> 
-                </div>
-                <!-- LAYER NR. 2 -->
-                <div class="tp-caption tp-resizeme rs-parallaxlevel-0 text-white text-uppercase font-roboto-slab font-weight-700" 
-                  id="slide-3-layer-2" 
-                  data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-                  data-y="['top','top','top','top']" data-voffset="['195','195','160','170']" 
-                  data-fontsize="['58','48','42','36']"
-                  data-lineheight="['70','60','50','45']"
-                  data-fontweight="['800','700','700','700']"
-                  data-textalign="['center','center','center','center']"
-                  data-width="['700','650','600','420']"
-                  data-height="none"
-                  data-whitespace="normal"
-                  data-transform_idle="o:1;"
-                  data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
-                  data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
-                  data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
-                  data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
-                  data-start="600" 
-                  data-splitin="none" 
-                  data-splitout="none" 
-                  data-responsive_offset="on" 
-                  style="z-index: 5; white-space: nowrap; font-weight:700;">
-                  
-                </div>
-                <!-- LAYER NR. 3 -->
-                <div class="tp-caption tp-resizeme text-white rs-parallaxlevel-0" 
-                  id="slide-3-layer-3" 
-                  data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-                  data-y="['top','top','top','top']" data-voffset="['275','260','220','220']"
-                  data-fontsize="['16','16',18',16']"
-                  data-lineheight="['24','24','24','24']"
-                  data-fontweight="['400','400','400','400']"
-                  data-textalign="['center','center','center','center']"
-                  data-width="['800','650','600','460']"
-                  data-height="none"
-                  data-whitespace="nowrap"
-                  data-transform_idle="o:1;"
-                  data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
-                  data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
-                  data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
-                  data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
-                  data-start="700" 
-                  data-splitin="none" 
-                  data-splitout="none" 
-                  data-responsive_offset="on" 
-                  style="z-index: 5; white-space: nowrap;">
-                  
-                </div>
-                <!-- LAYER NR. 4 -->
-                <div class="tp-caption rs-parallaxlevel-0" 
-                  id="slide-3-layer-4" 
-                  data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-                  data-y="['top','top','top','top']" data-voffset="['350','330','290','290']" 
-                  data-width="none"
-                  data-height="none"
-                  data-whitespace="nowrap"
-                  data-transform_idle="o:1;"
-                  data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
-                  data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
-                  data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
-                  data-mask_in="x:0px;y:0px;" 
-                  data-mask_out="x:0;y:0;" 
-                  data-start="800"
-                  data-splitin="none" 
-                  data-splitout="none" 
-                  data-responsive_offset="on" 
-                  data-responsive="off"
-                  style="z-index: 5; white-space: nowrap; letter-spacing:1px;">
-                  
-                </div>
-              </li>
-            </ul>
-            <div class="tp-bannertimer tp-bottom" style="height: 5px; background-color: rgba(255, 255, 255, 0.2);"></div>
-          </div>
-        </div>
-
-        <!-- END REVOLUTION SLIDER -->
-        <script type="text/javascript">
-          var tpj=jQuery;
-          var revapi34;
-          tpj(document).ready(function() {
-            if(tpj("#rev_slider_home").revolution == undefined){
-              revslider_showDoubleJqueryError("#rev_slider_home");
-            }else{
-              revapi34 = tpj("#rev_slider_home").show().revolution({
-                sliderType:"standard",
-                jsFileLocation:"js/revolution-slider/js/",
-                sliderLayout:"fullscreen",
-                dottedOverlay:"none",
-                delay:5000,
-                navigation: {
-                  keyboardNavigation:"on",
-                  keyboard_direction: "horizontal",
-                  mouseScrollNavigation:"off",
-                  onHoverStop:"on",
-                  touch:{
-                    touchenabled:"on",
-                    swipe_threshold: 75,
-                    swipe_min_touches: 1,
-                    swipe_direction: "horizontal",
-                    drag_block_vertical: false
-                  }
-                  ,
-                  arrows: {
-                    style:"zeus",
-                    enable:true,
-                    hide_onmobile:true,
-                    hide_under:600,
-                    hide_onleave:true,
-                    hide_delay:200,
-                    hide_delay_mobile:1200,
-                    tmp:'<div class="tp-title-wrap">    <div class="tp-arr-imgholder"></div> </div>',
-                    left: {
-                      h_align:"left",
-                      v_align:"center",
-                      h_offset:30,
-                      v_offset:0
-                    },
-                    right: {
-                      h_align:"right",
-                      v_align:"center",
-                      h_offset:30,
-                      v_offset:0
-                    }
-                  },
-                  bullets: {
-                    enable:true,
-                    hide_onmobile:true,
-                    hide_under:600,
-                    style:"metis",
-                    hide_onleave:true,
-                    hide_delay:200,
-                    hide_delay_mobile:1200,
-                    direction:"horizontal",
-                    h_align:"center",
-                    v_align:"bottom",
-                    h_offset:0,
-                    v_offset:30,
-                    space:5,
-                    tmp:'<span class="tp-bullet-img-wrap"><span class="tp-bullet-image"></span></span>'
-                  }
-                },
-                viewPort: {
-                  enable:true,
-                  outof:"pause",
-                  visible_area:"80%"
-                },
-                responsiveLevels:[1240,1024,778,480],
-                gridwidth:[1240,1024,778,480],
-                gridheight:[600,550,500,450],
-                lazyType:"none",
-                parallax: {
-                  type:"scroll",
-                  origo:"enterpoint",
-                  speed:400,
-                  levels:[5,10,15,20,25,30,35,40,45,50],
-                },
-                shadow:0,
-                spinner:"off",
-                stopLoop:"off",
-                stopAfterLoops:-1,
-                stopAtSlide:-1,
-                shuffle:"off",
-                autoHeight:"off",
-                hideThumbsOnMobile:"off",
-                hideSliderAtLimit:0,
-                hideCaptionAtLimit:0,
-                hideAllCaptionAtLilmit:0,
-                debugMode:false,
-                fallbacks: {
-                  simplifyAll:"off",
-                  nextSlideOnWindowFocus:"off",
-                  disableFocusListener:false,
-                }
-              });
-            }
-          }); /*ready*/
-        </script>
-      <!-- END REVOLUTION SLIDER -->
-
-      </div>
-    </section>
-
-    <!-- Section: home-boxes -->
-    <section>
-      <div class="container pt-0 pb-0">
-        <div class="section-content">
-          <div class="row equal-height-inner home-boxes" data-margin-top="10px">
-            <div class="col-sm-12 col-md-3 pl-0 pl-sm-15 pr-0 pr-sm-15 sm-height-auto mt-sm-0 wow fadeInLeft animation-delay1">
-              <div class="sm-height-auto" data-bg-color="#5D9CEC">
-                <div class="features-box-colored text-center p-15 pt-30 pb-20">
-                  <i class="fa fa-graduation-cap font-54 mb-20 text-white"></i>
-                  <h4 class="text-uppercase font-weight-600 mt-0"><a href="page-donate.html" class="text-white">Popular Courses</a></h4>
-                  <p class="text-white">Lorem ipsum dolor sit amet, consectetur adpisici elit. Obcaec atdistinc tio quaerat iusto, accusa ntumeos nsect eturpers piciatis minima tempore!</p>
-                  <div class="shadow-icon"><i class="pe-7s-mail-open"></i></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-3 pl-0 pl-sm-15 pr-0 pr-sm-15 sm-height-auto mt-sm-0 wow fadeInLeft animation-delay2">
-              <div class="sm-height-auto" data-bg-color="#EF5861">
-                <div class="features-box-colored text-center p-15 pt-30 pb-20">
-                  <i class="fa fa-book font-54 mb-20 text-white"></i>
-                  <h4 class="text-uppercase font-weight-600 mt-0"><a href="page-donate.html" class="text-white">Modern Library</a></h4>
-                  <p class="text-white">Lorem ipsum dolor sit amet, consectetur adpisici elit. Obcaec atdistinc tio quaerat iusto, accusa ntumeos nsect eturpers piciatis minima tempore!</p>
-                  <div class="shadow-icon"><i class="pe-7s-mail-open"></i></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-3 pl-0 pl-sm-15 pr-0 pr-sm-15 sm-height-auto mt-sm-0 wow fadeInLeft animation-delay3">
-              <div class="sm-height-auto" data-bg-color="#E79800">
-                <div class="features-box-colored text-center p-15 pt-30 pb-20">
-                  <i class="fa fa-user-o font-54 mb-20 text-white"></i>
-                  <h4 class="text-uppercase font-weight-600 mt-0"><a href="page-donate.html" class="text-white">Qualified Teachers</a></h4>
-                  <p class="text-white">Lorem ipsum dolor sit amet, consectetur adpisici elit. Obcaec atdistinc tio quaerat iusto, accusa ntumeos nsect eturpers piciatis minima tempore!</p>
-                  <div class="shadow-icon"><i class="pe-7s-mail-open"></i></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-3 pl-0 pl-sm-15 pr-0 pr-sm-15 sm-height-auto mt-sm-0 wow fadeInLeft animation-delay4">
-              <div class="sm-height-auto" data-bg-color="#43B14B">
-                <div class="features-box-colored text-center p-15 pt-30 pb-20">
-                  <i class="fa fa-certificate font-54 mb-20 text-white"></i>
-                  <h4 class="text-uppercase font-weight-600 mt-0"><a href="page-donate.html" class="text-white">Certification</a></h4>
-                  <p class="text-white">Lorem ipsum dolor sit amet, consectetur adpisici elit. Obcaec atdistinc tio quaerat iusto, accusa ntumeos nsect eturpers piciatis minima tempore!</p>
-                  <div class="shadow-icon"><i class="pe-7s-mail-open"></i></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-<section id="about">
-      <div class="container">
-        <div class="section-content">
-          <div class="row">
-            <div class="col-md-6">
-              <h5 class="text-uppercase text-gray-darkgray mb-15" style="font-size: 24px;
-    color: #333333!important;
-    font-weight: 900;">About <span class="text-theme-colored2">us</span></h5>
-              
-              <div class="double-line-bottom-theme-colored-2"></div>
-              <!-- <h3 class="font-weight-500 font-30 font- mt-10">Make Your Dream<span class="text-theme-colored"> Education</span> Site with Our LearnPro Template</h3> -->
-              <p>Netaji Subhas University is the first premier and one of the best University in Jharkhand, with a venerable legacy, highest academic standards, diverse educational programmes, distinguished faculty, illustrious alumni, varied co-curricular activities and modern infrastructure stands as the pride of Jharkhand and Eastern India. It is an unit of Sitwanto Devi Mahila Kalyan Sansthan.
-
-This is also one of the best University in Jamshedpur which emerges as a symbol of excellence, integrity and openness of mansa (thought), vaacha (speech) and karmana (action).
-
-Sri, Madan Mohan Singh, the Chancellor of the University, realising the importance of distinguished faculty to act as role models, relentlessly searched for talent all over the country and roped in people of eminence for this University.</p>
-              <!-- <img src="images/signature.png" alt="" class="mt-10 mb-15"> -->
-              <div><a href="#" class="btn btn-theme-colored mb-sm-30">Read More</a></div>
-            </div>
-            <div class="col-md-6">
-              <div class="box-hover-effect about-video">
-                <div class="effect-wrapper">
-                  <div class="thumb">
-                    <img class="img-responsive img-fullwidth" src="images/about/about-nsu.jpg" alt="">
-                  </div>
-                  <div class="video-button"></div>
-                  <a class="hover-link" data-lightbox-gallery="youtube-video" href="https://www.youtube.com/watch?v=F3QpgXBtDeo" title="Youtube Video">Youtube Video</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+<figure class="videoplayer "  data-aos="fade-right">
+             <video class="b-lazy b-loaded" controls="true" title="RKGIT::Top private engineering college in AKTU" autoplay="" loop="" muted="">
+              <source type="video/mp4" src="https://www.rkgit.edu.in/assets/videos/main.mp4">
+            </video>
+            <!-- slider start here -->                   
+        </figure>
 
 
-  <!--start Funfacts Section-->
-  <section class="parallax layer-overlay overlay-theme-colored-9" data-bg-img="images/bg/bg1.jpg" data-parallax-ratio="0.4">
-      <div class="container pt-90 pb-90">
-        <div class="section-content">
-          <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
-              <div class="funfact text-center">
-                <div class="odometer-animate-number text-white font-weight-600 font-48" data-value="5100" data-theme="minimal">0</div>
-                <div class="double-line-bottom-centered-theme-colored-2 mt-0 mb-25"></div>
-                <h5 class="text-white text-uppercase mb-0">Happy Students</h5>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
-              <div class="funfact text-center">
-                <div class="odometer-animate-number text-white font-weight-600 font-48" data-value="200" data-theme="minimal">0</div>
-                <div class="double-line-bottom-centered-theme-colored-2 mt-0 mb-25"></div>
-                <h5 class="text-white text-uppercase mb-0">Approved Courses</h5>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
-              <div class="funfact text-center">
-                <div class="odometer-animate-number text-white font-weight-600 font-48" data-value="20" data-theme="minimal">0</div>
-                <div class="double-line-bottom-centered-theme-colored-2 mt-0 mb-25"></div>
-                <h5 class="text-white text-uppercase mb-0">Certified Teachers</h5>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3 mb-md-0">
-              <div class="funfact text-center">
-                <div class="odometer-animate-number text-white font-weight-600 font-48" data-value="600" data-theme="minimal">0</div>
-                <div class="double-line-bottom-centered-theme-colored-2 mt-0 mb-25"></div>
-                <h5 class="text-white text-uppercase mb-0">Graduate Students</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Section About -->
+ <section id="about">
+                    <div class="container">
+                        <div class="section-content">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5 class="text-uppercase text-gray-darkgray mb-15" style="font-size: 24px;
+                    color: #333333!important;
+                    font-weight: 900;">About <span class="text-theme-colored2">us</span></h5>
+
+                                    <div class="double-line-bottom-theme-colored-2"></div>
+                                    <!-- <h3 class="font-weight-500 font-30 font- mt-10">Make Your Dream<span class="text-theme-colored"> Education</span> Site with Our LearnPro Template</h3> -->
+                                    <p>Netaji Subhas University is the first premier and one of the best University in
+                                        Jharkhand, with a venerable legacy, highest academic standards, diverse educational
+                                        programmes, distinguished faculty, illustrious alumni, varied co-curricular activities
+                                        and modern infrastructure stands as the pride of Jharkhand and Eastern India. It is an
+                                        unit of Sitwanto Devi Mahila Kalyan Sansthan.
+
+                                        This is also one of the best University in Jamshedpur which emerges as a symbol of
+                                        excellence, integrity and openness of mansa (thought), vaacha (speech) and karmana
+                                        (action).
+
+                                        Sri, Madan Mohan Singh, the Chancellor of the University, realising the importance of
+                                        distinguished faculty to act as role models, relentlessly searched for talent all over
+                                        the country and roped in people of eminence for this University.</p>
+                                    <!-- <img src="images/signature.png" alt="" class="mt-10 mb-15"> -->
+                                    <div><a href="#" class="btn btn-theme-colored mb-sm-30">Read More</a></div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="box-hover-effect about-video">
+                                        <div class="effect-wrapper">
+                                            <div class="thumb">
+                                                <img class="img-responsive img-fullwidth" src="images/about/about-nsu.jpg"
+                                                    alt="">
+                                            </div>
+                                            <div class="video-button"></div>
+                                            <a class="hover-link" data-lightbox-gallery="youtube-video"
+                                                href="https://www.youtube.com/watch?v=F3QpgXBtDeo" title="Youtube Video">Youtube
+                                                Video</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!--start Funfacts Section-->
+                <section class="parallax layer-overlay overlay-theme-colored-9" data-bg-img="images/bg/bg1.jpg"
+                    data-parallax-ratio="0.4">
+                    <div class="container pt-90 pb-90">
+                        <div class="section-content">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+                                    <div class="funfact text-center">
+                                        <div class="odometer-animate-number text-white font-weight-600 font-48"
+                                            data-value="5100" data-theme="minimal">0</div>
+                                        <div class="double-line-bottom-centered-theme-colored-2 mt-0 mb-25"></div>
+                                        <h5 class="text-white text-uppercase mb-0">Happy Students</h5>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+                                    <div class="funfact text-center">
+                                        <div class="odometer-animate-number text-white font-weight-600 font-48" data-value="200"
+                                            data-theme="minimal">0</div>
+                                        <div class="double-line-bottom-centered-theme-colored-2 mt-0 mb-25"></div>
+                                        <h5 class="text-white text-uppercase mb-0">Approved Courses</h5>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+                                    <div class="funfact text-center">
+                                        <div class="odometer-animate-number text-white font-weight-600 font-48" data-value="20"
+                                            data-theme="minimal">0</div>
+                                        <div class="double-line-bottom-centered-theme-colored-2 mt-0 mb-25"></div>
+                                        <h5 class="text-white text-uppercase mb-0">Certified Teachers</h5>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-3 mb-md-0">
+                                    <div class="funfact text-center">
+                                        <div class="odometer-animate-number text-white font-weight-600 font-48"
+                                            data-value="600" data-theme="minimal">0</div>
+                                        <div class="double-line-bottom-centered-theme-colored-2 mt-0 mb-25"></div>
+                                        <h5 class="text-white text-uppercase mb-0">Graduate Students</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Section About -->
     <section>
       <div class="container pt-50 pb-40">
         <div class="section-title">
@@ -632,198 +215,6 @@ Sri, Madan Mohan Singh, the Chancellor of the University, realising the importan
       </div>
     </section>
 
-    <!-- Section: Courses -->
-    <section id="courses" class="bg-silver-deep">
-      <div class="container pb-40">
-        <div class="section-title">
-          <div class="row">
-            <div class="col-md-12 text-center">
-              <h2 class="text-uppercase title">Popular <span class="text-theme-colored2">Courses</span></h2>
-              <div class="double-line-bottom-centered-theme-colored-2 mt-20"></div>              
-              <p class="text-uppercase">Choose Your Desired Course</p>
-            </div>
-          </div>
-        </div>
-        <div class="row mtli-row-clearfix">
-          <div class="owl-carousel-3col" data-nav="true">
-            <div class="item">
-              <div class="course-single-item bg-white border-1px clearfix mb-30">
-                <div class="course-thumb">
-                  <img class="img-fullwidth" alt="" src="images/course/sm1.jpg">
-                  <div class="price-tag">$290</div>
-                </div>
-                <div class="course-details clearfix p-20 pt-15">
-                  <div class="course-top-part pull-left mr-40">
-                    <a href="page-course-details.html"><h4 class="mt-0 mb-5">Nural Networking Course</h4></a>
-                    <ul class="list-inline">
-                      <li class="review-stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                      </li>
-                      <li>25 <i class="fa fa-comments-o text-theme-colored2"></i></li>
-                      <li>68 <i class="fa fa-thumbs-o-up text-theme-colored2"></i></li>
-                    </ul>
-                  </div>
-                  <div class="author-thumb">
-                    <img src="images/course/xs1.jpg" alt="" class="img-circle">
-                  </div>
-                  <div class="clearfix"></div>
-                  <p class="course-description mt-20">Lorem ipsum dolor sit amet, consec teturadipsi cing elit. Nobis commodi esse aliquam eligend reprehenderit, numquam a odio.</p>
-                  <ul class="list-inline course-meta mt-15">
-                    <li>
-                      <h6>4 year</h6>
-                      <span> Course</span>
-                    </li>
-                    <li>
-                      <h6>35</h6>
-                      <span> Class Size</span>
-                    </li>
-                    <li>
-                      <h6><span class="course-time">2 hours 30 min</span></h6>
-                      <span> Class Duration</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="course-single-item bg-white border-1px clearfix mb-30">
-                <div class="course-thumb">
-                  <img class="img-fullwidth" alt="" src="images/course/sm2.jpg">
-                  <div class="price-tag">$290</div>
-                </div>
-                <div class="course-details clearfix p-20 pt-15">
-                  <div class="course-top-part pull-left mr-40">
-                    <a href="page-course-details.html"><h4 class="mt-0 mb-5">Nural Networking Course</h4></a>
-                    <ul class="list-inline">
-                      <li class="review-stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half"></i>
-                        <i class="fa fa-star-o"></i>
-                        <i class="fa fa-star-o"></i>
-                      </li>
-                      <li>25 <i class="fa fa-comments-o text-theme-colored2"></i></li>
-                      <li>68 <i class="fa fa-thumbs-o-up text-theme-colored2"></i></li>
-                    </ul>
-                  </div>
-                  <div class="author-thumb">
-                    <img src="images/course/xs2.jpg" alt="" class="img-circle">
-                  </div>
-                  <div class="clearfix"></div>
-                  <p class="course-description mt-20">Lorem ipsum dolor sit amet, consec teturadipsi cing elit. Nobis commodi esse aliquam eligend reprehenderit, numquam a odio.</p>
-                  <ul class="list-inline course-meta mt-15">
-                    <li>
-                      <h6>3 year</h6>
-                      <span> Course</span>
-                    </li>
-                    <li>
-                      <h6>20</h6>
-                      <span> Class Size</span>
-                    </li>
-                    <li>
-                      <h6><span class="course-time">1 hour 45 min</span></h6>
-                      <span> Class Duration</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="course-single-item bg-white border-1px clearfix mb-30">
-                <div class="course-thumb">
-                  <img class="img-fullwidth" alt="" src="images/course/sm3.jpg">
-                  <div class="price-tag">Free</div>
-                </div>
-                <div class="course-details clearfix p-20 pt-15">
-                  <div class="course-top-part pull-left mr-40">
-                    <a href="page-course-details.html"><h4 class="mt-0 mb-5">Nural Networking Course</h4></a>
-                    <ul class="list-inline">
-                      <li class="review-stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                      </li>
-                      <li>25 <i class="fa fa-comments-o text-theme-colored2"></i></li>
-                      <li>68 <i class="fa fa-thumbs-o-up text-theme-colored2"></i></li>
-                    </ul>
-                  </div>
-                  <div class="author-thumb">
-                    <img src="images/course/xs3.jpg" alt="" class="img-circle">
-                  </div>
-                  <div class="clearfix"></div>
-                  <p class="course-description mt-20">Lorem ipsum dolor sit amet, consec teturadipsi cing elit. Nobis commodi esse aliquam eligend reprehenderit, numquam a odio.</p>
-                  <ul class="list-inline course-meta mt-15">
-                    <li>
-                      <h6>2 year</h6>
-                      <span> Course</span>
-                    </li>
-                    <li>
-                      <h6>30</h6>
-                      <span> Class Size</span>
-                    </li>
-                    <li>
-                      <h6><span class="course-time">2 hours 30 min</span></h6>
-                      <span> Class Duration</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="course-single-item bg-white border-1px clearfix mb-30">
-                <div class="course-thumb">
-                  <img class="img-fullwidth" alt="" src="images/course/sm4.jpg">
-                  <div class="price-tag">$290</div>
-                </div>
-                <div class="course-details clearfix p-20 pt-15">
-                  <div class="course-top-part pull-left mr-40">
-                    <a href="page-course-details.html"><h4 class="mt-0 mb-5">Nural Networking Course</h4></a>
-                    <ul class="list-inline">
-                      <li class="review-stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                      </li>
-                      <li>25 <i class="fa fa-comments-o text-theme-colored2"></i></li>
-                      <li>68 <i class="fa fa-thumbs-o-up text-theme-colored2"></i></li>
-                    </ul>
-                  </div>
-                  <div class="author-thumb">
-                    <img src="images/course/xs1.jpg" alt="" class="img-circle">
-                  </div>
-                  <div class="clearfix"></div>
-                  <p class="course-description mt-20">Lorem ipsum dolor sit amet, consec teturadipsi cing elit. Nobis commodi esse aliquam eligend reprehenderit, numquam a odio.</p>
-                  <ul class="list-inline course-meta mt-15">
-                    <li>
-                      <h6>1 year</h6>
-                      <span> Course</span>
-                    </li>
-                    <li>
-                      <h6>45</h6>
-                      <span> Class Size</span>
-                    </li>
-                    <li>
-                      <h6><span class="course-time">3 hours 20 min</span></h6>
-                      <span> Class Duration</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  
 
     <!-- Section: Team -->
     <section id="team">
@@ -1490,9 +881,7 @@ At NETAJI SUBHAS UNIVERSITY, students are expected to have an enriching and life
                       <button type="submit" class="btn btn-colored btn-theme-colored text-white btn-xs m-0" data-height="48px" style="padding: 10px 30px;">Apply Now</button>
                     </span>
                   </div>
-                </form>
-                
-                                
+                </form>                                              
               </div>
             </div>
           </div>
@@ -1500,6 +889,7 @@ At NETAJI SUBHAS UNIVERSITY, students are expected to have an enriching and life
       </div>
     </section>
     <!-- Divider: Call To Action -->
+
     <section class="bg-theme-colored2">
       <div class="container pt-0 pb-0">
         <div class="row">
@@ -1518,35 +908,15 @@ At NETAJI SUBHAS UNIVERSITY, students are expected to have an enriching and life
                   </span>
                 </div>
               </form>
-              <!-- Mailchimp Subscription Form Validation-->
-              <script type="text/javascript">
-                $('#mailchimp-subscription-form-footer').ajaxChimp({
-                    callback: mailChimpCallBack,
-                    url: '//thememascot.us9.list-manage.com/subscribe/post?u=a01f440178e35febc8cf4e51f&amp;amp;amp;id=49d6d30e1e'
-                });
-
-                function mailChimpCallBack(resp) {
-                    // Hide any previous response text
-                    var $mailchimpform = $('#mailchimp-subscription-form-footer'),
-                        $response = '';
-                    $mailchimpform.children(".alert").remove();
-                    if (resp.result === 'success') {
-                        $response = '&amp;lt;div class="alert alert-success"&amp;gt;&amp;lt;button type="button" class="close" data-dismiss="alert" aria-label="Close"&amp;gt;&amp;lt;span aria-hidden="true"&amp;gt;&amp;amp;times;&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt;' + resp.msg + '&amp;lt;/div&amp;gt;';
-                    } else if (resp.result === 'error') {
-                        $response = '&amp;lt;div class="alert alert-danger"&amp;gt;&amp;lt;button type="button" class="close" data-dismiss="alert" aria-label="Close"&amp;gt;&amp;lt;span aria-hidden="true"&amp;gt;&amp;amp;times;&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt;' + resp.msg + '&amp;lt;/div&amp;gt;';
-                    }
-                    $mailchimpform.prepend($response);
-                }
-              </script>
-              <!-- Mailchimp Subscription Form Ends Here -->
+              <!-- Mailchimp Subscription Form Validation-->           
             </div>
           </div>
         </div>
       </div>
     </section>
-  <!-- end main-content -->
-  
+  <!-- end main-content -->  
   </div>
+
   <?php
 include "include/footer.php";
   ?>

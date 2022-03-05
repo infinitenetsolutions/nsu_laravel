@@ -7052,6 +7052,8 @@ This file contains the common styles of this theme.
 */
                         
                         .styled-icons a {
+                            border-radius: 20px;
+                            border: 1px solid #ffffff;
                             color: #333333;
                             font-size: 18px;
                             height: 32px;
@@ -8305,7 +8307,7 @@ This file contains the common styles of this theme.
                         
                         .widget .list-border li {
                             margin-bottom: 0;
-                            padding: 10px 0;
+                            padding: 3px 0;
                         }
                         
                         .widget.brochures>li {
@@ -10302,7 +10304,7 @@ This file contains the common styles of this theme.
                         }
                         /* fixed footer */
                         
-                        footer#footer.fixed-footer {
+                        footer#footer.fixed-footers {
                             bottom: 0;
                             left: 0;
                             position: fixed;
@@ -10375,4 +10377,4 @@ This file contains the common styles of this theme.
                             float: right;
                         }
                         
-                        f
+                        f f
